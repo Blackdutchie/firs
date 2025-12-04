@@ -10,7 +10,7 @@ industry = IndustrySecondary(
         ("ITEM", 6),
         ("SHIP", 2),
     ],
-    life_type = "IND_LIFE_TYPE_BLACK_HOLE"
+    life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
     prob_map_gen="1",
     map_colour="166",
