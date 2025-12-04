@@ -10,7 +10,7 @@ cargo_module_names = [
     "artyshells",
     "basassmats",
     "beans",
-    "bmats,"
+    "bmats",
     "building_materials",
     "carbon_black",
     "cassava",
