@@ -42,7 +42,7 @@ cargo_module_names = [
     "fish",
     "food",
     "forgings_and_castings",
-    "frontlinesupplies"
+    "frontlinesupplies",
     "fruits",
     "glass",
     "goods",
