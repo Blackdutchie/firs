@@ -128,6 +128,21 @@ industry_numeric_ids = dict(
     concrete_plant=119,
     elastomer_products_plant=120,
     power_systems_factory=121,
+    bunker_base=122,
+    construction_yard=123,
+    factory_war=124,
+    field_coal=125,
+    field_components=126,
+    field_salvage=127,
+    field_sulphur=128,
+    garage=129,
+    mass_production_factory=130,
+    oil_wells_war=131,
+    refinery_components=132,
+    refinery_salvage=133,
+    refinery_sulphur=134,
+    seaport=135,
+    storage_depot=136,
     # 127 left free for GarryG
 )
 # Definition of industry tile numeric IDs
