@@ -1,10 +1,10 @@
 # Various needed programs
 GIT = git
-PYTHON3 = home/reinier/venvttd/bin/python3
+PYTHON3 = /home/reinier/venvttd/bin/python3
 SED = sed
 ZIP = zip
 
-NMLC = home/reinier/venvttd/bin/nmlc
+NMLC = /home/reinier/venvttd/bin/nmlc
 GRFID = grfid
 
 GIT_INFO = $(PYTHON3) src/polar_fox/git_info.py
