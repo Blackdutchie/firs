@@ -85,7 +85,7 @@ cargo_module_names = [
     "rubber",
     "sand",
     "salt",
-    "salvage,"
+    "salvage",
     "scrap_metal",
     "seals_belts_and_hoses",
     "shippables",
