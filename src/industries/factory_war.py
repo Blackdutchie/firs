@@ -27,152 +27,155 @@ industry.enable_in_economy(
 )
 
 industry.add_tile(
-    id="factory_tile_1",
-    animation_length=47,
+    id="appliance_factory_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
+industry.add_tile(
+    id="appliance_factory_tile_2",
+    animation_length=7,
     animation_looping=True,
-    animation_speed=2,
+    animation_speed=3,
     location_checks=TileLocationChecks(
         require_effectively_flat=True, disallow_industry_adjacent=True
     ),
 )
 
-spriteset_ground = industry.add_spriteset(
-    type="asphalt",
-)
-spriteset_1 = industry.add_spriteset(
-    sprites=[(10, 60, 64, 70, -31, -39)],
-)
+spriteset_ground = industry.add_spriteset(type="asphalt")
+# spriteset_1 deprecated
 spriteset_2 = industry.add_spriteset(
-    sprites=[(80, 60, 64, 70, -31, -39)],
+    sprites=[(80, 10, 64, 64, -31, -33)],
 )
 spriteset_3 = industry.add_spriteset(
-    sprites=[(150, 60, 64, 51, -31, -20)],
+    sprites=[(150, 10, 64, 64, -31, -33)],
 )
 spriteset_4 = industry.add_spriteset(
-    sprites=[(220, 60, 64, 51, -31, -20)],
+    sprites=[(220, 10, 64, 64, -31, -33)],
 )
 spriteset_5 = industry.add_spriteset(
-    sprites=[(290, 60, 64, 51, -31, -20)],
+    sprites=[(290, 10, 64, 64, -31, -33)],
 )
 spriteset_6 = industry.add_spriteset(
-    sprites=[(360, 60, 64, 31, -31, 0)],
+    sprites=[(360, 10, 64, 64, -31, -33)],
 )
 spriteset_7 = industry.add_spriteset(
-    sprites=[(430, 60, 64, 31, -31, 0)],
+    sprites=[(10, 84, 64, 120, -31, -89)],
 )
-sprite_smoke = industry.add_smoke_sprite(
-    smoke_type="dark_smoke_small",
-    xoffset=0,
-    yoffset=8,
-    zoffset=53,
+spriteset_8 = industry.add_spriteset(
+    sprites=[(80, 84, 64, 120, -31, -89)],
+)
+spriteset_9 = industry.add_spriteset(
+    sprites=[(150, 84, 64, 120, -31, -89)],
+)
+spriteset_10 = industry.add_spriteset(
+    sprites=[(220, 84, 64, 120, -31, -89)],
+)
+sprite_smoke_1 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_big",
+    xoffset=10,
+    yoffset=0,
+    zoffset=93,
+)
+sprite_smoke_2 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_big",
+    xoffset=6,
+    yoffset=0,
+    zoffset=79,
+    animation_frame_offset=1,
 )
 
 industry.add_spritelayout(
-    id="factory_spritelayout_1",
-    tile="factory_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_1],
-    smoke_sprites=[sprite_smoke],
-    fences=["nw", "ne", "se", "sw"],
-)
-industry.add_spritelayout(
-    id="factory_spritelayout_2",
-    tile="factory_tile_1",
+    id="appliance_factory_spritelayout_paper_store_empty",
+    tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_2],
-    fences=["nw", "ne", "se", "sw"],
+    add_to_object_num=7,
 )
 industry.add_spritelayout(
-    id="factory_spritelayout_3",
-    tile="factory_tile_1",
+    id="appliance_factory_spritelayout_paper_store_full",
+    tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_3],
-    fences=["nw", "ne", "se"],
-    add_to_object_num=1,
+    add_to_object_num=7,
 )
 industry.add_spritelayout(
-    id="factory_spritelayout_4",
-    tile="factory_tile_1",
+    id="appliance_factory_spritelayout_wood_store_forklift",
+    tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_4],
-    fences=["nw", "ne", "se"],
-    add_to_object_num=2,
+    add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="factory_spritelayout_5",
-    tile="factory_tile_1",
+    id="appliance_factory_spritelayout_wood_store_full",
+    tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_5],
-    fences=["nw", "ne", "se"],
-    add_to_object_num=3,
+    add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="factory_spritelayout_6",
-    tile="factory_tile_1",
+    id="appliance_factory_spritelayout_chemical_tanks",
+    tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_6],
-    fences=["nw", "ne", "se", "sw"],
+    add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="factory_spritelayout_7",
-    tile="factory_tile_1",
+    id="appliance_factory_spritelayout_tall_building_1",
+    tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_7],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=5,
-)
-
-industry.add_multi_tile_object(
     add_to_object_num=4,
-    view_layout=[
-        (0, 0, "factory_spritelayout_1"),
-        (0, 1, "factory_spritelayout_2"),
-    ],
+)
+industry.add_spritelayout(
+    id="appliance_factory_spritelayout_tall_building_2",
+    tile="appliance_factory_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_8],
+    add_to_object_num=2,
+)
+industry.add_spritelayout(
+    id="appliance_factory_spritelayout_pulp_processor",
+    tile="appliance_factory_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_9],
+    add_to_object_num=1,
+)
+industry.add_spritelayout(
+    id="appliance_factory_spritelayout_boilerhouse",
+    tile="appliance_factory_tile_2",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_10],
+    smoke_sprites=[sprite_smoke_1, sprite_smoke_2],
+    add_to_object_num=3,
 )
 
 industry.add_industry_layout(
-    id="factory_industry_layout_1",
+    id="appliance_factory_industry_layout_1",
     layout=[
-        (0, 0, "factory_spritelayout_3"),
-        (0, 1, "factory_spritelayout_3"),
-        (0, 2, "factory_spritelayout_5"),
-        (0, 3, "factory_spritelayout_4"),
-        (0, 4, "factory_spritelayout_5"),
-        (1, 0, "factory_spritelayout_3"),
-        (1, 1, "factory_spritelayout_3"),
-        (1, 2, "factory_spritelayout_5"),
-        (1, 3, "factory_spritelayout_4"),
-        (1, 4, "factory_spritelayout_6"),
-        (2, 0, "factory_spritelayout_3"),
-        (2, 1, "factory_spritelayout_1"),
-        (2, 2, "factory_spritelayout_2"),
-        (2, 3, "factory_spritelayout_7"),
-        (2, 4, "factory_spritelayout_7"),
-    ],
-)
-industry.add_industry_layout(
-    id="factory_industry_layout_2",
-    layout=[
-        (0, 2, "factory_spritelayout_3"),
-        (0, 3, "factory_spritelayout_3"),
-        (1, 0, "factory_spritelayout_1"),
-        (1, 1, "factory_spritelayout_2"),
-        (1, 2, "factory_spritelayout_3"),
-        (1, 3, "factory_spritelayout_3"),
-        (2, 0, "factory_spritelayout_4"),
-        (2, 1, "factory_spritelayout_7"),
-        (2, 2, "factory_spritelayout_6"),
-        (2, 3, "factory_spritelayout_6"),
-        (3, 0, "factory_spritelayout_4"),
-        (3, 1, "factory_spritelayout_5"),
-        (3, 2, "factory_spritelayout_4"),
-        (3, 3, "factory_spritelayout_3"),
+        (0, 0, "appliance_factory_spritelayout_tall_building_1"),
+        (0, 1, "appliance_factory_spritelayout_tall_building_1"),
+        (0, 2, "appliance_factory_spritelayout_paper_store_full"),
+        (1, 0, "appliance_factory_spritelayout_tall_building_2"),
+        (1, 1, "appliance_factory_spritelayout_tall_building_2"),
+        (1, 2, "appliance_factory_spritelayout_paper_store_empty"),
+        (2, 0, "appliance_factory_spritelayout_tall_building_1"),
+        (2, 1, "appliance_factory_spritelayout_tall_building_1"),
+        (2, 2, "appliance_factory_spritelayout_paper_store_full"),
+        (3, 0, "appliance_factory_spritelayout_tall_building_2"),
+        (3, 1, "appliance_factory_spritelayout_tall_building_2"),
+        (3, 2, "appliance_factory_spritelayout_wood_store_full"),
+        (4, 0, "appliance_factory_spritelayout_boilerhouse"),
+        (4, 1, "appliance_factory_spritelayout_boilerhouse"),
+        (4, 2, "appliance_factory_spritelayout_wood_store_forklift"),
     ],
 )
