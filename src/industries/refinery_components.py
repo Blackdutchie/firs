@@ -8,7 +8,7 @@ industry = IndustrySecondary(
     prod_cargo_types_with_output_ratios=[
         ("RMAT", 8),
     ],
-    life_type = "IND_LIFE_TYPE_BLACK_HOLE"
+    life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",  # do not build during gameplay
     prob_map_gen="3",
     map_colour="10",
