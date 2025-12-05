@@ -45,5 +45,5 @@ industry.add_spritelayout(
 )
 industry.add_industry_layout(
     id="refinery_components_industry_layout",
-    layout=[(0, 0, "storage_depot_spritelayout")],
+    layout=[(0, 0, "refinery_components_spritelayout")],
 )
