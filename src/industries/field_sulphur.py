@@ -196,7 +196,7 @@ spriteset_crusher = industry.add_spriteset(
 )
 
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_1",
+    id="sulphurfield_spritelayout_1",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_1,
@@ -205,7 +205,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_2",
+    id="sulphurfield_spritelayout_2",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_2,
@@ -214,7 +214,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_4",
+    id="sulphurfield_spritelayout_4",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_4,
@@ -223,7 +223,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_animated_crane",
+    id="sulphurfield_spritelayout_animated_crane",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_5,
@@ -232,7 +232,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_6",
+    id="sulphurfield_spritelayout_6",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_6,
@@ -241,7 +241,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_7",
+    id="sulphurfield_spritelayout_7",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_7,
@@ -250,7 +250,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_animated_dozer",
+    id="sulphurfield_spritelayout_animated_dozer",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_8,
@@ -259,7 +259,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_inner_1",
+    id="sulphurfield_spritelayout_inner_1",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_10,
@@ -268,7 +268,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_inner_2",
+    id="sulphurfield_spritelayout_inner_2",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_11,
@@ -277,7 +277,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_12",
+    id="sulphurfield_spritelayout_12",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_12,
@@ -286,7 +286,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_19",
+    id="sulphurfield_spritelayout_19",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_19,
@@ -295,7 +295,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_20",
+    id="sulphurfield_spritelayout_20",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_20,
@@ -304,7 +304,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_22",
+    id="sulphurfield_spritelayout_22",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_22,
@@ -313,7 +313,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_23",
+    id="sulphurfield_spritelayout_23",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_23,
@@ -322,7 +322,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_24",
+    id="sulphurfield_spritelayout_24",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_24,
@@ -331,7 +331,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_processor_front",
+    id="sulphurfield_spritelayout_processor_front",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_39,
@@ -340,7 +340,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_processor_middle",
+    id="sulphurfield_spritelayout_processor_middle",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_40,
@@ -349,7 +349,7 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="clay_pit_spritelayout_processor_rear",
+    id="sulphurfield_spritelayout_processor_rear",
     tile="clay_pit_tile_1",
     ground_sprite=None,
     ground_overlay=spriteset_41,
@@ -360,49 +360,49 @@ industry.add_spritelayout(
 
 
 industry.add_industry_layout(
-    id="clay_pit_layout_1",
+    id="sulphurfield_layout_1",
     layout=[
-        (0, 1, "clay_pit_spritelayout_24"),
-        (0, 2, "clay_pit_spritelayout_12"),
-        (0, 3, "clay_pit_spritelayout_6"),
-        (1, 0, "clay_pit_spritelayout_processor_rear"),
-        (1, 1, "clay_pit_spritelayout_23"),
-        (1, 2, "clay_pit_spritelayout_inner_2"),
-        (1, 3, "clay_pit_spritelayout_animated_crane"),
-        (2, 0, "clay_pit_spritelayout_processor_middle"),
-        (2, 1, "clay_pit_spritelayout_22"),
-        (2, 2, "clay_pit_spritelayout_inner_1"),
-        (2, 3, "clay_pit_spritelayout_4"),
-        (3, 0, "clay_pit_spritelayout_processor_front"),
-        (3, 1, "clay_pit_spritelayout_20"),
-        (3, 2, "clay_pit_spritelayout_animated_dozer"),
-        (3, 3, "clay_pit_spritelayout_2"),
-        (4, 1, "clay_pit_spritelayout_19"),
-        (4, 2, "clay_pit_spritelayout_7"),
-        (4, 3, "clay_pit_spritelayout_1"),
+        (0, 1, "sulphurfield_spritelayout_24"),
+        (0, 2, "sulphurfield_spritelayout_12"),
+        (0, 3, "sulphurfield_spritelayout_6"),
+        (1, 0, "sulphurfield_spritelayout_processor_rear"),
+        (1, 1, "sulphurfield_spritelayout_23"),
+        (1, 2, "sulphurfield_spritelayout_inner_2"),
+        (1, 3, "sulphurfield_spritelayout_animated_crane"),
+        (2, 0, "sulphurfield_spritelayout_processor_middle"),
+        (2, 1, "sulphurfield_spritelayout_22"),
+        (2, 2, "sulphurfield_spritelayout_inner_1"),
+        (2, 3, "sulphurfield_spritelayout_4"),
+        (3, 0, "sulphurfield_spritelayout_processor_front"),
+        (3, 1, "sulphurfield_spritelayout_20"),
+        (3, 2, "sulphurfield_spritelayout_animated_dozer"),
+        (3, 3, "sulphurfield_spritelayout_2"),
+        (4, 1, "sulphurfield_spritelayout_19"),
+        (4, 2, "sulphurfield_spritelayout_7"),
+        (4, 3, "sulphurfield_spritelayout_1"),
     ],
 )
 
 industry.add_industry_layout(
-    id="clay_pit_layout_2",
+    id="sulphurfield_layout_2",
     layout=[
-        (0, 0, "clay_pit_spritelayout_24"),
-        (0, 1, "clay_pit_spritelayout_12"),
-        (0, 2, "clay_pit_spritelayout_6"),
-        (1, 0, "clay_pit_spritelayout_23"),
-        (1, 1, "clay_pit_spritelayout_inner_2"),
-        (1, 2, "clay_pit_spritelayout_animated_crane"),
-        (1, 3, "clay_pit_spritelayout_processor_rear"),
-        (2, 0, "clay_pit_spritelayout_22"),
-        (2, 1, "clay_pit_spritelayout_inner_1"),
-        (2, 2, "clay_pit_spritelayout_4"),
-        (2, 3, "clay_pit_spritelayout_processor_middle"),
-        (3, 0, "clay_pit_spritelayout_20"),
-        (3, 1, "clay_pit_spritelayout_animated_dozer"),
-        (3, 2, "clay_pit_spritelayout_2"),
-        (3, 3, "clay_pit_spritelayout_processor_front"),
-        (4, 0, "clay_pit_spritelayout_19"),
-        (4, 1, "clay_pit_spritelayout_7"),
-        (4, 2, "clay_pit_spritelayout_1"),
+        (0, 0, "sulphurfield_spritelayout_24"),
+        (0, 1, "sulphurfield_spritelayout_12"),
+        (0, 2, "sulphurfield_spritelayout_6"),
+        (1, 0, "sulphurfield_spritelayout_23"),
+        (1, 1, "sulphurfield_spritelayout_inner_2"),
+        (1, 2, "sulphurfield_spritelayout_animated_crane"),
+        (1, 3, "sulphurfield_spritelayout_processor_rear"),
+        (2, 0, "sulphurfield_spritelayout_22"),
+        (2, 1, "sulphurfield_spritelayout_inner_1"),
+        (2, 2, "sulphurfield_spritelayout_4"),
+        (2, 3, "sulphurfield_spritelayout_processor_middle"),
+        (3, 0, "sulphurfield_spritelayout_20"),
+        (3, 1, "sulphurfield_spritelayout_animated_dozer"),
+        (3, 2, "sulphurfield_spritelayout_2"),
+        (3, 3, "sulphurfield_spritelayout_processor_front"),
+        (4, 0, "sulphurfield_spritelayout_19"),
+        (4, 1, "sulphurfield_spritelayout_7"),
+        (4, 2, "sulphurfield_spritelayout_1"),
     ],
 )

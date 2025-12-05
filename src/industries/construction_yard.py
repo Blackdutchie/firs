@@ -54,7 +54,7 @@ spriteset_6 = industry.add_spriteset(
     sprites=[(360, 10, 64, 64, -31, -32)],
 )
 industry.add_spritelayout(
-    id="supply_yard_spritelayout_1",
+    id="construction_yard_spritelayout_1",
     tile="supply_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -63,7 +63,7 @@ industry.add_spritelayout(
     add_to_object_num=1,
 )
 industry.add_spritelayout(
-    id="supply_yard_spritelayout_2",
+    id="construction_yard_spritelayout_2",
     tile="supply_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -72,7 +72,7 @@ industry.add_spritelayout(
     add_to_object_num=2,
 )
 industry.add_spritelayout(
-    id="supply_yard_spritelayout_3",
+    id="construction_yard_spritelayout_3",
     tile="supply_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -81,7 +81,7 @@ industry.add_spritelayout(
     add_to_object_num=3,
 )
 industry.add_spritelayout(
-    id="supply_yard_spritelayout_4",
+    id="construction_yard_spritelayout_4",
     tile="supply_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -90,7 +90,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="supply_yard_spritelayout_5",
+    id="construction_yard_spritelayout_5",
     tile="supply_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -99,7 +99,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="supply_yard_spritelayout_6",
+    id="construction_yard_spritelayout_6",
     tile="supply_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -108,7 +108,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="supply_yard_spritelayout_empty",
+    id="construction_yard_spritelayout_empty",
     tile="supply_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -119,43 +119,43 @@ industry.add_spritelayout(
 
 
 industry.add_industry_layout(
-    id="supply_yard_industry_layout_1",
+    id="construction_yard_industry_layout_1",
     layout=[
-        (0, 0, "supply_yard_spritelayout_1"),
-        (0, 1, "supply_yard_spritelayout_2"),
-        (0, 2, "supply_yard_spritelayout_3"),
-        (0, 3, "supply_yard_spritelayout_1"),
-        (1, 0, "supply_yard_spritelayout_4"),
-        (1, 1, "supply_yard_spritelayout_5"),
-        (1, 2, "supply_yard_spritelayout_6"),
-        (1, 3, "supply_yard_spritelayout_2"),
+        (0, 0, "construction_yard_spritelayout_1"),
+        (0, 1, "construction_yard_spritelayout_2"),
+        (0, 2, "construction_yard_spritelayout_3"),
+        (0, 3, "construction_yard_spritelayout_1"),
+        (1, 0, "construction_yard_spritelayout_4"),
+        (1, 1, "construction_yard_spritelayout_5"),
+        (1, 2, "construction_yard_spritelayout_6"),
+        (1, 3, "construction_yard_spritelayout_2"),
     ],
 )
 
 industry.add_industry_layout(
-    id="supply_yard_industry_layout_2",
+    id="construction_yard_industry_layout_2",
     layout=[
-        (0, 0, "supply_yard_spritelayout_1"),
-        (0, 1, "supply_yard_spritelayout_1"),
-        (1, 0, "supply_yard_spritelayout_2"),
-        (1, 1, "supply_yard_spritelayout_2"),
-        (1, 2, "supply_yard_spritelayout_6"),
-        (2, 0, "supply_yard_spritelayout_5"),
-        (2, 1, "supply_yard_spritelayout_4"),
-        (2, 2, "supply_yard_spritelayout_3"),
+        (0, 0, "construction_yard_spritelayout_1"),
+        (0, 1, "construction_yard_spritelayout_1"),
+        (1, 0, "construction_yard_spritelayout_2"),
+        (1, 1, "construction_yard_spritelayout_2"),
+        (1, 2, "construction_yard_spritelayout_6"),
+        (2, 0, "construction_yard_spritelayout_5"),
+        (2, 1, "construction_yard_spritelayout_4"),
+        (2, 2, "construction_yard_spritelayout_3"),
     ],
 )
 
 industry.add_industry_layout(
-    id="supply_yard_industry_layout_3",
+    id="construction_yard_industry_layout_3",
     layout=[
-        (0, 0, "supply_yard_spritelayout_2"),
-        (0, 1, "supply_yard_spritelayout_6"),
-        (1, 0, "supply_yard_spritelayout_1"),
-        (1, 1, "supply_yard_spritelayout_1"),
-        (2, 0, "supply_yard_spritelayout_2"),
-        (2, 1, "supply_yard_spritelayout_3"),
-        (3, 0, "supply_yard_spritelayout_5"),
-        (3, 1, "supply_yard_spritelayout_4"),
+        (0, 0, "construction_yard_spritelayout_2"),
+        (0, 1, "construction_yard_spritelayout_6"),
+        (1, 0, "construction_yard_spritelayout_1"),
+        (1, 1, "construction_yard_spritelayout_1"),
+        (2, 0, "construction_yard_spritelayout_2"),
+        (2, 1, "construction_yard_spritelayout_3"),
+        (3, 0, "construction_yard_spritelayout_5"),
+        (3, 1, "construction_yard_spritelayout_4"),
     ],
 )

@@ -113,7 +113,7 @@ sprite_smoke = industry.add_smoke_sprite(
 )
 
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_empty",
+    id="refinery_salvage_spritelayout_empty",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -121,7 +121,7 @@ industry.add_spritelayout(
     add_to_object_num=9,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_greeble",
+    id="refinery_salvage_spritelayout_greeble",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -129,7 +129,7 @@ industry.add_spritelayout(
     add_to_object_num=2,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_blast_furnace_1",
+    id="refinery_salvage_spritelayout_blast_furnace_1",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -138,7 +138,7 @@ industry.add_spritelayout(
     add_to_object_num=3,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_blast_furnace_2",
+    id="refinery_salvage_spritelayout_blast_furnace_2",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -146,7 +146,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_small_shed",
+    id="refinery_salvage_spritelayout_small_shed",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -154,7 +154,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_ladle_transporter",
+    id="refinery_salvage_spritelayout_ladle_transporter",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -162,7 +162,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_brick_building",
+    id="refinery_salvage_spritelayout_brick_building",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -170,7 +170,7 @@ industry.add_spritelayout(
     add_to_object_num=7,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_small_tanks",
+    id="refinery_salvage_spritelayout_small_tanks",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -178,21 +178,21 @@ industry.add_spritelayout(
     add_to_object_num=8,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_large_shed_rear_part",
+    id="refinery_salvage_spritelayout_large_shed_rear_part",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_large_shed_rear_part],
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_large_shed_front_part",
+    id="refinery_salvage_spritelayout_large_shed_front_part",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground_tile_dark_animated,
     ground_overlay=spriteset_ground_tile_dark_animated,
     building_sprites=[spriteset_large_shed_front_part_animated],
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_casting_shed",
+    id="refinery_salvage_spritelayout_casting_shed",
     tile="blast_furnace_tile_1",
     ground_sprite=spriteset_ground_tile_dark_animated,
     ground_overlay=spriteset_ground_tile_dark_animated,
@@ -201,96 +201,96 @@ industry.add_spritelayout(
 
 # this industry needs outpost layout as there are lots of cargos
 industry.add_industry_outpost_layout(
-    id="blast_furnace_industry_outpost_layout_1",
+    id="refinery_salvage_industry_outpost_layout_1",
     layout=[
         # test outpost layout
-        (0, 0, "blast_furnace_spritelayout_blast_furnace_1"),
-        (0, 1, "blast_furnace_spritelayout_blast_furnace_2"),
-        (1, 0, "blast_furnace_spritelayout_small_tanks"),
-        (1, 1, "blast_furnace_spritelayout_brick_building"),
+        (0, 0, "refinery_salvage_spritelayout_blast_furnace_1"),
+        (0, 1, "refinery_salvage_spritelayout_blast_furnace_2"),
+        (1, 0, "refinery_salvage_spritelayout_small_tanks"),
+        (1, 1, "refinery_salvage_spritelayout_brick_building"),
     ],
 )
 
 # core layouts are roughly 6x4 or 5x5
 industry.add_industry_layout(
-    id="blast_furnace_industry_layout_1",
+    id="refinery_salvage_industry_layout_1",
     layout=[
-        (0, 0, "blast_furnace_spritelayout_empty"),
-        (0, 1, "blast_furnace_spritelayout_empty"),
-        (0, 2, "blast_furnace_spritelayout_empty"),
-        (0, 3, "blast_furnace_spritelayout_empty"),
-        (1, 0, "blast_furnace_spritelayout_blast_furnace_1"),
-        (1, 1, "blast_furnace_spritelayout_blast_furnace_2"),
-        (1, 2, "blast_furnace_spritelayout_small_tanks"),
-        (1, 3, "blast_furnace_spritelayout_brick_building"),
-        (2, 0, "blast_furnace_spritelayout_blast_furnace_1"),
-        (2, 1, "blast_furnace_spritelayout_blast_furnace_2"),
-        (2, 2, "blast_furnace_spritelayout_small_shed"),
-        (2, 3, "blast_furnace_spritelayout_empty"),
-        (3, 0, "blast_furnace_spritelayout_blast_furnace_1"),
-        (3, 1, "blast_furnace_spritelayout_blast_furnace_2"),
-        (3, 2, "blast_furnace_spritelayout_greeble"),
-        (3, 3, "blast_furnace_spritelayout_empty"),
-        (4, 0, "blast_furnace_spritelayout_empty"),
+        (0, 0, "refinery_salvage_spritelayout_empty"),
+        (0, 1, "refinery_salvage_spritelayout_empty"),
+        (0, 2, "refinery_salvage_spritelayout_empty"),
+        (0, 3, "refinery_salvage_spritelayout_empty"),
+        (1, 0, "refinery_salvage_spritelayout_blast_furnace_1"),
+        (1, 1, "refinery_salvage_spritelayout_blast_furnace_2"),
+        (1, 2, "refinery_salvage_spritelayout_small_tanks"),
+        (1, 3, "refinery_salvage_spritelayout_brick_building"),
+        (2, 0, "refinery_salvage_spritelayout_blast_furnace_1"),
+        (2, 1, "refinery_salvage_spritelayout_blast_furnace_2"),
+        (2, 2, "refinery_salvage_spritelayout_small_shed"),
+        (2, 3, "refinery_salvage_spritelayout_empty"),
+        (3, 0, "refinery_salvage_spritelayout_blast_furnace_1"),
+        (3, 1, "refinery_salvage_spritelayout_blast_furnace_2"),
+        (3, 2, "refinery_salvage_spritelayout_greeble"),
+        (3, 3, "refinery_salvage_spritelayout_empty"),
+        (4, 0, "refinery_salvage_spritelayout_empty"),
         (
             4,
             1,
-            "blast_furnace_spritelayout_large_shed_rear_part",
+            "refinery_salvage_spritelayout_large_shed_rear_part",
         ),
-        (4, 2, "blast_furnace_spritelayout_small_shed"),
-        (4, 3, "blast_furnace_spritelayout_small_shed"),
-        (5, 0, "blast_furnace_spritelayout_casting_shed"),
+        (4, 2, "refinery_salvage_spritelayout_small_shed"),
+        (4, 3, "refinery_salvage_spritelayout_small_shed"),
+        (5, 0, "refinery_salvage_spritelayout_casting_shed"),
         (
             5,
             1,
-            "blast_furnace_spritelayout_large_shed_front_part",
+            "refinery_salvage_spritelayout_large_shed_front_part",
         ),
-        (5, 2, "blast_furnace_spritelayout_ladle_transporter"),
-        (5, 3, "blast_furnace_spritelayout_greeble"),
+        (5, 2, "refinery_salvage_spritelayout_ladle_transporter"),
+        (5, 3, "refinery_salvage_spritelayout_greeble"),
     ],
 )
 industry.add_industry_layout(
-    id="blast_furnace_industry_layout_2",
+    id="refinery_salvage_industry_layout_2",
     layout=[
-        (0, 0, "blast_furnace_spritelayout_small_tanks"),
+        (0, 0, "refinery_salvage_spritelayout_small_tanks"),
         (
             0,
             1,
-            "blast_furnace_spritelayout_large_shed_rear_part",
+            "refinery_salvage_spritelayout_large_shed_rear_part",
         ),
-        (0, 2, "blast_furnace_spritelayout_small_shed"),
-        (0, 3, "blast_furnace_spritelayout_blast_furnace_1"),
-        (0, 4, "blast_furnace_spritelayout_blast_furnace_2"),
-        (0, 5, "blast_furnace_spritelayout_empty"),
-        (1, 0, "blast_furnace_spritelayout_casting_shed"),
+        (0, 2, "refinery_salvage_spritelayout_small_shed"),
+        (0, 3, "refinery_salvage_spritelayout_blast_furnace_1"),
+        (0, 4, "refinery_salvage_spritelayout_blast_furnace_2"),
+        (0, 5, "refinery_salvage_spritelayout_empty"),
+        (1, 0, "refinery_salvage_spritelayout_casting_shed"),
         (
             1,
             1,
-            "blast_furnace_spritelayout_large_shed_front_part",
+            "refinery_salvage_spritelayout_large_shed_front_part",
         ),
-        (1, 2, "blast_furnace_spritelayout_blast_furnace_1"),
-        (1, 3, "blast_furnace_spritelayout_blast_furnace_2"),
-        (1, 4, "blast_furnace_spritelayout_brick_building"),
-        (1, 5, "blast_furnace_spritelayout_empty"),
-        (2, 0, "blast_furnace_spritelayout_empty"),
+        (1, 2, "refinery_salvage_spritelayout_blast_furnace_1"),
+        (1, 3, "refinery_salvage_spritelayout_blast_furnace_2"),
+        (1, 4, "refinery_salvage_spritelayout_brick_building"),
+        (1, 5, "refinery_salvage_spritelayout_empty"),
+        (2, 0, "refinery_salvage_spritelayout_empty"),
         (
             2,
             1,
-            "blast_furnace_spritelayout_large_shed_rear_part",
+            "refinery_salvage_spritelayout_large_shed_rear_part",
         ),
-        (2, 2, "blast_furnace_spritelayout_blast_furnace_1"),
-        (2, 3, "blast_furnace_spritelayout_blast_furnace_2"),
-        (2, 4, "blast_furnace_spritelayout_small_shed"),
-        (2, 5, "blast_furnace_spritelayout_empty"),
-        (3, 0, "blast_furnace_spritelayout_casting_shed"),
+        (2, 2, "refinery_salvage_spritelayout_blast_furnace_1"),
+        (2, 3, "refinery_salvage_spritelayout_blast_furnace_2"),
+        (2, 4, "refinery_salvage_spritelayout_small_shed"),
+        (2, 5, "refinery_salvage_spritelayout_empty"),
+        (3, 0, "refinery_salvage_spritelayout_casting_shed"),
         (
             3,
             1,
-            "blast_furnace_spritelayout_large_shed_front_part",
+            "refinery_salvage_spritelayout_large_shed_front_part",
         ),
-        (3, 2, "blast_furnace_spritelayout_ladle_transporter"),
-        (3, 3, "blast_furnace_spritelayout_empty"),
-        (3, 4, "blast_furnace_spritelayout_greeble"),
-        (3, 5, "blast_furnace_spritelayout_empty"),
+        (3, 2, "refinery_salvage_spritelayout_ladle_transporter"),
+        (3, 3, "refinery_salvage_spritelayout_empty"),
+        (3, 4, "refinery_salvage_spritelayout_greeble"),
+        (3, 5, "refinery_salvage_spritelayout_empty"),
     ],
 )

@@ -52,7 +52,7 @@ stacks_2 = industry.add_spriteset(
     always_draw=True,
 )
 industry.add_spritelayout(
-    id="builders_yard_spritelayout_1",
+    id="bunker_base_spritelayout_1",
     tile="builders_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -60,21 +60,21 @@ industry.add_spritelayout(
     fences=["nw", "ne", "se", "sw"],
 )
 industry.add_spritelayout(
-    id="builders_yard_spritelayout_2",
+    id="bunker_base_spritelayout_2",
     tile="builders_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[shed],
 )
 industry.add_spritelayout(
-    id="builders_yard_spritelayout_3",
+    id="bunker_base_spritelayout_3",
     tile="builders_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[silo],
 )
 industry.add_spritelayout(
-    id="builders_yard_spritelayout_4",
+    id="bunker_base_spritelayout_4",
     tile="builders_yard_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -82,38 +82,38 @@ industry.add_spritelayout(
 )
 
 industry.add_industry_layout(
-    id="builders_yard_industry_layout_1",
+    id="bunker_base_industry_layout_1",
     layout=[
-        (0, 0, "builders_yard_spritelayout_3"),
-        (0, 1, "builders_yard_spritelayout_4"),
-        (1, 0, "builders_yard_spritelayout_2"),
-        (1, 1, "builders_yard_spritelayout_1"),
+        (0, 0, "bunker_base_spritelayout_3"),
+        (0, 1, "bunker_base_spritelayout_4"),
+        (1, 0, "bunker_base_spritelayout_2"),
+        (1, 1, "bunker_base_spritelayout_1"),
     ],
 )
 industry.add_industry_layout(
-    id="builders_yard_industry_layout_2",
+    id="bunker_base_industry_layout_2",
     layout=[
-        (0, 0, "builders_yard_spritelayout_2"),
-        (0, 1, "builders_yard_spritelayout_3"),
-        (1, 0, "builders_yard_spritelayout_4"),
-        (1, 1, "builders_yard_spritelayout_1"),
+        (0, 0, "bunker_base_spritelayout_2"),
+        (0, 1, "bunker_base_spritelayout_3"),
+        (1, 0, "bunker_base_spritelayout_4"),
+        (1, 1, "bunker_base_spritelayout_1"),
     ],
 )
 industry.add_industry_layout(
-    id="builders_yard_industry_layout_3",
+    id="bunker_base_industry_layout_3",
     layout=[
-        (0, 0, "builders_yard_spritelayout_3"),
-        (0, 1, "builders_yard_spritelayout_2"),
-        (1, 0, "builders_yard_spritelayout_1"),
-        (1, 1, "builders_yard_spritelayout_4"),
+        (0, 0, "bunker_base_spritelayout_3"),
+        (0, 1, "bunker_base_spritelayout_2"),
+        (1, 0, "bunker_base_spritelayout_1"),
+        (1, 1, "bunker_base_spritelayout_4"),
     ],
 )
 industry.add_industry_layout(
-    id="builders_yard_industry_layout_4",
+    id="bunker_base_industry_layout_4",
     layout=[
-        (0, 0, "builders_yard_spritelayout_2"),
-        (0, 1, "builders_yard_spritelayout_1"),
-        (1, 0, "builders_yard_spritelayout_3"),
-        (1, 1, "builders_yard_spritelayout_4"),
+        (0, 0, "bunker_base_spritelayout_2"),
+        (0, 1, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_3"),
+        (1, 1, "bunker_base_spritelayout_4"),
     ],
 )
