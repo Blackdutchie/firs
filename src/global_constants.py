@@ -355,6 +355,8 @@ tile_numeric_ids = dict(
     carbon_black_plant_tile_2=252,
     body_plant_tile_2=253,
     chemical_plant_tile_2=254,
+    #sneaking in another tile
+    oil_wells_war_tile_1 = 77
 )
 
 grfid = "F1250009"
