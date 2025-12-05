@@ -24,7 +24,6 @@ industry = IndustrySecondary(
     life_type="IND_LIFE_TYPE_BLACK_HOLE",
     nearby_station_name="string(STR_STATION_INDUSTRY_HARBOUR_2)",
     fund_cost_multiplier="152",
-    override_default_construction_states=True,
     sprites_complete=True,
     animated_tiles_fixed=True,
 )
