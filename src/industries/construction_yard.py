@@ -27,129 +27,20 @@ industry.enable_in_economy(
 
 
 spriteset_ground = industry.add_spriteset(
-    type="asphalt",
+    type="pavement",
 )
-spriteset_1 = industry.add_spriteset(
-    sprites=[(10, 10, 64, 64, -31, -32)],
+spriteset_ground_overlay = industry.add_spriteset(
+    sprites=[(10, 10, 64, 31, -31, 0)],
 )
-spriteset_2 = industry.add_spriteset(
-    sprites=[(80, 10, 64, 64, -31, -32)],
-)
-spriteset_3 = industry.add_spriteset(
-    sprites=[(150, 10, 64, 64, -31, -32)],
-)
-spriteset_4 = industry.add_spriteset(
-    sprites=[(220, 10, 64, 64, -31, -32)],
-)
-spriteset_5 = industry.add_spriteset(
-    sprites=[(290, 10, 64, 64, -31, -32)],
-)
-spriteset_6 = industry.add_spriteset(
-    sprites=[(360, 10, 64, 64, -31, -32)],
-)
+spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
 industry.add_spritelayout(
-    id="construction_yard_spritelayout_1",
-    tile="supply_yard_tile_1",
+    id="construction_yard_spritelayout",
+    tile="general_store_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=None,
+    ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_1],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=1,
 )
-industry.add_spritelayout(
-    id="construction_yard_spritelayout_2",
-    tile="supply_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_2],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=2,
-)
-industry.add_spritelayout(
-    id="construction_yard_spritelayout_3",
-    tile="supply_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_3],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=3,
-)
-industry.add_spritelayout(
-    id="construction_yard_spritelayout_4",
-    tile="supply_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_4],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=4,
-)
-industry.add_spritelayout(
-    id="construction_yard_spritelayout_5",
-    tile="supply_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_5],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=5,
-)
-industry.add_spritelayout(
-    id="construction_yard_spritelayout_6",
-    tile="supply_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_6],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=6,
-)
-industry.add_spritelayout(
-    id="construction_yard_spritelayout_empty",
-    tile="supply_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=7,
-)
-
-
 industry.add_industry_layout(
-    id="construction_yard_industry_layout_1",
-    layout=[
-        (0, 0, "construction_yard_spritelayout_1"),
-        (0, 1, "construction_yard_spritelayout_2"),
-        (0, 2, "construction_yard_spritelayout_3"),
-        (0, 3, "construction_yard_spritelayout_1"),
-        (1, 0, "construction_yard_spritelayout_4"),
-        (1, 1, "construction_yard_spritelayout_5"),
-        (1, 2, "construction_yard_spritelayout_6"),
-        (1, 3, "construction_yard_spritelayout_2"),
-    ],
-)
-
-industry.add_industry_layout(
-    id="construction_yard_industry_layout_2",
-    layout=[
-        (0, 0, "construction_yard_spritelayout_1"),
-        (0, 1, "construction_yard_spritelayout_1"),
-        (1, 0, "construction_yard_spritelayout_2"),
-        (1, 1, "construction_yard_spritelayout_2"),
-        (1, 2, "construction_yard_spritelayout_6"),
-        (2, 0, "construction_yard_spritelayout_5"),
-        (2, 1, "construction_yard_spritelayout_4"),
-        (2, 2, "construction_yard_spritelayout_3"),
-    ],
-)
-
-industry.add_industry_layout(
-    id="construction_yard_industry_layout_3",
-    layout=[
-        (0, 0, "construction_yard_spritelayout_2"),
-        (0, 1, "construction_yard_spritelayout_6"),
-        (1, 0, "construction_yard_spritelayout_1"),
-        (1, 1, "construction_yard_spritelayout_1"),
-        (2, 0, "construction_yard_spritelayout_2"),
-        (2, 1, "construction_yard_spritelayout_3"),
-        (3, 0, "construction_yard_spritelayout_5"),
-        (3, 1, "construction_yard_spritelayout_4"),
-    ],
+    id="construction_yard_industry_layout",
+    layout=[(0, 0, "storage_depot_spritelayout")],
 )

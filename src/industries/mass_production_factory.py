@@ -27,205 +27,21 @@ industry.enable_in_economy(
     "WAR_ECONOMY",
 )
 
-
 spriteset_ground = industry.add_spriteset(
-    type="asphalt",
+    type="pavement",
 )
-spriteset_1 = industry.add_spriteset(
-    sprites=[(10, 10, 64, 80, -31, -49)],
+spriteset_ground_overlay = industry.add_spriteset(
+    sprites=[(10, 10, 64, 31, -31, 0)],
 )
-# spriteset_2 was deprecated
-spriteset_3 = industry.add_spriteset(
-    sprites=[(150, 10, 64, 80, -31, -49)],
-)
-spriteset_4 = industry.add_spriteset(
-    sprites=[(220, 10, 64, 80, -31, -49)],
-)
-spriteset_5 = industry.add_spriteset(
-    sprites=[(290, 10, 64, 80, -31, -49)],
-)
-spriteset_6 = industry.add_spriteset(
-    sprites=[(360, 10, 64, 80, -31, -49)],
-)
-spriteset_7 = industry.add_spriteset(
-    sprites=[(430, 10, 64, 80, -31, -49)],
-)
-spriteset_8 = industry.add_spriteset(
-    sprites=[(500, 10, 64, 80, -31, -49)],
-)
-spriteset_9 = industry.add_spriteset(
-    sprites=[(570, 10, 64, 80, -31, -49)],
-    always_draw=True,
-)
-spriteset_10 = industry.add_spriteset(
-    sprites=[(640, 10, 64, 80, -31, -49)],
-)
-spriteset_11 = industry.add_spriteset(
-    sprites=[(710, 10, 64, 80, -31, -49)],
-)
-spriteset_12 = industry.add_spriteset(
-    sprites=[(640, 100, 64, 80, -31, -49)],
-)
-
+spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
 industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_rear_assembly_hall_windows",
-    tile="assembly_plant_tile_1",
+    id="mass_production_factory_spritelayout",
+    tile="general_store_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=None,
+    ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_1],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=1,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_central_assembly_hall",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_3],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=2,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_front_assembly_hall_windows",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_4],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=3,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_front_assembly_hall_doors",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_5],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=3,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_goods_in_1",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_6],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=5,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_offices",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_8],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=4,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_tyres",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_9],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=6,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_vehicles_1",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_10],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=7,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_vehicles_2",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_11],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=8,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_vehicles_3",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_12],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=9,
-)
-industry.add_spritelayout(
-    id="mass_production_factory_spritelayout_empty",
-    tile="assembly_plant_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=10,
-)
-
-# this industry needs outpost layout as there are lots of cargos
-industry.add_industry_outpost_layout(
-    id="mass_production_factory_industry_outpost_layout_1",
-    layout=[
-        # test outpost layout
-        (0, 0, "mass_production_factory_spritelayout_rear_assembly_hall_windows"),
-        (0, 1, "mass_production_factory_spritelayout_central_assembly_hall"),
-        (0, 2, "mass_production_factory_spritelayout_front_assembly_hall_doors"),
-        (1, 0, "mass_production_factory_spritelayout_offices"),
-        (1, 1, "mass_production_factory_spritelayout_tyres"),
-        (1, 2, "mass_production_factory_spritelayout_offices"),
-    ],
 )
 industry.add_industry_layout(
-    id="mass_production_factory_industry_layout_1",
-    layout=[
-        (
-            0,
-            0,
-            "mass_production_factory_spritelayout_rear_assembly_hall_windows",
-        ),
-        (
-            0,
-            1,
-            "mass_production_factory_spritelayout_central_assembly_hall",
-        ),
-        (
-            0,
-            2,
-            "mass_production_factory_spritelayout_central_assembly_hall",
-        ),
-        (
-            0,
-            3,
-            "mass_production_factory_spritelayout_front_assembly_hall_doors",
-        ),
-        (
-            1,
-            0,
-            "mass_production_factory_spritelayout_rear_assembly_hall_windows",
-        ),
-        (
-            1,
-            1,
-            "mass_production_factory_spritelayout_central_assembly_hall",
-        ),
-        (
-            1,
-            2,
-            "mass_production_factory_spritelayout_central_assembly_hall",
-        ),
-        (
-            1,
-            3,
-            "mass_production_factory_spritelayout_front_assembly_hall_windows",
-        ),
-        (2, 0, "mass_production_factory_spritelayout_goods_in_1"),
-        (2, 1, "mass_production_factory_spritelayout_offices"),
-        (2, 2, "mass_production_factory_spritelayout_offices"),
-        (2, 3, "mass_production_factory_spritelayout_tyres"),
-    ],
+    id="mass_production_factory_industry_layout",
+    layout=[(0, 0, "storage_depot_spritelayout")],
 )

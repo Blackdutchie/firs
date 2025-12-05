@@ -25,124 +25,21 @@ industry.enable_in_economy(
     prob_map_gen="3",
 )
 
-sprite_ground = industry.add_sprite(sprite_number=3962)
-spriteset_1 = industry.add_spriteset(
-    sprites=[(10, 10, 64, 59, -31, -28)],
+spriteset_ground = industry.add_spriteset(
+    type="pavement",
 )
-spriteset_2 = industry.add_spriteset(
-    sprites=[(80, 10, 64, 59, -31, -28)],
+spriteset_ground_overlay = industry.add_spriteset(
+    sprites=[(10, 10, 64, 31, -31, 0)],
 )
-
+spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
 industry.add_spritelayout(
-    id="coalfield_house_spritelayout",
-    tile="vineyard_tile_2",
-    ground_sprite=sprite_ground,
-    ground_overlay=None,
+    id="field_coal_spritelayout",
+    tile="general_store_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_1],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=1,
-)
-industry.add_spritelayout(
-    id="coalfield_shed_spritelayout",
-    tile="vineyard_tile_2",
-    ground_sprite=sprite_ground,
-    ground_overlay=None,
-    building_sprites=[spriteset_2],
-    fences=["nw", "ne", "se", "sw"],
-    add_to_object_num=2,
-)
-industry.add_magic_spritelayout(
-    type="slope_aware_trees",
-    base_id="coalfield_slope_aware_ground_with_trees",
-    tile="vineyard_tile_1",
-    config={
-        "ground_sprite": 4164,
-        "trees_default": [1857, 1857, 1857, 1857, 1857, 1857, 1857, 1857, 1857],
-    },
-)
-
-industry.add_industry_layout(
-    id="coalfield_layout_1",
-    layout=[
-        (0, 0, "coalfield_slope_aware_ground_with_trees"),
-        (0, 1, "coalfield_slope_aware_ground_with_trees"),
-        (0, 2, "coalfield_shed_spritelayout"),
-        (1, 0, "coalfield_slope_aware_ground_with_trees"),
-        (1, 1, "coalfield_slope_aware_ground_with_trees"),
-        (1, 2, "coalfield_slope_aware_ground_with_trees"),
-        (2, 1, "coalfield_slope_aware_ground_with_trees"),
-        (2, 2, "coalfield_house_spritelayout"),
-    ],
 )
 industry.add_industry_layout(
-    id="coalfield_layout_2",
-    layout=[
-        (0, 0, "coalfield_slope_aware_ground_with_trees"),
-        (0, 1, "coalfield_slope_aware_ground_with_trees"),
-        (0, 2, "coalfield_slope_aware_ground_with_trees"),
-        (0, 3, "coalfield_slope_aware_ground_with_trees"),
-        (1, 1, "coalfield_slope_aware_ground_with_trees"),
-        (1, 2, "coalfield_slope_aware_ground_with_trees"),
-        (1, 3, "coalfield_house_spritelayout"),
-        (1, 4, "coalfield_shed_spritelayout"),
-    ],
-)
-industry.add_industry_layout(
-    id="coalfield_layout_3",
-    layout=[
-        (0, 0, "coalfield_slope_aware_ground_with_trees"),
-        (0, 1, "coalfield_slope_aware_ground_with_trees"),
-        (1, 0, "coalfield_slope_aware_ground_with_trees"),
-        (1, 1, "coalfield_shed_spritelayout"),
-        (2, 0, "coalfield_slope_aware_ground_with_trees"),
-        (2, 1, "coalfield_house_spritelayout"),
-        (3, 0, "coalfield_slope_aware_ground_with_trees"),
-        (3, 1, "coalfield_slope_aware_ground_with_trees"),
-    ],
-)
-industry.add_industry_layout(
-    id="coalfield_layout_4",
-    layout=[
-        (0, 0, "coalfield_slope_aware_ground_with_trees"),
-        (0, 1, "coalfield_slope_aware_ground_with_trees"),
-        (0, 3, "coalfield_slope_aware_ground_with_trees"),
-        (0, 4, "coalfield_slope_aware_ground_with_trees"),
-        (1, 0, "coalfield_slope_aware_ground_with_trees"),
-        (1, 1, "coalfield_slope_aware_ground_with_trees"),
-        (1, 3, "coalfield_shed_spritelayout"),
-        (1, 4, "coalfield_house_spritelayout"),
-        (3, 0, "coalfield_slope_aware_ground_with_trees"),
-        (3, 1, "coalfield_slope_aware_ground_with_trees"),
-        (3, 3, "coalfield_slope_aware_ground_with_trees"),
-        (3, 4, "coalfield_slope_aware_ground_with_trees"),
-        (4, 0, "coalfield_slope_aware_ground_with_trees"),
-        (4, 1, "coalfield_slope_aware_ground_with_trees"),
-        (4, 3, "coalfield_slope_aware_ground_with_trees"),
-        (4, 4, "coalfield_slope_aware_ground_with_trees"),
-    ],
-)
-industry.add_industry_layout(
-    id="coalfield_layout_5",
-    layout=[
-        (0, 1, "coalfield_slope_aware_ground_with_trees"),
-        (0, 2, "coalfield_slope_aware_ground_with_trees"),
-        (0, 3, "coalfield_slope_aware_ground_with_trees"),
-        (0, 4, "coalfield_slope_aware_ground_with_trees"),
-        (1, 0, "coalfield_slope_aware_ground_with_trees"),
-        (1, 1, "coalfield_slope_aware_ground_with_trees"),
-        (1, 2, "coalfield_slope_aware_ground_with_trees"),
-        (1, 3, "coalfield_slope_aware_ground_with_trees"),
-        (1, 4, "coalfield_slope_aware_ground_with_trees"),
-        (1, 5, "coalfield_slope_aware_ground_with_trees"),
-        (2, 0, "coalfield_slope_aware_ground_with_trees"),
-        (2, 1, "coalfield_house_spritelayout"),
-        (2, 2, "coalfield_slope_aware_ground_with_trees"),
-        (2, 3, "coalfield_slope_aware_ground_with_trees"),
-        (2, 4, "coalfield_slope_aware_ground_with_trees"),
-        (2, 5, "coalfield_slope_aware_ground_with_trees"),
-        (3, 1, "coalfield_shed_spritelayout"),
-        (3, 2, "coalfield_slope_aware_ground_with_trees"),
-        (3, 3, "coalfield_slope_aware_ground_with_trees"),
-        (3, 4, "coalfield_slope_aware_ground_with_trees"),
-    ],
+    id="field_coal_industry_layout",
+    layout=[(0, 0, "storage_depot_spritelayout")],
 )
