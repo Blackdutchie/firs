@@ -91,7 +91,7 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="carbon_black_plant_spritelayout_chimneys",
-    tile="carbon_black_plant_tile_2",
+    tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_chimneys],
