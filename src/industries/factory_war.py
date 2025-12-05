@@ -32,15 +32,7 @@ industry.add_tile(
         require_effectively_flat=True, disallow_industry_adjacent=True
     ),
 )
-industry.add_tile(
-    id="appliance_factory_tile_2",
-    animation_length=7,
-    animation_looping=True,
-    animation_speed=3,
-    location_checks=TileLocationChecks(
-        require_effectively_flat=True, disallow_industry_adjacent=True
-    ),
-)
+
 
 spriteset_ground = industry.add_spriteset(type="asphalt")
 # spriteset_1 deprecated
@@ -151,7 +143,7 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="appliance_factory_spritelayout_boilerhouse",
-    tile="appliance_factory_tile_2",
+    tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_10],
