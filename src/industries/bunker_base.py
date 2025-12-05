@@ -24,16 +24,6 @@ industry.enable_in_economy(
     "WAR_ECONOMY",
 )
 
-
-industry.add_tile(
-    id="builders_yard_tile_1",
-    location_checks=TileLocationChecks(
-        require_houses_nearby=True,
-        require_effectively_flat=True,
-        disallow_industry_adjacent=True,
-    ),
-)
-
 spriteset_ground = industry.add_spriteset(
     type="asphalt",
 )
