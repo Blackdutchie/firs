@@ -27,7 +27,13 @@ industry.enable_in_economy(
     prob_map_gen="3",
 )
 
-
+sprite_pump = industry.add_sprite(
+    sprite_number="2174",
+    xoffset=1,
+    yoffset=2,
+    xextent=15,
+    yextent=14,
+)
 
 sprite_ground_overlay_building = industry.add_sprite(
     sprite_number="GROUNDTILE_MUD_TRACKS",
