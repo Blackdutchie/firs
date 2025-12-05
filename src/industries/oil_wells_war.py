@@ -28,14 +28,6 @@ industry.enable_in_economy(
 )
 
 
-sprite_ground_overlay_pump = industry.add_sprite(sprite_number=2173)
-sprite_pump = industry.add_sprite(
-    sprite_number="2174 + (((animation_frame % 11) < 6) ? (animation_frame % 11) : 10 - (animation_frame % 11))",
-    xoffset=1,
-    yoffset=2,
-    xextent=15,
-    yextent=14,
-)
 sprite_ground_overlay_building = industry.add_sprite(
     sprite_number="GROUNDTILE_MUD_TRACKS",
 )
