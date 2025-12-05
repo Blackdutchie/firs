@@ -63,6 +63,9 @@ base = "In A Hot Country"
 [STR_PARAM_VALUE_ECONOMIES_STEELTOWN]
 base = "Steeltown"
 
+[STR_PARAM_VALUE_ECONOMIES_WAR_ECONOMY]
+base = "War Economy"
+
 [STR_PARAM_NAME_OBJECTS]
 base = "FIRS landscaping objects"
 
