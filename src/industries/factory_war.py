@@ -26,6 +26,21 @@ industry.enable_in_economy(
     "WAR_ECONOMY",
 )
 
+industry.add_tile(
+    id="appliance_factory_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
+industry.add_tile(
+    id="appliance_factory_tile_2",
+    animation_length=7,
+    animation_looping=True,
+    animation_speed=3,
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
 
 spriteset_ground = industry.add_spriteset(type="asphalt")
 # spriteset_1 deprecated

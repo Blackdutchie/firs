@@ -30,6 +30,35 @@ industry.enable_in_economy(
     ],
 )
 
+industry.add_tile(
+    id="blast_furnace_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
+industry.add_tile(
+    id="blast_furnace_tile_2",
+    animation_length=7,
+    animation_looping=True,
+    animation_speed=3,
+    custom_animation_control={
+        "macro": "random_first_frame",
+        "animation_triggers": "bitmask(ANIM_TRIGGER_INDTILE_CONSTRUCTION_STATE)",
+    },
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
+industry.add_tile(
+    id="blast_furnace_tile_3",
+    animation_length=30,
+    animation_looping=True,
+    animation_speed=4,
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
+
 spriteset_ground = industry.add_spriteset(
     type="gravel",
 )

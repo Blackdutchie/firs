@@ -25,6 +25,17 @@ industry.enable_in_economy(
     prob_map_gen="10",
 )
 
+industry.add_tile(
+    id="peatlands_tile_1",
+    foundations="return CB_RESULT_NO_FOUNDATIONS",
+    autoslope="return CB_RESULT_NO_AUTOSLOPE",
+    location_checks=TileLocationChecks(
+        disallow_slopes=True,
+        disallow_desert=True,
+        disallow_coast=True,
+        disallow_industry_adjacent=True,
+    ),
+)
 
 sprite_ground = industry.add_sprite(sprite_number="4126")
 sprite_ground_tracks = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
