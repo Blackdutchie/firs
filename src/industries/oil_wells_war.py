@@ -44,5 +44,5 @@ industry.add_spritelayout(
 )
 industry.add_industry_layout(
     id="oil_wells_war_industry_layout",
-    layout=[(0, 0, "oil_wells_spritelayout")],
+    layout=[(0, 0, "oil_wells_war_spritelayout")],
 )
