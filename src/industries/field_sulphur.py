@@ -25,32 +25,6 @@ industry.enable_in_economy(
     prob_map_gen="3",
 )
 
-industry.add_tile(
-    id="clay_pit_tile_1",
-    location_checks=TileLocationChecks(
-        require_effectively_flat=True,
-        disallow_desert=True,
-        disallow_industry_adjacent=True,
-    ),
-)
-industry.add_tile(
-    id="clay_pit_tile_2",
-    animation_length=56,
-    animation_looping=True,
-    animation_speed=4,
-    custom_animation_control={
-        "macro": "random_first_frame",
-        "animation_triggers": "bitmask(ANIM_TRIGGER_INDTILE_CONSTRUCTION_STATE)",
-    },
-    foundations="return CB_RESULT_NO_FOUNDATIONS",  # might not be needed, cargo-culted from previous code, didn't test; may be needed to stop rear foundations showing in some cases?
-    autoslope="return CB_RESULT_NO_AUTOSLOPE",
-    location_checks=TileLocationChecks(
-        disallow_slopes=True,
-        disallow_desert=True,
-        disallow_coast=True,
-        disallow_industry_adjacent=True,
-    ),
-)
 
 spriteset_animated_dozer = industry.add_spriteset(
     sprites=[
