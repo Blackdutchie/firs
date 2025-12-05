@@ -134,15 +134,16 @@ industry_numeric_ids = dict(
     field_coal=125,
     field_components=126,
     field_salvage=127,
-    field_sulphur=128,
-    garage=129,
-    mass_production_factory=130,
-    oil_wells_war=131,
-    refinery_components=132,
-    refinery_salvage=133,
-    refinery_sulphur=134,
-    seaport=135,
-    storage_depot=136,
+    #we're running into a small issue with going over index 127, so we're rolling back down the unused numbers (introduces incompatibility with BLTC)
+    field_sulphur=13,
+    garage=17,
+    mass_production_factory=18,
+    oil_wells_war=21,
+    refinery_components=23,
+    refinery_salvage=24,
+    refinery_sulphur=27,
+    seaport=31,
+    storage_depot=39,
     # 127 left free for GarryG
 )
 # Definition of industry tile numeric IDs
