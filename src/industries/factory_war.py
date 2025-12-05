@@ -78,7 +78,7 @@ sprite_smoke_2 = industry.add_smoke_sprite(
 )
 
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_paper_store_empty",
+    id="factory_war_spritelayout_paper_store_empty",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -86,7 +86,7 @@ industry.add_spritelayout(
     add_to_object_num=7,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_paper_store_full",
+    id="factory_war_spritelayout_paper_store_full",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -94,7 +94,7 @@ industry.add_spritelayout(
     add_to_object_num=7,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_wood_store_forklift",
+    id="factory_war_spritelayout_wood_store_forklift",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -102,7 +102,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_wood_store_full",
+    id="factory_war_spritelayout_wood_store_full",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -110,7 +110,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_chemical_tanks",
+    id="factory_war_spritelayout_chemical_tanks",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -118,7 +118,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_tall_building_1",
+    id="factory_war_spritelayout_tall_building_1",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -126,7 +126,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_tall_building_2",
+    id="factory_war_spritelayout_tall_building_2",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -134,7 +134,7 @@ industry.add_spritelayout(
     add_to_object_num=2,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_pulp_processor",
+    id="factory_war_spritelayout_pulp_processor",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -142,7 +142,7 @@ industry.add_spritelayout(
     add_to_object_num=1,
 )
 industry.add_spritelayout(
-    id="appliance_factory_spritelayout_boilerhouse",
+    id="factory_war_spritelayout_boilerhouse",
     tile="appliance_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -152,22 +152,22 @@ industry.add_spritelayout(
 )
 
 industry.add_industry_layout(
-    id="appliance_factory_industry_layout_1",
+    id="factory_war_industry_layout_1",
     layout=[
-        (0, 0, "appliance_factory_spritelayout_tall_building_1"),
-        (0, 1, "appliance_factory_spritelayout_tall_building_1"),
-        (0, 2, "appliance_factory_spritelayout_paper_store_full"),
-        (1, 0, "appliance_factory_spritelayout_tall_building_2"),
-        (1, 1, "appliance_factory_spritelayout_tall_building_2"),
-        (1, 2, "appliance_factory_spritelayout_paper_store_empty"),
-        (2, 0, "appliance_factory_spritelayout_tall_building_1"),
-        (2, 1, "appliance_factory_spritelayout_tall_building_1"),
-        (2, 2, "appliance_factory_spritelayout_paper_store_full"),
-        (3, 0, "appliance_factory_spritelayout_tall_building_2"),
-        (3, 1, "appliance_factory_spritelayout_tall_building_2"),
-        (3, 2, "appliance_factory_spritelayout_wood_store_full"),
-        (4, 0, "appliance_factory_spritelayout_boilerhouse"),
-        (4, 1, "appliance_factory_spritelayout_boilerhouse"),
-        (4, 2, "appliance_factory_spritelayout_wood_store_forklift"),
+        (0, 0, "factory_war_spritelayout_tall_building_1"),
+        (0, 1, "factory_war_spritelayout_tall_building_1"),
+        (0, 2, "factory_war_spritelayout_paper_store_full"),
+        (1, 0, "factory_war_spritelayout_tall_building_2"),
+        (1, 1, "factory_war_spritelayout_tall_building_2"),
+        (1, 2, "factory_war_spritelayout_paper_store_empty"),
+        (2, 0, "factory_war_spritelayout_tall_building_1"),
+        (2, 1, "factory_war_spritelayout_tall_building_1"),
+        (2, 2, "factory_war_spritelayout_paper_store_full"),
+        (3, 0, "factory_war_spritelayout_tall_building_2"),
+        (3, 1, "factory_war_spritelayout_tall_building_2"),
+        (3, 2, "factory_war_spritelayout_wood_store_full"),
+        (4, 0, "factory_war_spritelayout_boilerhouse"),
+        (4, 1, "factory_war_spritelayout_boilerhouse"),
+        (4, 2, "factory_war_spritelayout_wood_store_forklift"),
     ],
 )

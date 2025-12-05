@@ -73,7 +73,7 @@ sprite_smoke_3 = industry.add_smoke_sprite(
 )
 
 industry.add_spritelayout(
-    id="carbon_black_plant_spritelayout_empty",
+    id="refinery_components_plant_spritelayout_empty",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -81,7 +81,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="carbon_black_plant_spritelayout_boiler",
+    id="refinery_components_plant_spritelayout_boiler",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -90,7 +90,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="carbon_black_plant_spritelayout_chimneys",
+    id="refinery_components_plant_spritelayout_chimneys",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -100,7 +100,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="carbon_black_plant_spritelayout_tanks_group",
+    id="refinery_components_plant_spritelayout_tanks_group",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -109,7 +109,7 @@ industry.add_spritelayout(
     add_to_object_num=3,
 )
 industry.add_spritelayout(
-    id="carbon_black_plant_spritelayout_silos",
+    id="refinery_components_plant_spritelayout_silos",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -118,7 +118,7 @@ industry.add_spritelayout(
     add_to_object_num=2,
 )
 industry.add_spritelayout(
-    id="carbon_black_plant_spritelayout_silos_with_office",
+    id="refinery_components_plant_spritelayout_silos_with_office",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -128,78 +128,78 @@ industry.add_spritelayout(
 )
 
 industry.add_industry_layout(
-    id="carbon_black_plant_industry_layout_1",
+    id="refinery_components_industry_layout_1",
     layout=[
-        (0, 0, "carbon_black_plant_spritelayout_chimneys"),
-        (0, 1, "carbon_black_plant_spritelayout_boiler"),
+        (0, 0, "refinery_components_spritelayout_chimneys"),
+        (0, 1, "refinery_components_spritelayout_boiler"),
         (
             0,
             2,
-            "carbon_black_plant_spritelayout_tanks_group",
+            "refinery_components_spritelayout_tanks_group",
         ),
-        (1, 0, "carbon_black_plant_spritelayout_chimneys"),
-        (1, 1, "carbon_black_plant_spritelayout_boiler"),
+        (1, 0, "refinery_components_spritelayout_chimneys"),
+        (1, 1, "refinery_components_spritelayout_boiler"),
         (
             1,
             2,
-            "carbon_black_plant_spritelayout_tanks_group",
+            "refinery_components_spritelayout_tanks_group",
         ),
         (
             2,
             0,
-            "carbon_black_plant_spritelayout_silos_with_office",
+            "refinery_components_spritelayout_silos_with_office",
         ),
-        (2, 1, "carbon_black_plant_spritelayout_silos"),
-        (2, 2, "carbon_black_plant_spritelayout_empty"),
+        (2, 1, "refinery_components_spritelayout_silos"),
+        (2, 2, "refinery_components_spritelayout_empty"),
     ],
 )
 industry.add_industry_layout(
-    id="carbon_black_plant_industry_layout_2",
+    id="refinery_components_industry_layout_2",
     layout=[
-        (0, 0, "carbon_black_plant_spritelayout_boiler"),
+        (0, 0, "refinery_components_spritelayout_boiler"),
         (
             0,
             1,
-            "carbon_black_plant_spritelayout_tanks_group",
+            "refinery_components_spritelayout_tanks_group",
         ),
-        (1, 0, "carbon_black_plant_spritelayout_boiler"),
+        (1, 0, "refinery_components_spritelayout_boiler"),
         (
             1,
             1,
-            "carbon_black_plant_spritelayout_tanks_group",
+            "refinery_components_spritelayout_tanks_group",
         ),
-        (2, 0, "carbon_black_plant_spritelayout_chimneys"),
-        (2, 1, "carbon_black_plant_spritelayout_silos"),
+        (2, 0, "refinery_components_spritelayout_chimneys"),
+        (2, 1, "refinery_components_spritelayout_silos"),
         (
             3,
             0,
-            "carbon_black_plant_spritelayout_silos_with_office",
+            "refinery_components_spritelayout_silos_with_office",
         ),
-        (3, 1, "carbon_black_plant_spritelayout_empty"),
+        (3, 1, "refinery_components_spritelayout_empty"),
     ],
 )
 industry.add_industry_layout(
-    id="carbon_black_plant_industry_layout_3",
+    id="refinery_components_industry_layout_3",
     layout=[
-        (0, 0, "carbon_black_plant_spritelayout_boiler"),
+        (0, 0, "refinery_components_spritelayout_boiler"),
         (
             0,
             1,
-            "carbon_black_plant_spritelayout_tanks_group",
+            "refinery_components_spritelayout_tanks_group",
         ),
-        (0, 2, "carbon_black_plant_spritelayout_chimneys"),
-        (0, 3, "carbon_black_plant_spritelayout_silos"),
-        (1, 0, "carbon_black_plant_spritelayout_boiler"),
+        (0, 2, "refinery_components_spritelayout_chimneys"),
+        (0, 3, "refinery_components_spritelayout_silos"),
+        (1, 0, "refinery_components_spritelayout_boiler"),
         (
             1,
             1,
-            "carbon_black_plant_spritelayout_tanks_group",
+            "refinery_components_spritelayout_tanks_group",
         ),
         (
             1,
             2,
-            "carbon_black_plant_spritelayout_silos_with_office",
+            "refinery_components_spritelayout_silos_with_office",
         ),
-        (1, 3, "carbon_black_plant_spritelayout_empty"),
+        (1, 3, "refinery_components_spritelayout_empty"),
     ],
 )

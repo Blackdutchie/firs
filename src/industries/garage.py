@@ -37,13 +37,13 @@ hardware_store_spriteset_ground = industry.add_spriteset(
 hardware_store_spriteset = industry.add_spriteset(sprites=[(0, 0, 64, 64, -31, -33)])
 
 industry.add_spritelayout(
-    id="hardware_store_spritelayout",
+    id="garage_spritelayout",
     tile="hardware_store_tile_1",
     ground_sprite=hardware_store_spriteset_ground,
     ground_overlay=None,
     building_sprites=[hardware_store_spriteset],
 )
 industry.add_industry_layout(
-    id="hardware_store_industry_layout",
-    layout=[(0, 0, "hardware_store_spritelayout")],
+    id="garage_industry_layout",
+    layout=[(0, 0, "garage_spritelayout")],
 )

@@ -58,7 +58,7 @@ spriteset_6 = industry.add_spriteset(
 )
 
 industry.add_spritelayout(
-    id="cryo_plant_spritelayout_separation_tower",
+    id="refinery_sulphur_spritelayout_separation_tower",
     tile="cryo_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -67,7 +67,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="cryo_plant_spritelayout_large_shed",
+    id="refinery_sulphur_spritelayout_large_shed",
     tile="cryo_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -76,7 +76,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="cryo_plant_spritelayout_purification_unit",
+    id="refinery_sulphur_spritelayout_purification_unit",
     tile="cryo_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -85,7 +85,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="cryo_plant_spritelayout_horizontal_tanks",
+    id="refinery_sulphur_spritelayout_horizontal_tanks",
     tile="cryo_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -94,7 +94,7 @@ industry.add_spritelayout(
     add_to_object_num=3,
 )
 industry.add_spritelayout(
-    id="cryo_plant_spritelayout_storage_tank_blue",
+    id="refinery_sulphur_spritelayout_storage_tank_blue",
     tile="cryo_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -103,7 +103,7 @@ industry.add_spritelayout(
     add_to_object_num=2,
 )
 industry.add_spritelayout(
-    id="cryo_plant_spritelayout_storage_tank_yellow",
+    id="refinery_sulphur_spritelayout_storage_tank_yellow",
     tile="cryo_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -112,7 +112,7 @@ industry.add_spritelayout(
     add_to_object_num=1,
 )
 industry.add_spritelayout(
-    id="cryo_plant_spritelayout_empty",
+    id="refinery_sulphur_spritelayout_empty",
     tile="cryo_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -121,67 +121,67 @@ industry.add_spritelayout(
 )
 
 industry.add_industry_layout(
-    id="cryo_plant_industry_layout_1",
+    id="refinery_sulphur_industry_layout_1",
     layout=[
-        (0, 0, "cryo_plant_spritelayout_large_shed"),
-        (0, 1, "cryo_plant_spritelayout_horizontal_tanks"),
-        (1, 0, "cryo_plant_spritelayout_purification_unit"),
-        (1, 1, "cryo_plant_spritelayout_separation_tower"),
-        (2, 0, "cryo_plant_spritelayout_horizontal_tanks"),
-        (2, 1, "cryo_plant_spritelayout_empty"),
-        (3, 0, "cryo_plant_spritelayout_storage_tank_blue"),
-        (3, 1, "cryo_plant_spritelayout_storage_tank_yellow"),
+        (0, 0, "refinery_sulphur_spritelayout_large_shed"),
+        (0, 1, "refinery_sulphur_spritelayout_horizontal_tanks"),
+        (1, 0, "refinery_sulphur_spritelayout_purification_unit"),
+        (1, 1, "refinery_sulphur_spritelayout_separation_tower"),
+        (2, 0, "refinery_sulphur_spritelayout_horizontal_tanks"),
+        (2, 1, "refinery_sulphur_spritelayout_empty"),
+        (3, 0, "refinery_sulphur_spritelayout_storage_tank_blue"),
+        (3, 1, "refinery_sulphur_spritelayout_storage_tank_yellow"),
     ],
 )
 industry.add_industry_layout(
-    id="cryo_plant_industry_layout_2",
+    id="refinery_sulphur_industry_layout_2",
     layout=[
-        (0, 0, "cryo_plant_spritelayout_storage_tank_blue"),
-        (0, 1, "cryo_plant_spritelayout_storage_tank_yellow"),
-        (1, 0, "cryo_plant_spritelayout_large_shed"),
-        (1, 1, "cryo_plant_spritelayout_empty"),
-        (2, 0, "cryo_plant_spritelayout_purification_unit"),
-        (2, 1, "cryo_plant_spritelayout_separation_tower"),
-        (3, 0, "cryo_plant_spritelayout_horizontal_tanks"),
-        (3, 1, "cryo_plant_spritelayout_horizontal_tanks"),
+        (0, 0, "refinery_sulphur_spritelayout_storage_tank_blue"),
+        (0, 1, "refinery_sulphur_spritelayout_storage_tank_yellow"),
+        (1, 0, "refinery_sulphur_spritelayout_large_shed"),
+        (1, 1, "refinery_sulphur_spritelayout_empty"),
+        (2, 0, "refinery_sulphur_spritelayout_purification_unit"),
+        (2, 1, "refinery_sulphur_spritelayout_separation_tower"),
+        (3, 0, "refinery_sulphur_spritelayout_horizontal_tanks"),
+        (3, 1, "refinery_sulphur_spritelayout_horizontal_tanks"),
     ],
 )
 industry.add_industry_layout(
-    id="cryo_plant_industry_layout_3",
+    id="refinery_sulphur_industry_layout_3",
     layout=[
-        (0, 0, "cryo_plant_spritelayout_large_shed"),
-        (0, 1, "cryo_plant_spritelayout_horizontal_tanks"),
-        (0, 2, "cryo_plant_spritelayout_horizontal_tanks"),
-        (0, 3, "cryo_plant_spritelayout_storage_tank_yellow"),
-        (1, 0, "cryo_plant_spritelayout_purification_unit"),
-        (1, 1, "cryo_plant_spritelayout_separation_tower"),
-        (1, 2, "cryo_plant_spritelayout_empty"),
-        (1, 3, "cryo_plant_spritelayout_storage_tank_blue"),
+        (0, 0, "refinery_sulphur_spritelayout_large_shed"),
+        (0, 1, "refinery_sulphur_spritelayout_horizontal_tanks"),
+        (0, 2, "refinery_sulphur_spritelayout_horizontal_tanks"),
+        (0, 3, "refinery_sulphur_spritelayout_storage_tank_yellow"),
+        (1, 0, "refinery_sulphur_spritelayout_purification_unit"),
+        (1, 1, "refinery_sulphur_spritelayout_separation_tower"),
+        (1, 2, "refinery_sulphur_spritelayout_empty"),
+        (1, 3, "refinery_sulphur_spritelayout_storage_tank_blue"),
     ],
 )
 industry.add_industry_layout(
-    id="cryo_plant_industry_layout_4",
+    id="refinery_sulphur_industry_layout_4",
     layout=[
-        (0, 0, "cryo_plant_spritelayout_storage_tank_yellow"),
-        (0, 1, "cryo_plant_spritelayout_large_shed"),
-        (0, 2, "cryo_plant_spritelayout_purification_unit"),
-        (0, 3, "cryo_plant_spritelayout_separation_tower"),
-        (1, 0, "cryo_plant_spritelayout_storage_tank_blue"),
-        (1, 1, "cryo_plant_spritelayout_empty"),
-        (1, 2, "cryo_plant_spritelayout_horizontal_tanks"),
-        (1, 3, "cryo_plant_spritelayout_horizontal_tanks"),
+        (0, 0, "refinery_sulphur_spritelayout_storage_tank_yellow"),
+        (0, 1, "refinery_sulphur_spritelayout_large_shed"),
+        (0, 2, "refinery_sulphur_spritelayout_purification_unit"),
+        (0, 3, "refinery_sulphur_spritelayout_separation_tower"),
+        (1, 0, "refinery_sulphur_spritelayout_storage_tank_blue"),
+        (1, 1, "refinery_sulphur_spritelayout_empty"),
+        (1, 2, "refinery_sulphur_spritelayout_horizontal_tanks"),
+        (1, 3, "refinery_sulphur_spritelayout_horizontal_tanks"),
     ],
 )
 industry.add_industry_layout(
-    id="cryo_plant_industry_layout_5",
+    id="refinery_sulphur_industry_layout_5",
     layout=[
-        (0, 0, "cryo_plant_spritelayout_large_shed"),
-        (0, 1, "cryo_plant_spritelayout_empty"),
-        (0, 2, "cryo_plant_spritelayout_storage_tank_yellow"),
-        (1, 0, "cryo_plant_spritelayout_purification_unit"),
-        (1, 1, "cryo_plant_spritelayout_separation_tower"),
-        (1, 2, "cryo_plant_spritelayout_storage_tank_blue"),
-        (2, 0, "cryo_plant_spritelayout_horizontal_tanks"),
-        (2, 1, "cryo_plant_spritelayout_horizontal_tanks"),
+        (0, 0, "refinery_sulphur_spritelayout_large_shed"),
+        (0, 1, "refinery_sulphur_spritelayout_empty"),
+        (0, 2, "refinery_sulphur_spritelayout_storage_tank_yellow"),
+        (1, 0, "refinery_sulphur_spritelayout_purification_unit"),
+        (1, 1, "refinery_sulphur_spritelayout_separation_tower"),
+        (1, 2, "refinery_sulphur_spritelayout_storage_tank_blue"),
+        (2, 0, "refinery_sulphur_spritelayout_horizontal_tanks"),
+        (2, 1, "refinery_sulphur_spritelayout_horizontal_tanks"),
     ],
 )

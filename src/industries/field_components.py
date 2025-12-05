@@ -69,7 +69,7 @@ spriteset_9 = industry.add_spriteset(
 )
 
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_1",
+    id="compfield_spritelayout_1",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -77,7 +77,7 @@ industry.add_spritelayout(
     add_to_object_num=1,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_2",
+    id="compfield_spritelayout_2",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -85,7 +85,7 @@ industry.add_spritelayout(
     add_to_object_num=2,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_3",
+    id="compfield_spritelayout_3",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -93,7 +93,7 @@ industry.add_spritelayout(
     add_to_object_num=3,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_4",
+    id="compfield_spritelayout_4",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -101,7 +101,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_5",
+    id="compfield_spritelayout_5",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -109,7 +109,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_6",
+    id="compfield_spritelayout_6",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -117,7 +117,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_7",
+    id="compfield_spritelayout_7",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -125,7 +125,7 @@ industry.add_spritelayout(
     add_to_object_num=7,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_8",
+    id="compfield_spritelayout_8",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -133,7 +133,7 @@ industry.add_spritelayout(
     add_to_object_num=8,
 )
 industry.add_spritelayout(
-    id="scrap_yard_spritelayout_9",
+    id="compfield_spritelayout_9",
     tile="scrap_yard_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
@@ -142,43 +142,43 @@ industry.add_spritelayout(
 )
 
 industry.add_industry_layout(
-    id="scrap_yard_industry_layout_1",
+    id="compfield_industry_layout_1",
     layout=[
-        (0, 2, "scrap_yard_spritelayout_2"),
-        (1, 1, "scrap_yard_spritelayout_2"),
-        (1, 2, "scrap_yard_spritelayout_9"),
-        (2, 1, "scrap_yard_spritelayout_1"),
-        (2, 2, "scrap_yard_spritelayout_8"),
-        (3, 1, "scrap_yard_spritelayout_4"),
-        (3, 2, "scrap_yard_spritelayout_7"),
-        (4, 0, "scrap_yard_spritelayout_5"),
-        (4, 1, "scrap_yard_spritelayout_3"),
-        (4, 2, "scrap_yard_spritelayout_6"),
+        (0, 2, "compfield_spritelayout_2"),
+        (1, 1, "compfield_spritelayout_2"),
+        (1, 2, "compfield_spritelayout_9"),
+        (2, 1, "compfield_spritelayout_1"),
+        (2, 2, "compfield_spritelayout_8"),
+        (3, 1, "compfield_spritelayout_4"),
+        (3, 2, "compfield_spritelayout_7"),
+        (4, 0, "compfield_spritelayout_5"),
+        (4, 1, "compfield_spritelayout_3"),
+        (4, 2, "compfield_spritelayout_6"),
     ],
 )
 industry.add_industry_layout(
-    id="scrap_yard_industry_layout_2",
+    id="compfield_industry_layout_2",
     layout=[
-        (0, 1, "scrap_yard_spritelayout_7"),
-        (1, 1, "scrap_yard_spritelayout_1"),
-        (1, 2, "scrap_yard_spritelayout_8"),
-        (2, 0, "scrap_yard_spritelayout_5"),
-        (2, 1, "scrap_yard_spritelayout_3"),
-        (2, 2, "scrap_yard_spritelayout_6"),
+        (0, 1, "compfield_spritelayout_7"),
+        (1, 1, "compfield_spritelayout_1"),
+        (1, 2, "compfield_spritelayout_8"),
+        (2, 0, "compfield_spritelayout_5"),
+        (2, 1, "compfield_spritelayout_3"),
+        (2, 2, "compfield_spritelayout_6"),
     ],
 )
 industry.add_industry_layout(
-    id="scrap_yard_industry_layout_3",
+    id="compfield_industry_layout_3",
     layout=[
-        (0, 3, "scrap_yard_spritelayout_2"),
-        (1, 1, "scrap_yard_spritelayout_2"),
-        (1, 3, "scrap_yard_spritelayout_9"),
-        (2, 1, "scrap_yard_spritelayout_1"),
-        (2, 3, "scrap_yard_spritelayout_8"),
-        (3, 1, "scrap_yard_spritelayout_4"),
-        (3, 3, "scrap_yard_spritelayout_7"),
-        (4, 0, "scrap_yard_spritelayout_5"),
-        (4, 1, "scrap_yard_spritelayout_3"),
-        (4, 3, "scrap_yard_spritelayout_6"),
+        (0, 3, "compfield_spritelayout_2"),
+        (1, 1, "compfield_spritelayout_2"),
+        (1, 3, "compfield_spritelayout_9"),
+        (2, 1, "compfield_spritelayout_1"),
+        (2, 3, "compfield_spritelayout_8"),
+        (3, 1, "compfield_spritelayout_4"),
+        (3, 3, "compfield_spritelayout_7"),
+        (4, 0, "compfield_spritelayout_5"),
+        (4, 1, "compfield_spritelayout_3"),
+        (4, 3, "compfield_spritelayout_6"),
     ],
 )
