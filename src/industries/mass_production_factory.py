@@ -11,7 +11,7 @@ industry = IndustrySecondary(
         ("SHIP", 2),
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
-    prob_in_game="0",
+    prob_in_game="1",
     prob_map_gen="1",
     map_colour="166",
     colour_scheme_name="scheme_1_elton", # cabbage needs checked
