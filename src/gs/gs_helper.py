@@ -9,7 +9,7 @@ class GSHelper(object):
         # as of August 2021, port and wharf were sufficiently unique, and at least one of them is in every economy
         # !! this could use a guard to enforce uniqueness
         for industry in firs.industry_manager:
-            if industry.id in ["port", "wharf"]:
+            if industry.id in ["port", "wharf","seaport"]:
                 if industry.economy_variations[economy.id].enabled:
                     fingerprint_industry = industry
                     break
