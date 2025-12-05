@@ -73,7 +73,7 @@ sprite_smoke_3 = industry.add_smoke_sprite(
 )
 
 industry.add_spritelayout(
-    id="refinery_components_plant_spritelayout_empty",
+    id="refinery_components_spritelayout_empty",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -81,7 +81,7 @@ industry.add_spritelayout(
     add_to_object_num=6,
 )
 industry.add_spritelayout(
-    id="refinery_components_plant_spritelayout_boiler",
+    id="refinery_components_spritelayout_boiler",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -90,7 +90,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="refinery_components_plant_spritelayout_chimneys",
+    id="refinery_components_spritelayout_chimneys",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -100,7 +100,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="refinery_components_plant_spritelayout_tanks_group",
+    id="refinery_components_spritelayout_tanks_group",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -109,7 +109,7 @@ industry.add_spritelayout(
     add_to_object_num=3,
 )
 industry.add_spritelayout(
-    id="refinery_components_plant_spritelayout_silos",
+    id="refinery_components_spritelayout_silos",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -118,7 +118,7 @@ industry.add_spritelayout(
     add_to_object_num=2,
 )
 industry.add_spritelayout(
-    id="refinery_components_plant_spritelayout_silos_with_office",
+    id="refinery_components_spritelayout_silos_with_office",
     tile="carbon_black_plant_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
