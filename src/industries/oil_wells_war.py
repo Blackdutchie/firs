@@ -28,6 +28,7 @@ industry.enable_in_economy(
 )
 
 
+
 sprite_ground_overlay_building = industry.add_sprite(
     sprite_number="GROUNDTILE_MUD_TRACKS",
 )
@@ -39,7 +40,7 @@ industry.add_spritelayout(
     id="oil_wells_war_spritelayout_pump",
     tile="oil_wells_tile_2",
     ground_sprite=None,
-    ground_overlay=sprite_ground_overlay_pump,
+    ground_overlay=sprite_ground_overlay_building,
     building_sprites=[sprite_pump],
     fences=["nw", "ne", "se", "sw"],
 )
