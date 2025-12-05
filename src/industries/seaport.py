@@ -23,7 +23,7 @@ industry = IndustrySecondary(
     name="string(STR_IND_SEAPORT)",
     life_type="IND_LIFE_TYPE_BLACK_HOLE",
     nearby_station_name="string(STR_STATION_INDUSTRY_HARBOUR_2)",
-    fund_cost_multiplier="152",
+    fund_cost_multiplier="255",
     sprites_complete=True,
     animated_tiles_fixed=True,
 )

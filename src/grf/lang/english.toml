@@ -444,6 +444,9 @@ base = "Vehicle Parts"
 [STR_CARGO_NAME_VEHICLES]
 base = "Vehicles"
 
+[STR_CARGO_NAME_WATER]
+base = "Water"
+
 [STR_CARGO_NAME_WELDING_CONSUMABLES]
 base = "Welding Consumables"
 
@@ -788,6 +791,9 @@ base = "{WEIGHT} of vehicle parts"
 
 [STR_CARGO_UNIT_VEHICLES]
 base = "{WEIGHT} of vehicles"
+
+[STR_CARGO_UNIT_WATER]
+base = "{VOLUME} of water"
 
 [STR_CARGO_UNIT_WELDING_CONSUMABLES]
 base = "{WEIGHT} of welding consumables"
@@ -1139,6 +1145,9 @@ base = "{TINYFONT}VP"
 
 [STR_CID_VEHICLES]
 base = "{TINYFONT}VS"
+
+[STR_CID_WATER]
+base = "{TINYFONT}WA"
 
 [STR_CID_WELDING_CONSUMABLES]
 base = "{TINYFONT}WS"

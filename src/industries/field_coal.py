@@ -3,7 +3,7 @@ from industry import IndustryPrimaryExtractive, TileLocationChecks
 industry = IndustryPrimaryExtractive(
     id="field_coal",
     prod_cargo_types_with_multipliers=[("COAL", 20)],
-    accept_cargo_types = "AVEH",
+    accept_cargo_types = ["AVEH"],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
     prob_map_gen="7",
@@ -13,7 +13,7 @@ industry = IndustryPrimaryExtractive(
     prospect_chance="0.0",
     name="string(STR_IND_FIELD_COAL)",
     nearby_station_name="string(STR_STATION_COLLIERY)",
-    fund_cost_multiplier="252",
+    fund_cost_multiplier="255",
     pollution_and_squalor_factor=1,
     provides_snow=True,
     primary_production_random_factor_set="wide_range",

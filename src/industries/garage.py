@@ -17,7 +17,7 @@ industry = IndustrySecondary(
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     special_flags=["IND_FLAG_ONLY_IN_TOWNS"],
     nearby_station_name="string(STR_STATION_AUTOMOTIVE)",
-    fund_cost_multiplier="145",
+    fund_cost_multiplier="255",
     sprites_complete=True,
     animated_tiles_fixed=True,
 )
