@@ -25,14 +25,6 @@ industry.enable_in_economy(
     prob_map_gen="3",
 )
 
-industry.add_tile(
-    id="clay_pit_tile_1",
-    location_checks=TileLocationChecks(
-        require_effectively_flat=True,
-        disallow_desert=True,
-        disallow_industry_adjacent=True,
-    ),
-)
 
 
 spriteset_animated_dozer = industry.add_spriteset(

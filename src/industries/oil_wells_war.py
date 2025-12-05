@@ -28,12 +28,6 @@ industry.enable_in_economy(
 )
 
 
-
-industry.add_tile(
-    id="oil_wells_tile_2",
-    location_checks=TileLocationChecks(disallow_industry_adjacent=True),
-)
-
 sprite_ground_overlay_pump = industry.add_sprite(sprite_number=2173)
 sprite_pump = industry.add_sprite(
     sprite_number="2174 + (((animation_frame % 11) < 6) ? (animation_frame % 11) : 10 - (animation_frame % 11))",

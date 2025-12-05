@@ -25,26 +25,6 @@ industry.enable_in_economy(
     prob_map_gen="3",
 )
 
-industry.add_tile(
-    id="vineyard_tile_1",
-    foundations="return CB_RESULT_NO_FOUNDATIONS",
-    autoslope="return CB_RESULT_NO_AUTOSLOPE",
-    location_checks=TileLocationChecks(
-        disallow_above_snowline=True,
-        disallow_desert=True,
-        disallow_industry_adjacent=True,
-    ),
-)
-industry.add_tile(
-    id="vineyard_tile_2",  # house
-    autoslope="return CB_RESULT_AUTOSLOPE",
-    location_checks=TileLocationChecks(
-        disallow_above_snowline=True,
-        disallow_desert=True,
-        disallow_industry_adjacent=True,
-    ),
-)
-
 sprite_ground = industry.add_sprite(sprite_number=3962)
 spriteset_1 = industry.add_spriteset(
     sprites=[(10, 10, 64, 59, -31, -28)],

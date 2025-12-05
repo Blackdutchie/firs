@@ -26,14 +26,6 @@ industry.enable_in_economy(
 )
 
 
-industry.add_tile(
-    id="scrap_yard_tile_1",
-    location_checks=TileLocationChecks(
-        disallow_steep_slopes=True,
-        require_houses_nearby=True,
-        disallow_industry_adjacent=True,
-    ),
-)
 
 sprite_ground = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 spriteset_1 = industry.add_spriteset(

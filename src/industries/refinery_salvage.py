@@ -30,13 +30,6 @@ industry.enable_in_economy(
     ],
 )
 
-industry.add_tile(
-    id="blast_furnace_tile_1",
-    location_checks=TileLocationChecks(
-        require_effectively_flat=True, disallow_industry_adjacent=True
-    ),
-)
-
 
 spriteset_ground = industry.add_spriteset(
     type="gravel",
