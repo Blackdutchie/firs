@@ -24,11 +24,24 @@ industry = IndustrySecondary(
 )
 industry.enable_in_economy(
     "WAR_ECONOMY",
-    prob_map_gen="3",
+    prob_map_gen="4",
 )
-
+industry.add_tile(
+    id="oil_wells_war_tile_1",
+    location_checks=TileLocationChecks(disallow_industry_adjacent=True),
+    animation_length=20,
+    animation_looping=True,
+    animation_speed=3,
+    special_flags=["INDTILE_FLAG_RANDOM_ANIMATION"],
+    random_trigger="oil_wells_tile_1_industry_anim_control",
+    custom_animation_next_frame="oil_wells_tile_1_anim_next_frame",
+    custom_animation_control={
+        "macro": "oil_wells",
+        "animation_triggers": "bitmask(ANIM_TRIGGER_INDTILE_TILE_LOOP)",
+    },
+)
 sprite_pump = industry.add_sprite(
-    sprite_number="2174",
+    sprite_number="2174 + (((animation_frame % 11) < 6) ? (animation_frame % 11) : 10 - (animation_frame % 11))",
     xoffset=1,
     yoffset=2,
     xextent=15,
@@ -44,7 +57,7 @@ spriteset_building = industry.add_spriteset(
 
 industry.add_spritelayout(
     id="oil_wells_war_spritelayout_pump",
-    tile="oil_wells_tile_2",
+    tile="oil_wells_tile_1",
     ground_sprite=None,
     ground_overlay=sprite_ground_overlay_building,
     building_sprites=[sprite_pump],
