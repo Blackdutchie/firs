@@ -1538,6 +1538,25 @@ class IndustryPrimaryOrganic(IndustryPrimary):
         self.allow_production_change_from_gs = True
 
 
+class IndustryPrimaryResourceField(IndustryPrimary):
+    """
+    Industry that is organic AND has production boosted by delivery of FMSP (farms and similar)
+    Sparse subclass of IndustryPrimary, do not add much to this, it's subclassed once already
+    """
+
+    def __init__(self, **kwargs):
+        kwargs["accept_cargo_types"] = ["AVEH"]
+        kwargs["life_type"] = "IND_LIFE_TYPE_BLACK_HOLE"
+        super().__init__(**kwargs)
+        # janky use of a un-named list for historical reasons (2nd item is string prefix, 3rd is multiplier of requirements parameters)
+        self.supply_requirements = [
+            0,
+            "PRIMARY",
+            1,
+        ]
+        self.allow_production_change_from_gs = True
+
+
 class IndustryPrimaryPort(IndustryPrimary):
     """
     Industry that is import-export AND has production boosted by delivery of arbitrary cargos (ports and similar)

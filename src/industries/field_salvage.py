@@ -1,9 +1,8 @@
-from industry import IndustryPrimaryExtractive, TileLocationChecks
+from industry import IndustryPrimaryResourceField, TileLocationChecks
 
-industry = IndustryPrimaryExtractive(
+industry = IndustryPrimaryResourceField(
     id="field_salvage",
     prod_cargo_types_with_multipliers=[("SALV", 20)],
-    accept_cargo_types = ["AVEH"],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
     prob_map_gen="7",
