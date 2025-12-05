@@ -25,85 +25,20 @@ industry.enable_in_economy(
 )
 
 spriteset_ground = industry.add_spriteset(
-    type="asphalt",
+    type="pavement",
 )
-stacks_1 = industry.add_spriteset(
-    sprites=[(10, 10, 64, 56, -31, -26)],
-    always_draw=True,
+spriteset_ground_overlay = industry.add_spriteset(
+    sprites=[(10, 10, 64, 31, -31, 0)],
 )
-shed = industry.add_spriteset(
-    sprites=[(80, 10, 64, 56, -31, -26)],
-)
-silo = industry.add_spriteset(
-    sprites=[(220, 10, 64, 64, -31, -34)],
-)
-stacks_2 = industry.add_spriteset(
-    sprites=[(150, 10, 64, 56, -31, -26)],
-    always_draw=True,
-)
+spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
 industry.add_spritelayout(
-    id="bunker_base_spritelayout_1",
-    tile="builders_yard_tile_1",
+    id="bunker_base_spritelayout",
+    tile="general_store_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[stacks_1],
-    fences=["nw", "ne", "se", "sw"],
-)
-industry.add_spritelayout(
-    id="bunker_base_spritelayout_2",
-    tile="builders_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[shed],
-)
-industry.add_spritelayout(
-    id="bunker_base_spritelayout_3",
-    tile="builders_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[silo],
-)
-industry.add_spritelayout(
-    id="bunker_base_spritelayout_4",
-    tile="builders_yard_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=None,
-    building_sprites=[stacks_2],
-)
-
-industry.add_industry_layout(
-    id="bunker_base_industry_layout_1",
-    layout=[
-        (0, 0, "bunker_base_spritelayout_3"),
-        (0, 1, "bunker_base_spritelayout_4"),
-        (1, 0, "bunker_base_spritelayout_2"),
-        (1, 1, "bunker_base_spritelayout_1"),
-    ],
+    ground_overlay=spriteset_ground_overlay,
+    building_sprites=[spriteset_1],
 )
 industry.add_industry_layout(
-    id="bunker_base_industry_layout_2",
-    layout=[
-        (0, 0, "bunker_base_spritelayout_2"),
-        (0, 1, "bunker_base_spritelayout_3"),
-        (1, 0, "bunker_base_spritelayout_4"),
-        (1, 1, "bunker_base_spritelayout_1"),
-    ],
-)
-industry.add_industry_layout(
-    id="bunker_base_industry_layout_3",
-    layout=[
-        (0, 0, "bunker_base_spritelayout_3"),
-        (0, 1, "bunker_base_spritelayout_2"),
-        (1, 0, "bunker_base_spritelayout_1"),
-        (1, 1, "bunker_base_spritelayout_4"),
-    ],
-)
-industry.add_industry_layout(
-    id="bunker_base_industry_layout_4",
-    layout=[
-        (0, 0, "bunker_base_spritelayout_2"),
-        (0, 1, "bunker_base_spritelayout_1"),
-        (1, 0, "bunker_base_spritelayout_3"),
-        (1, 1, "bunker_base_spritelayout_4"),
-    ],
+    id="bunker_base_industry_layout",
+    layout=[(0, 0, "storage_depot_spritelayout")],
 )

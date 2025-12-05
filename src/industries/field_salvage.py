@@ -25,151 +25,21 @@ industry.enable_in_economy(
     prob_map_gen="10",
 )
 
-sprite_ground = industry.add_sprite(sprite_number="4126")
-sprite_ground_tracks = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
-spriteset_1 = industry.add_spriteset(
-    sprites=[(10, 10, 64, 64, -31, -31)],
+spriteset_ground = industry.add_spriteset(
+    type="pavement",
 )
-spriteset_2 = industry.add_spriteset(
-    sprites=[(80, 10, 64, 64, -31, -31)],
+spriteset_ground_overlay = industry.add_spriteset(
+    sprites=[(10, 10, 64, 31, -31, 0)],
 )
-spriteset_3 = industry.add_spriteset(
-    sprites=[(150, 10, 64, 64, -31, -31)],
-)
-spriteset_4 = industry.add_spriteset(
-    sprites=[(220, 10, 64, 64, -31, -31)],
-)
-spriteset_5 = industry.add_spriteset(
-    sprites=[(290, 10, 64, 64, -31, -31)],
-)
-spriteset_6 = industry.add_spriteset(
-    sprites=[(360, 10, 64, 64, -31, -31)],
-)
-spriteset_7 = industry.add_spriteset(
-    sprites=[(430, 10, 64, 64, -31, -31)],
-)
+spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
 industry.add_spritelayout(
-    id="salvagefield_spritelayout_bare_ground",
-    tile="peatlands_tile_1",
-    ground_sprite=sprite_ground,
-    ground_overlay=sprite_ground,
-    building_sprites=[],
-)
-industry.add_spritelayout(
-    id="salvagefield_spritelayout_tractor",
-    tile="peatlands_tile_1",
-    ground_sprite=sprite_ground,
-    ground_overlay=sprite_ground,
-    building_sprites=[spriteset_3],
-)
-industry.add_spritelayout(
-    id="salvagefield_spritelayout_harvester",
-    tile="peatlands_tile_1",
-    ground_sprite=sprite_ground,
-    ground_overlay=sprite_ground,
-    building_sprites=[spriteset_4],
-)
-industry.add_spritelayout(
-    id="salvagefield_spritelayout_nissen_hut",
-    tile="peatlands_tile_1",
-    ground_sprite=sprite_ground_tracks,
-    ground_overlay=sprite_ground_tracks,
-    building_sprites=[spriteset_2],
-)
-industry.add_spritelayout(
-    id="salvagefield_spritelayout_crane",
-    tile="peatlands_tile_1",
-    ground_sprite=sprite_ground_tracks,
-    ground_overlay=sprite_ground_tracks,
-    building_sprites=[spriteset_6, spriteset_5],
-)
-industry.add_spritelayout(
-    id="salvagefield_spritelayout_peat_pile",
-    tile="peatlands_tile_1",
-    ground_sprite=sprite_ground_tracks,
-    ground_overlay=sprite_ground_tracks,
-    building_sprites=[spriteset_7],
-)
-
-industry.add_industry_layout(
-    id="salvagefield_layout_1",
-    layout=[
-        (0, 0, "salvagefield_spritelayout_nissen_hut"),
-        (0, 1, "salvagefield_spritelayout_peat_pile"),
-        (0, 2, "salvagefield_spritelayout_crane"),
-        (1, 0, "salvagefield_spritelayout_bare_ground"),
-        (1, 1, "salvagefield_spritelayout_bare_ground"),
-        (1, 2, "salvagefield_spritelayout_bare_ground"),
-        (2, 0, "salvagefield_spritelayout_tractor"),
-        (2, 1, "salvagefield_spritelayout_bare_ground"),
-        (2, 2, "salvagefield_spritelayout_harvester"),
-        (3, 0, "salvagefield_spritelayout_bare_ground"),
-        (3, 1, "salvagefield_spritelayout_harvester"),
-        (3, 2, "salvagefield_spritelayout_bare_ground"),
-        (4, 0, "salvagefield_spritelayout_bare_ground"),
-        (4, 1, "salvagefield_spritelayout_bare_ground"),
-        (4, 2, "salvagefield_spritelayout_bare_ground"),
-    ],
+    id="field_salvage_spritelayout",
+    tile="general_store_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=spriteset_ground_overlay,
+    building_sprites=[spriteset_1],
 )
 industry.add_industry_layout(
-    id="salvagefield_layout_2",
-    layout=[
-        (0, 0, "salvagefield_spritelayout_bare_ground"),
-        (0, 1, "salvagefield_spritelayout_harvester"),
-        (0, 2, "salvagefield_spritelayout_bare_ground"),
-        (1, 0, "salvagefield_spritelayout_bare_ground"),
-        (1, 1, "salvagefield_spritelayout_bare_ground"),
-        (1, 2, "salvagefield_spritelayout_bare_ground"),
-        (2, 0, "salvagefield_spritelayout_tractor"),
-        (2, 1, "salvagefield_spritelayout_bare_ground"),
-        (2, 2, "salvagefield_spritelayout_bare_ground"),
-        (3, 0, "salvagefield_spritelayout_bare_ground"),
-        (3, 1, "salvagefield_spritelayout_harvester"),
-        (3, 2, "salvagefield_spritelayout_bare_ground"),
-        (4, 0, "salvagefield_spritelayout_nissen_hut"),
-        (4, 1, "salvagefield_spritelayout_peat_pile"),
-        (4, 2, "salvagefield_spritelayout_crane"),
-    ],
-)
-industry.add_industry_layout(
-    id="salvagefield_layout_3",
-    layout=[
-        (0, 0, "salvagefield_spritelayout_bare_ground"),
-        (0, 1, "salvagefield_spritelayout_harvester"),
-        (0, 2, "salvagefield_spritelayout_bare_ground"),
-        (0, 3, "salvagefield_spritelayout_peat_pile"),
-        (1, 0, "salvagefield_spritelayout_bare_ground"),
-        (1, 1, "salvagefield_spritelayout_bare_ground"),
-        (1, 2, "salvagefield_spritelayout_bare_ground"),
-        (1, 3, "salvagefield_spritelayout_crane"),
-        (2, 0, "salvagefield_spritelayout_harvester"),
-        (2, 1, "salvagefield_spritelayout_bare_ground"),
-        (2, 2, "salvagefield_spritelayout_tractor"),
-        (2, 3, "salvagefield_spritelayout_nissen_hut"),
-        (3, 0, "salvagefield_spritelayout_bare_ground"),
-        (3, 1, "salvagefield_spritelayout_bare_ground"),
-        (3, 2, "salvagefield_spritelayout_bare_ground"),
-        (3, 3, "salvagefield_spritelayout_peat_pile"),
-    ],
-)
-industry.add_industry_layout(
-    id="salvagefield_layout_4",
-    layout=[
-        (0, 0, "salvagefield_spritelayout_peat_pile"),
-        (0, 1, "salvagefield_spritelayout_bare_ground"),
-        (0, 2, "salvagefield_spritelayout_harvester"),
-        (0, 3, "salvagefield_spritelayout_bare_ground"),
-        (1, 0, "salvagefield_spritelayout_nissen_hut"),
-        (1, 1, "salvagefield_spritelayout_harvester"),
-        (1, 2, "salvagefield_spritelayout_bare_ground"),
-        (1, 3, "salvagefield_spritelayout_bare_ground"),
-        (2, 0, "salvagefield_spritelayout_crane"),
-        (2, 1, "salvagefield_spritelayout_bare_ground"),
-        (2, 2, "salvagefield_spritelayout_bare_ground"),
-        (2, 3, "salvagefield_spritelayout_tractor"),
-        (3, 0, "salvagefield_spritelayout_peat_pile"),
-        (3, 1, "salvagefield_spritelayout_bare_ground"),
-        (3, 2, "salvagefield_spritelayout_bare_ground"),
-        (3, 3, "salvagefield_spritelayout_bare_ground"),
-    ],
+    id="field_salvage_industry_layout",
+    layout=[(0, 0, "storage_depot_spritelayout")],
 )
