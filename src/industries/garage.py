@@ -26,6 +26,11 @@ industry.enable_in_economy(
     "WAR_ECONOMY",
 )
 
+industry.add_tile(
+    id="hardware_store_tile_1",
+    location_checks=TileLocationChecks(require_road_adjacent=True),
+)
+
 hardware_store_spriteset_ground = industry.add_spriteset(
     type="pavement",
 )
