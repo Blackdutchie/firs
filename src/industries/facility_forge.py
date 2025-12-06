@@ -76,7 +76,7 @@ spriteset_high_tower = industry.add_spriteset(
 )
 
 
-)
+
 sprite_smoke_1 = industry.add_smoke_sprite(
     smoke_type="white_smoke_big",
     xoffset=1,
