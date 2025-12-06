@@ -70,7 +70,7 @@ sprite_smoke = industry.add_smoke_sprite(
     zoffset=68,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_empty",
+    id="facility_blast_furnace_spritelayout_empty",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -78,7 +78,7 @@ industry.add_spritelayout(
     add_to_object_num=9,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_blast_furnace_1",
+    id="facility_blast_furnace_spritelayout_blast_furnace_1",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -87,7 +87,7 @@ industry.add_spritelayout(
     add_to_object_num=3,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_blast_furnace_2",
+    id="facility_blast_furnace_spritelayout_blast_furnace_2",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -95,7 +95,7 @@ industry.add_spritelayout(
     add_to_object_num=4,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_small_shed",
+    id="facility_blast_furnace_spritelayout_small_shed",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -103,7 +103,7 @@ industry.add_spritelayout(
     add_to_object_num=5,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_brick_building",
+    id="facility_blast_furnace_spritelayout_brick_building",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -111,7 +111,7 @@ industry.add_spritelayout(
     add_to_object_num=7,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_small_tanks",
+    id="facility_blast_furnace_spritelayout_small_tanks",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -119,14 +119,14 @@ industry.add_spritelayout(
     add_to_object_num=8,
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_large_shed_rear_part",
+    id="facility_blast_furnace_spritelayout_large_shed_rear_part",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_large_shed_rear_part],
 )
 industry.add_spritelayout(
-    id="blast_furnace_spritelayout_large_shed_front_part",
+    id="facility_blast_furnace_spritelayout_large_shed_front_part",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground_tile_dark,
     ground_overlay=spriteset_ground_tile_dark,
@@ -134,13 +134,13 @@ industry.add_spritelayout(
 )
 
 industry.add_industry_layout(
-    id="bunker_base_industry_layout_1",
+    id="facility_blast_furnace_industry_layout_1",
     layout=[
-        (0, 0, "blast_furnace_spritelayout_large_shed_rear_part"),
-        (0, 1, "blast_furnace_spritelayout_blast_furnace_1"),
-        (1, 0, "blast_furnace_spritelayout_large_shed_front_part"),
-        (1, 1, "blast_furnace_spritelayout_blast_furnace_2"),
-        (2, 0, "blast_furnace_spritelayout_small_shed"),
-        (2, 1, "blast_furnace_spritelayout_empty"),
+        (0, 0, "facility_blast_furnace_spritelayout_large_shed_rear_part"),
+        (0, 1, "facility_blast_furnace_spritelayout_blast_furnace_1"),
+        (1, 0, "facility_blast_furnace_spritelayout_large_shed_front_part"),
+        (1, 1, "facility_blast_furnace_spritelayout_blast_furnace_2"),
+        (2, 0, "facility_blast_furnace_spritelayout_small_shed"),
+        (2, 1, "facility_blast_furnace_spritelayout_empty"),
     ],
 )
