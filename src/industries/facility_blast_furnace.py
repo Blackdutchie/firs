@@ -69,7 +69,7 @@ sprite_smoke = industry.add_smoke_sprite(
     yoffset=6,
     zoffset=68,
 )
-ndustry.add_spritelayout(
+industry.add_spritelayout(
     id="blast_furnace_spritelayout_empty",
     tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
