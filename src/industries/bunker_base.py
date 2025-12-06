@@ -46,14 +46,12 @@ industry.add_spritelayout(
     id="bunker_base_spritelayout_1",
     tile="bunker_base_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_1],
 )
 industry.add_spritelayout(
     id="bunker_base_spritelayout_2",
     tile="bunker_base_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_2],
 )
 industry.add_industry_layout(
