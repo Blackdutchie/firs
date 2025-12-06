@@ -80,7 +80,7 @@ industry.add_spritelayout(
     building_sprites=[],
 )
 industry.add_industry_layout(
-    id="facility_advanced_vehicle_pad_industry_layout_1",
+    id="facility_basic_vehicle_pad_industry_layout_1",
     layout=[
         (0, 0, "facility_basic_vehicle_pad_spritelayout_3"),
         (0, 1, "facility_basic_vehicle_pad_spritelayout_3"),
