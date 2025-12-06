@@ -83,11 +83,11 @@ industry.add_spritelayout(
 industry.add_industry_layout(
     id="facility_ammunition_factory_industry_layout_1",
     layout=[
-        (0, 0, "bunker_base_spritelayout_2"),
-        (0, 1, "bunker_base_spritelayout_3"),
-        (1, 0, "bunker_base_spritelayout_2"),
-        (1, 1, "bunker_base_spritelayout_1"),
-        (2, 0, "bunker_base_spritelayout_2"),
-        (2, 1, "bunker_base_spritelayout_empty"),
+        (0, 0, "facility_ammunition_factory_spritelayout_2"),
+        (0, 1, "facility_ammunition_factory_spritelayout_3"),
+        (1, 0, "facility_ammunition_factory_spritelayout_2"),
+        (1, 1, "facility_ammunition_factory_spritelayout_1"),
+        (2, 0, "facility_ammunition_factory_spritelayout_2"),
+        (2, 1, "facility_ammunition_factory_spritelayout_empty"),
     ],
 )
