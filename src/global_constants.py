@@ -144,6 +144,17 @@ industry_numeric_ids = dict(
     refinery_sulphur=27,
     seaport=31,
     storage_depot=39,
+    facility_advanced_vehicle_pad=40,
+    facility_ammunition_factory=42,
+    facility_basic_vehiclepad=45,
+    facility_blast_furnace=46,
+    facility_coal_refinery=51,
+    facility_engineering_bay=59,
+    facility_forge=82,
+    facility_metal_press=83,
+    facility_oil_reformer=89,
+    facility_petrochemical_plant=91,
+    facility_water_pump=92,
     # 127 left free for GarryG
 )
 # Definition of industry tile numeric IDs
@@ -355,8 +366,6 @@ tile_numeric_ids = dict(
     carbon_black_plant_tile_2=252,
     body_plant_tile_2=253,
     chemical_plant_tile_2=254,
-    #sneaking in another tile
-    oil_wells_war_tile_1 = 77
 )
 
 grfid = "F1250009"

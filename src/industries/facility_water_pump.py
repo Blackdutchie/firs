@@ -1,27 +1,26 @@
-from industry import IndustryPrimaryResourceField, TileLocationChecks
+from industry import IndustryPrimaryNoSupplies, TileLocationChecks
 
-industry = IndustryPrimaryResourceField(
-    id="field_salvage",
-    prod_cargo_types_with_multipliers=[("SALV", 20)],
-    life_type = "IND_LIFE_TYPE_BLACK_HOLE",
+industry = IndustryPrimaryNoSupplies(
+    id="facility_water_pump",
+    prod_cargo_types_with_multipliers=[
+        ("WATR", 8),
+    ],
     prob_in_game="0",
-    prob_map_gen="7",
-    map_colour="209",
-    colour_scheme_name="scheme_1_elton",
-    location_checks=dict(require_cluster=[70, 3]),
-    prospect_chance="0.0",
-    name="string(STR_IND_FIELD_SALVAGE)",
-    nearby_station_name="string(STR_STATION_COLLIERY)",
-    fund_cost_multiplier="255",
+    prob_map_gen="0",
+    map_colour="151",
+    colour_scheme_name="scheme_3_hendrix",
+    name="TTD_STR_INDUSTRY_NAME_OIL_WELLS",
+    fund_cost_multiplier="15",
+    nearby_station_name="string(STR_STATION_WELLS)",
     pollution_and_squalor_factor=1,
     provides_snow=True,
     primary_production_random_factor_set="wide_range",
     sprites_complete=True,
     animated_tiles_fixed=True,
 )
+
 industry.enable_in_economy(
     "WAR_ECONOMY",
-    prob_map_gen="9",
 )
 
 spriteset_ground = industry.add_spriteset(
@@ -32,13 +31,13 @@ spriteset_ground_overlay = industry.add_spriteset(
 )
 spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
 industry.add_spritelayout(
-    id="field_salvage_spritelayout",
+    id="oil_wells_spritelayout",
     tile="general_store_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_1],
 )
 industry.add_industry_layout(
-    id="field_salvage_industry_layout",
-    layout=[(0, 0, "field_salvage_spritelayout")],
+    id="oil_wells_industry_layout",
+    layout=[(0, 0, "oil_wells_spritelayout")],
 )
