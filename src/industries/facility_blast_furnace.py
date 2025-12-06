@@ -75,7 +75,6 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[],
-    add_to_object_num=9,
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_blast_furnace_1",
@@ -84,7 +83,6 @@ industry.add_spritelayout(
     ground_overlay=None,
     building_sprites=[spriteset_blast_furnace_1],
     smoke_sprites=[sprite_smoke],
-    add_to_object_num=3,
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_blast_furnace_2",
@@ -92,7 +90,6 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_blast_furnace_2],
-    add_to_object_num=4,
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_small_shed",
@@ -100,7 +97,6 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_small_shed],
-    add_to_object_num=5,
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_brick_building",
@@ -108,7 +104,6 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_brick_building],
-    add_to_object_num=7,
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_small_tanks",
@@ -116,7 +111,6 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_small_tanks],
-    add_to_object_num=8,
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_large_shed_rear_part",
