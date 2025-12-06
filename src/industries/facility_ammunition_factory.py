@@ -64,7 +64,7 @@ industry.add_spritelayout(
     tile="facility_ammunition_factory_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
-    building_sprites=[spriteset_crane_NW],
+    building_sprites=[spriteset_crane_SE],
 )
 industry.add_spritelayout(
     id="facility_ammunition_factory_spritelayout_2",

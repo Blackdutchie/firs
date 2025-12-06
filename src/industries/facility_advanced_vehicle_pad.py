@@ -64,7 +64,7 @@ industry.add_spritelayout(
     tile="facility_advanced_vehicle_pad_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
-    building_sprites=[spriteset_crane_SE],
+    building_sprites=[spriteset_crane_NW],
 )
 industry.add_spritelayout(
     id="facility_advanced_vehicle_pad_spritelayout_2",
