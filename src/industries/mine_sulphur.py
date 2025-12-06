@@ -3,11 +3,11 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="mine_sulphur",
     accept_cargos_with_input_ratios=[
-        ("DIES", 6),
-        ("PETR", 2),
+        ("DIES", 20),
+        ("PETR", 8),
     ],
     prod_cargo_types_with_output_ratios=[
-        ("SULP", 4),
+        ("SULP", 8),
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",

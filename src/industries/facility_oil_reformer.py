@@ -3,11 +3,11 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="facility_oil_reformer",
     accept_cargos_with_input_ratios=[
-        ("OIL_", 8),
+        ("OIL_", 6),
         ("WATR", 2),
     ],
     prod_cargo_types_with_output_ratios=[
-        ("PETR", 10),
+        ("PETR", 8),
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",

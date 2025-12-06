@@ -3,11 +3,11 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="facility_ammunition_factory",
     accept_cargos_with_input_ratios=[
-        ("HEPW", 8),
-        ("CMAT", 3),
+        ("HEPW", 16),
+        ("CMAT", 6),
     ],
     prod_cargo_types_with_output_ratios=[
-        ("ARTY", 4),
+        ("ARTY", 8),
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",

@@ -3,8 +3,8 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="mine_salvage",
     accept_cargos_with_input_ratios=[
-        ("DIES", 6),
-        ("PETR", 2),
+        ("DIES", 12),
+        ("PETR", 4),
     ],
     prod_cargo_types_with_output_ratios=[
         ("SALV", 8),
