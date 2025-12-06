@@ -17,8 +17,8 @@ industry = IndustrySecondary(
     nearby_station_name="string(STR_STATION_INDUSTRY_ESTATE_1)",
     fund_cost_multiplier="30",
     pollution_and_squalor_factor=1,
-    sprites_complete=False,
-    animated_tiles_fixed=False,
+    sprites_complete=True,
+    animated_tiles_fixed=True,
 )
 
 industry.enable_in_economy(
@@ -31,15 +31,62 @@ spriteset_ground = industry.add_spriteset(
 spriteset_ground_overlay = industry.add_spriteset(
     sprites=[(10, 10, 64, 31, -31, 0)],
 )
-spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
+
+industry.add_tile(
+    id="facility_basic_vehicle_pad_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
+
+spriteset_crane_SE = industry.add_spriteset(
+    sprites=[(440, 110, 64, 84, -31, -60)],
+)
+
+spriteset_shed = industry.add_spriteset(
+    sprites=[(650, 10, 64, 84, -31, -70)],
+)
+spriteset_rail = industry.add_spriteset(
+    sprites=[(150, 10, 64, 31, -31, 0)],
+)
+
+
 industry.add_spritelayout(
-    id="facility_basic_vehicle_pad_spritelayout",
-    tile="general_store_tile_1",
+    id="facility_basic_vehicle_pad_spritelayout_empty",
+    tile="facility_basic_vehicle_pad_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
-    building_sprites=[spriteset_1],
+    ground_overlay=None,
+    building_sprites=[],
+)
+industry.add_spritelayout(
+    id="facility_basic_vehicle_pad_spritelayout_1",
+    tile="facility_basic_vehicle_pad_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_crane_SE],
+)
+industry.add_spritelayout(
+    id="facility_basic_vehicle_pad_spritelayout_2",
+    tile="facility_basic_vehicle_pad_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_shed],
+)
+industry.add_spritelayout(
+    id="facility_basic_vehicle_pad_spritelayout_3",
+    tile="facility_basic_vehicle_pad_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=spriteset_rail,
+    building_sprites=[],
 )
 industry.add_industry_layout(
-    id="facility_basic_vehicle_pad_industry_layout",
-    layout=[(0, 0, "facility_basic_vehicle_pad_spritelayout")],
+    id="facility_advanced_vehicle_pad_industry_layout_1",
+    layout=[
+        (0, 0, "facility_basic_vehicle_pad_spritelayout_3"),
+        (0, 1, "facility_basic_vehicle_pad_spritelayout_3"),
+        (1, 0, "facility_basic_vehicle_pad_spritelayout_1"),
+        (1, 1, "facility_basic_vehicle_pad_spritelayout_empty"),
+        (2, 0, "facility_basic_vehicle_pad_spritelayout_3"),
+        (2, 1, "facility_basic_vehicle_pad_spritelayout_3"),
+    ],
 )
