@@ -61,9 +61,103 @@ industry.add_industry_layout(
     layout=[
         (0, 0, "bunker_base_spritelayout_1"),
         (0, 1, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_2"),
+        (1, 1, "bunker_base_spritelayout_1"),
+        (2, 0, "bunker_base_spritelayout_1"),
+        (2, 1, "bunker_base_spritelayout_1"),
+    ],
+)
+industry.add_industry_layout(
+    id="bunker_base_industry_layout_2",
+    layout=[
+        (0, 0, "bunker_base_spritelayout_1"),
+        (0, 1, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_1"),
+        (1, 1, "bunker_base_spritelayout_2"),
+        (2, 0, "bunker_base_spritelayout_1"),
+        (2, 1, "bunker_base_spritelayout_1"),
+    ],
+)
+industry.add_industry_layout(
+    id="bunker_base_industry_layout_3",
+    layout=[
+        (0, 0, "bunker_base_spritelayout_1"),
+        (0, 1, "bunker_base_spritelayout_2"),
+        (0, 2, "bunker_base_spritelayout_1"),
         (1, 0, "bunker_base_spritelayout_1"),
         (1, 1, "bunker_base_spritelayout_1"),
-        (2, 0, "bunker_base_spritelayout_2"),
+        (1, 2, "bunker_base_spritelayout_1"),
+    ],
+
+
+industry.add_industry_layout(
+    id="bunker_base_industry_layout_4",
+    layout=[
+        (0, 0, "bunker_base_spritelayout_1"),
+        (0, 1, "bunker_base_spritelayout_1"),
+        (0, 2, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_1"),
+        (1, 1, "bunker_base_spritelayout_2"),
+        (1, 2, "bunker_base_spritelayout_1"),
+    ],
+)
+
+industry.add_industry_layout(
+    id="bunker_base_industry_layout_5",
+    layout=[
+        (0, 0, "bunker_base_spritelayout_1"),
+        (0, 1, "bunker_base_spritelayout_2"),
+        (0, 2, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_1"),
+        (1, 1, "bunker_base_spritelayout_1"),
+        (1, 2, "bunker_base_spritelayout_1"),
+        (2, 0, "bunker_base_spritelayout_1"),
         (2, 1, "bunker_base_spritelayout_1"),
+        (2, 2, "bunker_base_spritelayout_1"),
+    ],
+)
+
+industry.add_industry_layout(
+    id="bunker_base_industry_layout_6",
+    layout=[
+        (0, 0, "bunker_base_spritelayout_1"),
+        (0, 1, "bunker_base_spritelayout_1"),
+        (0, 2, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_2"),
+        (1, 1, "bunker_base_spritelayout_1"),
+        (1, 2, "bunker_base_spritelayout_1"),
+        (2, 0, "bunker_base_spritelayout_1"),
+        (2, 1, "bunker_base_spritelayout_1"),
+        (2, 2, "bunker_base_spritelayout_1"),
+    ],
+)
+
+industry.add_industry_layout(
+    id="bunker_base_industry_layout_7",
+    layout=[
+        (0, 0, "bunker_base_spritelayout_1"),
+        (0, 1, "bunker_base_spritelayout_1"),
+        (0, 2, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_1"),
+        (1, 1, "bunker_base_spritelayout_1"),
+        (1, 2, "bunker_base_spritelayout_2"),
+        (2, 0, "bunker_base_spritelayout_1"),
+        (2, 1, "bunker_base_spritelayout_1"),
+        (2, 2, "bunker_base_spritelayout_1"),
+    ],
+)
+
+industry.add_industry_layout(
+    id="bunker_base_industry_layout_8",
+    layout=[
+        (0, 0, "bunker_base_spritelayout_1"),
+        (0, 1, "bunker_base_spritelayout_1"),
+        (0, 2, "bunker_base_spritelayout_1"),
+        (1, 0, "bunker_base_spritelayout_1"),
+        (1, 1, "bunker_base_spritelayout_1"),
+        (1, 2, "bunker_base_spritelayout_1"),
+        (2, 0, "bunker_base_spritelayout_1"),
+        (2, 1, "bunker_base_spritelayout_2"),
+        (2, 2, "bunker_base_spritelayout_1"),
     ],
 )

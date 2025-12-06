@@ -14,7 +14,7 @@ cargo = Cargo(
     items_of_cargo="string(STR_CARGO_UNIT_FRONTSUP)",
     penalty_lowerbound="0",
     single_penalty_length="8",
-    price_factor=250,
+    price_factor=125,
     capacity_multiplier="2",
     icon_indices=(5, 0),
     # used by FIRS GS
