@@ -373,6 +373,7 @@ tile_numeric_ids = dict(
     bunker_base_tile_1=77,
     facility_blast_furnace_tile_1=85,
     facility_ammunition_factory_tile_1=92,
+    facility_advanced_vehicle_pad_tile_1=93,
 )
 
 grfid = "F1250009"
