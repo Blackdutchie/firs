@@ -29,7 +29,7 @@ spriteset_ground = industry.add_spriteset(
 )
 
 industry.add_tile(
-    id="bunker_base_tile_1",
+    id="wareco_base_tile_1",
     location_checks=TileLocationChecks(
         require_effectively_flat=True, disallow_industry_adjacent=True
     ),
@@ -44,14 +44,14 @@ spriteset_2 = industry.add_spriteset(
 
 industry.add_spritelayout(
     id="bunker_base_spritelayout_1",
-    tile="bunker_base_tile_1",
+    tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_1],
 )
 industry.add_spritelayout(
     id="bunker_base_spritelayout_2",
-    tile="bunker_base_tile_1",
+    tile="wareco_base_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_2],
