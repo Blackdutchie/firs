@@ -88,7 +88,7 @@ industry.add_industry_layout(
         (1, 1, "bunker_base_spritelayout_1"),
         (1, 2, "bunker_base_spritelayout_1"),
     ],
-
+)
 
 industry.add_industry_layout(
     id="bunker_base_industry_layout_4",
