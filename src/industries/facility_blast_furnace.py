@@ -128,8 +128,8 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="blast_furnace_spritelayout_large_shed_front_part",
     tile="wareco_base_tile_1",
-    ground_sprite=spriteset_ground_tile_dark_animated,
-    ground_overlay=spriteset_ground_tile_dark_animated,
+    ground_sprite=spriteset_ground_tile_dark,
+    ground_overlay=spriteset_ground_tile_dark,
     building_sprites=[spriteset_large_shed_front_part],
 )
 
