@@ -191,9 +191,10 @@ industry.add_industry_layout(
         (0, 1, "facility_engineering_bay_spritelayout_3"),
         (1, 0, "facility_engineering_bay_spritelayout_4"),
         (1, 1, "facility_engineering_bay_spritelayout_1"),
-        (2, 0, "facility_engineering_bay_spritelayout_9"),
+        (2, 0, "facility_engineering_bay_spritelayout_11"),
         (2, 1, "facility_engineering_bay_spritelayout_8"),
         (2, 2, "facility_engineering_bay_spritelayout_7"),
         (3, 0, "facility_engineering_bay_spritelayout_10"),
+        (3, 1, "facility_engineering_bay_spritelayout_9"),
     ],
 )
