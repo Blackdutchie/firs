@@ -9,7 +9,7 @@ industry = IndustryPrimaryNoSupplies(
     prob_map_gen="0",
     map_colour="151",
     colour_scheme_name="scheme_3_hendrix",
-    name="TTD_STR_INDUSTRY_NAME_OIL_WELLS",
+    name="string(STR_IND_FACILITY_WATER_PUMP)",
     fund_cost_multiplier="15",
     nearby_station_name="string(STR_STATION_WELLS)",
     pollution_and_squalor_factor=1,
@@ -31,13 +31,13 @@ spriteset_ground_overlay = industry.add_spriteset(
 )
 spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
 industry.add_spritelayout(
-    id="oil_wells_spritelayout",
+    id="facility_water_pump_spritelayout",
     tile="general_store_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_1],
 )
 industry.add_industry_layout(
-    id="oil_wells_industry_layout",
-    layout=[(0, 0, "oil_wells_spritelayout")],
+    id="facility_water_pump_industry_layout",
+    layout=[(0, 0, "facility_water_pump_spritelayout")],
 )
