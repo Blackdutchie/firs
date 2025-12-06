@@ -36,19 +36,7 @@ industry.add_tile(
         require_effectively_flat=True, disallow_industry_adjacent=True
     ),
 )
-industry.add_tile(
-    id="facility_blast_furnace_tile_2",
-    animation_length=7,
-    animation_looping=True,
-    animation_speed=3,
-    custom_animation_control={
-        "macro": "random_first_frame",
-        "animation_triggers": "bitmask(ANIM_TRIGGER_INDTILE_CONSTRUCTION_STATE)",
-    },
-    location_checks=TileLocationChecks(
-        require_effectively_flat=True, disallow_industry_adjacent=True
-    ),
-)
+
 spriteset_ground_tile_dark = industry.add_spriteset(
     sprites=[(500, 10, 64, 122, -31, -91)],
 )
@@ -95,7 +83,7 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_blast_furnace_1",
-    tile="facility_blast_furnace_tile_2",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_blast_furnace_1],
