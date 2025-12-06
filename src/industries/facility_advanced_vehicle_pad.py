@@ -41,11 +41,11 @@ industry.add_tile(
 )
 
 spriteset_crane_NW = industry.add_spriteset(
-    sprites=[(650, 110, 64, 84, -31, -70)],
+    sprites=[(650, 110, 64, 84, -31, -50)],
 )
 
 spriteset_shed = industry.add_spriteset(
-    sprites=[(650, 10, 64, 84, -31, -70)],
+    sprites=[(650, 10, 64, 84, -31, -50)],
 )
 spriteset_rail = industry.add_spriteset(
     sprites=[(150, 10, 64, 31, -31, 0)],

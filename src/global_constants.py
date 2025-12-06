@@ -375,6 +375,7 @@ tile_numeric_ids = dict(
     facility_ammunition_factory_tile_1=92,
     facility_advanced_vehicle_pad_tile_1=93,
     facility_basic_vehicle_pad_tile_1=94,
+    facility_engineering_bay_tile_1=95,
 )
 
 grfid = "F1250009"
