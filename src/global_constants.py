@@ -155,6 +155,9 @@ industry_numeric_ids = dict(
     facility_oil_reformer=89,
     facility_petrochemical_plant=91,
     facility_water_pump=92,
+    mine_salvage=93,
+    mine_components=97,
+    mine_sulphur=101,
     # 127 left free for GarryG
 )
 # Definition of industry tile numeric IDs
