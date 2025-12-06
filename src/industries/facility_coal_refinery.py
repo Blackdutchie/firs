@@ -3,7 +3,7 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="facility_coal_refinery",
     accept_cargos_with_input_ratios=[
-        ("COAL", 8),
+        ("COAL", 5),
         ("WATR", 3),
     ],
     prod_cargo_types_with_output_ratios=[

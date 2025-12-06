@@ -3,9 +3,9 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="facility_blast_furnace",
     accept_cargos_with_input_ratios=[
-        ("PETR", 8),
-        ("CMAT", 8),
-        ("COMP", 16),
+        ("PETR", 2),
+        ("CMAT", 2),
+        ("COMP", 4),
     ],
     prod_cargo_types_with_output_ratios=[
         ("PCMT", 8),
