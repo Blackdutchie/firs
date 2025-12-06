@@ -372,6 +372,7 @@ tile_numeric_ids = dict(
     # Roll-over region for foxhole graphics
     bunker_base_tile_1=77,
     facility_blast_furnace_tile_1=85,
+    facility_blast_furnace_tile_2=92,
 )
 
 grfid = "F1250009"
