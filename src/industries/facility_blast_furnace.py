@@ -5,7 +5,7 @@ industry = IndustrySecondary(
     accept_cargos_with_input_ratios=[
         ("PETR", 2),
         ("CMAT", 2),
-        ("COMP", 4)
+        ("COMP", 4),
     ],
     prod_cargo_types_with_output_ratios=[
         ("PCMT", 2),

@@ -4,7 +4,7 @@ industry = IndustrySecondary(
     id="facility_ammunition_factory",
     accept_cargos_with_input_ratios=[
         ("HEPW", 8),
-        ("CMAT", 2)
+        ("CMAT", 3),
     ],
     prod_cargo_types_with_output_ratios=[
         ("ARTY", 4),
