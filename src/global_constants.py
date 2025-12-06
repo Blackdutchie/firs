@@ -370,7 +370,8 @@ tile_numeric_ids = dict(
     body_plant_tile_2=253,
     chemical_plant_tile_2=254,
     # Roll-over region for foxhole graphics
-    wareco_base_tile_1=77, #Defined in bunker base industry file, in case we want to remove that we'll have to redefine
+    bunker_base_tile_1=77,
+    facility_blast_furnace_tile_1=85,
 )
 
 grfid = "F1250009"

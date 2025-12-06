@@ -30,7 +30,12 @@ industry.enable_in_economy(
 spriteset_ground = industry.add_spriteset(
     type="gravel",
 )
-
+industry.add_tile(
+    id="facility_blast_furnace_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
 
 spriteset_ground_tile_dark = industry.add_spriteset(
     sprites=[(500, 10, 64, 122, -31, -91)],
@@ -71,14 +76,14 @@ sprite_smoke = industry.add_smoke_sprite(
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_empty",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[],
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_blast_furnace_1",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_blast_furnace_1],
@@ -86,42 +91,42 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_blast_furnace_2",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_blast_furnace_2],
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_small_shed",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_small_shed],
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_brick_building",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_brick_building],
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_small_tanks",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_small_tanks],
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_large_shed_rear_part",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_large_shed_rear_part],
 )
 industry.add_spritelayout(
     id="facility_blast_furnace_spritelayout_large_shed_front_part",
-    tile="wareco_base_tile_1",
+    tile="facility_blast_furnace_tile_1",
     ground_sprite=spriteset_ground_tile_dark,
     ground_overlay=spriteset_ground_tile_dark,
     building_sprites=[spriteset_large_shed_front_part],
