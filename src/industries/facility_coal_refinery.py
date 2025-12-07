@@ -20,29 +20,268 @@ industry = IndustrySecondary(
     nearby_station_name="string(STR_STATION_INDUSTRY_ESTATE_1)",
     fund_cost_multiplier="30",
     pollution_and_squalor_factor=1,
-    sprites_complete=False,
-    animated_tiles_fixed=False,
+    sprites_complete=True,
+    animated_tiles_fixed=True,
 )
 
 industry.enable_in_economy(
     "WAR_ECONOMY",
 )
+industry.add_tile(
+    id="facility_coal_refinery_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
 
-spriteset_ground = industry.add_spriteset(
-    type="pavement",
+
+sprite_ground = industry.add_spriteset(
+    type="gravel",
 )
-spriteset_ground_overlay = industry.add_spriteset(
-    sprites=[(10, 10, 64, 31, -31, 0)],
+spriteset_silo = industry.add_spriteset(
+    sprites=[(10, 10, 64, 122, -31, -91)],
 )
-spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
+spriteset_oven_battery = industry.add_spriteset(
+    sprites=[(80, 10, 64, 122, -31, -91)],
+)
+spriteset_oven_battery_larry_car = industry.add_spriteset(
+    sprites=[(150, 10, 64, 122, -31, -91)],
+)
+spriteset_pusher_rails_base = industry.add_spriteset(
+    sprites=[(220, 10, 64, 122, -31, -91)], yextent=8  # prevents gantry flickering ??
+)
+spriteset_pusher_car = industry.add_spriteset(
+    sprites=[(10, 234, 64, 64, -31, -32)], yextent=8  # prevents gantry flickering ??
+)
+spriteset_pipe_gantry = industry.add_spriteset(
+    sprites=[(290, 10, 64, 122, -31, -91)],
+)
+spriteset_pipe_gantry_house = industry.add_spriteset(
+    sprites=[(360, 10, 64, 122, -31, -91)],
+)
+spriteset_coal_handling_front = industry.add_spriteset(
+    sprites=[(430, 10, 64, 122, -31, -91)],
+)
+spriteset_coal_handling_rear = industry.add_spriteset(
+    sprites=[(500, 10, 64, 122, -31, -91)],
+)
+spriteset_quench_tower = industry.add_spriteset(
+    sprites=[(570, 10, 64, 122, -31, -91)],
+)
+spriteset_gas_plant_1 = industry.add_spriteset(
+    sprites=[(640, 10, 64, 122, -31, -91)],
+)
+spriteset_extra_pipe_huts_rear = industry.add_spriteset(
+    sprites=[(710, 10, 64, 122, -31, -91)],
+)
+spriteset_extra_pipe_huts_front = industry.add_spriteset(
+    sprites=[(780, 10, 64, 122, -31, -91)],
+)
+spriteset_tile_tar_tanks = industry.add_spriteset(
+    sprites=[(850, 10, 64, 122, -31, -91)],
+)
+spriteset_pipe_gantry_angled = industry.add_spriteset(
+    sprites=[(920, 10, 64, 122, -31, -91)],
+)
+spriteset_extra_coal_front = industry.add_spriteset(
+    sprites=[(990, 10, 64, 122, -31, -91)],
+)
+spriteset_extra_coal_rear = industry.add_spriteset(
+    sprites=[(1060, 10, 64, 122, -31, -91)],
+)
+spriteset_mostly_empty = industry.add_spriteset(
+    sprites=[(1130, 10, 64, 122, -31, -91)],
+)
+sprite_smoke_big_1 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_big",
+    xoffset=8,
+    yoffset=5,
+    zoffset=104,
+)
+sprite_smoke_big_2 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_big",
+    xoffset=0,
+    yoffset=7,
+    zoffset=76,
+)
+sprite_smoke_small_1 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=0,
+    yoffset=0,
+    zoffset=16,
+)
+sprite_smoke_small_2 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=0,
+    yoffset=5,
+    zoffset=16,
+    animation_frame_offset=4,
+)
+
 industry.add_spritelayout(
-    id="facility_coal_refinery_spritelayout",
-    tile="general_store_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
-    building_sprites=[spriteset_1],
+    id="facility_coal_refinery_spritelayout_empty",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[],
+    add_to_object_num=14,
 )
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_oven_battery_pipes_only",
+    # tile id has to match larry car spritelayout for the multiple-view object case
+    tile="facility_coal_refinery_tile_3",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_oven_battery],
+    add_to_object_num=2,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_oven_battery_larry_car",
+    tile="facility_coal_refinery_tile_3",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_oven_battery_larry_car],
+    smoke_sprites=[sprite_smoke_small_1, sprite_smoke_small_2],
+    add_to_object_num=2,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_silo",
+    tile="facility_coal_refinery_tile_2",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_silo],
+    smoke_sprites=[sprite_smoke_big_1],
+    add_to_object_num=1,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_pusher_rails_empty",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_pusher_rails_base, spriteset_pipe_gantry],
+    add_to_object_num=5,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_pusher_rails_with_car",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[
+        spriteset_pusher_rails_base,
+        spriteset_pusher_car,
+        spriteset_pipe_gantry,
+    ],
+    add_to_object_num=5,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_pusher_rails_with_house",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_pusher_rails_base, spriteset_pipe_gantry_house],
+    add_to_object_num=4,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_quench_tower",
+    tile="facility_coal_refinery_tile_2",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_quench_tower],
+    smoke_sprites=[sprite_smoke_big_2],
+    add_to_object_num=3,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_gas_plant_1",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_gas_plant_1],
+    add_to_object_num=7,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_coal_handling_front",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_coal_handling_front],
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_coal_handling_rear",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_coal_handling_rear],
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_extra_coal_front",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_extra_coal_front],
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_extra_coal_rear",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_extra_coal_rear],
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_extra_pipe_huts_front",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_extra_pipe_huts_front],
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_extra_pipe_huts_rear",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_extra_pipe_huts_rear],
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_tar_tanks",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_tile_tar_tanks],
+    add_to_object_num=8,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_extra_pipe_gantry_plain",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_pipe_gantry],
+    add_to_object_num=9,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_extra_pipe_gantry_fancy",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_pipe_gantry_angled],
+    add_to_object_num=10,
+)
+industry.add_spritelayout(
+    id="facility_coal_refinery_spritelayout_mostly_empty",
+    tile="facility_coal_refinery_tile_1",
+    ground_sprite=sprite_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_mostly_empty],
+    add_to_object_num=13,
+)
+
+
 industry.add_industry_layout(
-    id="facility_coal_refinery_industry_layout",
-    layout=[(0, 0, "facility_coal_refinery_spritelayout")],
+    id="facility_coal_refinery_industry_layout_1",
+    layout=[
+        (0, 0, "facility_coal_refinery_spritelayout_silo"),
+        (0, 1, "facility_coal_refinery_spritelayout_extra_coal_rear"),
+        (1, 0, "facility_coal_refinery_spritelayout_quench_tower"),
+        (1, 1, "facility_coal_refinery_spritelayout_extra_coal_front"),
+        (2, 0, "facility_coal_refinery_spritelayout_extra_pipe_gantry_fancy"),
+        (2, 1, "facility_coal_refinery_spritelayout_gas_plant_1"),
+    ],
 )
