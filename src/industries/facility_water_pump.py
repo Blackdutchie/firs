@@ -38,39 +38,53 @@ spriteset_small_tanks = industry.add_spriteset(
 ) 
 
 industry.add_magic_spritelayout(
-    type="jetty_auto_orient_to_coast_direction",
+    type="jetty_coast_foundations",
     base_id="facility_water_pump_spritelayout_small_tanks",
     tile="facility_water_pump_tile_1",
     config={
         "jetty_foundations": True,
         "building_sprites": {
-            "se": [
+            "slope_nw_se": [
                 spriteset_small_tanks,
             ],
-            "sw": [
+            "slope_ne_sw": [
                 spriteset_small_tanks,
             ],
-            "nw": [
+            "slope_se_nw": [
                 spriteset_small_tanks,
             ],
-            "ne": [
+            "slope_sw_ne": [
                 spriteset_small_tanks,
             ],
         },
     },
 )
 
-industry.add_industry_jetty_layout(
+industry.add_industry_layout(
     id="facility_water_pump_industry_layout_1",
     layout=[
-        (0, 1, "spritelayout_null_water"),
-        (0, 0, "facility_water_pump_spritelayout_small_tanks"),
+        (0, 0, "spritelayout_null_water"),
+        (0, 1, "facility_water_pump_spritelayout_small_tanks"),
     ],
 )
-industry.add_industry_jetty_layout(
+industry.add_industry_layout(
     id="facility_water_pump_industry_layout_2",
     layout=[
-        (1, 0, "spritelayout_null_water"),
+        (0, 0, "spritelayout_null_water"),
+        (1, 0, "facility_water_pump_spritelayout_small_tanks"),
+    ],
+)
+industry.add_industry_layout(
+    id="facility_water_pump_industry_layout_3",
+    layout=[
         (0, 0, "facility_water_pump_spritelayout_small_tanks"),
+        (0, 1, "spritelayout_null_water"),
+    ],
+)
+industry.add_industry_layout(
+    id="facility_water_pump_industry_layout_4",
+    layout=[
+        (0, 0, "facility_water_pump_spritelayout_small_tanks"),
+        (1, 0, "spritelayout_null_water"),
     ],
 )
