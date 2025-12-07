@@ -30,7 +30,7 @@ industry.add_tile(
     foundations="return CB_RESULT_NO_FOUNDATIONS",
     # supporting autoslope for the water tiles produces too many edge cases which are difficult to handle, so ban it
     autoslope="return CB_RESULT_NO_AUTOSLOPE",
-    location_checks=TileLocationChecks(always_allow_founder=False, require_coast=True),
+    location_checks=TileLocationChecks(always_allow_founder=False),
 )
 spriteset_small_tanks = industry.add_spriteset(
     sprites=[(440, 110, 64, 84, -31, -43)],

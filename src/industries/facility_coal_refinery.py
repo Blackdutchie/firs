@@ -264,9 +264,11 @@ industry.add_industry_layout(
     id="facility_coal_refinery_industry_layout_1",
     layout=[
         (0, 0, "facility_coal_refinery_spritelayout_silo"),
-        (0, 1, "facility_coal_refinery_spritelayout_extra_coal_rear"),
+        (0, 1, "facility_coal_refinery_spritelayout_coal_handling_rear"),
+        (0, 2, "facility_coal_refinery_spritelayout_extra_coal_rear"),
         (1, 0, "facility_coal_refinery_spritelayout_quench_tower"),
-        (1, 1, "facility_coal_refinery_spritelayout_extra_coal_front"),
+        (1, 1, "facility_coal_refinery_spritelayout_coal_handling_front"),
+        (1, 2, "facility_coal_refinery_spritelayout_extra_coal_front"),
         (2, 0, "facility_coal_refinery_spritelayout_extra_pipe_gantry_fancy"),
         (2, 1, "facility_coal_refinery_spritelayout_gas_plant_1"),
     ],
