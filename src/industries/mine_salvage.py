@@ -25,8 +25,9 @@ industry = IndustrySecondary(
 industry.enable_in_economy(
     "WAR_ECONOMY",
 )
-sprite_ground = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
-
+spriteset_ground = industry.add_spriteset(
+    type="gravel",
+)
 
 industry.add_tile(
     id="mine_salvage_tile_1",
