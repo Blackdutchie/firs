@@ -9,6 +9,7 @@ industry = IndustryPrimaryNoSupplies(
     prob_map_gen="0",
     map_colour="151",
     colour_scheme_name="scheme_3_hendrix",
+    special_flags=["IND_FLAG_BUILT_ON_WATER"],
     name="string(STR_IND_FACILITY_WATER_PUMP)",
     fund_cost_multiplier="15",
     nearby_station_name="string(STR_STATION_WELLS)",
