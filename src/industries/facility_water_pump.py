@@ -63,14 +63,14 @@ industry.add_magic_spritelayout(
 industry.add_industry_jetty_layout(
     id="facility_water_pump_industry_layout_1",
     layout=[
-        (0, 0, "spritelayout_null_water"),
-        (0, 1, "facility_water_pump_spritelayout_small_tanks"),
+        (0, 1, "spritelayout_null_water"),
+        (0, 0, "facility_water_pump_spritelayout_small_tanks"),
     ],
 )
 industry.add_industry_jetty_layout(
     id="facility_water_pump_industry_layout_2",
     layout=[
-        (0, 0, "spritelayout_null_water"),
-        (1, 0, "facility_water_pump_spritelayout_small_tanks"),
+        (1, 0, "spritelayout_null_water"),
+        (0, 0, "facility_water_pump_spritelayout_small_tanks"),
     ],
 )
