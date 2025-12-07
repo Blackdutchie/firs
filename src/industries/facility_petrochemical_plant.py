@@ -296,9 +296,9 @@ industry.add_industry_layout(
     layout=[
         (0, 0, "facility_petrochemical_plant_spritelayout_drop_tower_and_thin_chimney"),
         (0, 1, "facility_petrochemical_plant_spritelayout_4"),
-        (1, 0, "spriteset_large_building"),
+        (1, 0, "facility_petrochemical_plant_spritelayout_large_building"),
         (1, 1, "facility_petrochemical_plant_spritelayout_4"),
-        (2, 0, "spriteset_frac_columns"),
+        (2, 0, "facility_petrochemical_plant_spritelayout_frac_columns"),
         (2, 1, "facility_petrochemical_plant_spritelayout_4"),
     ],
 )
