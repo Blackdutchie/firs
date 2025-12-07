@@ -23,21 +23,47 @@ industry.enable_in_economy(
     "WAR_ECONOMY",
 )
 
-spriteset_ground = industry.add_spriteset(
-    type="pavement",
+
+industry.add_tile(
+    id="facility_water_pump_tile_1",
+    # we'll draw our own foundations as needed - this also conveniently adjusts the y offsets on the tile to where we want them
+    foundations="return CB_RESULT_NO_FOUNDATIONS",
+    # supporting autoslope for the water tiles produces too many edge cases which are difficult to handle, so ban it
+    autoslope="return CB_RESULT_NO_AUTOSLOPE",
+    location_checks=TileLocationChecks(always_allow_founder=False, require_coast=True),
 )
-spriteset_ground_overlay = industry.add_spriteset(
-    sprites=[(10, 10, 64, 31, -31, 0)],
+spriteset_small_tanks = industry.add_spriteset(
+    sprites=[(440, 110, 64, 84, -31, -43)],
+    zoffset=18,
 )
-spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
-industry.add_spritelayout(
-    id="facility_water_pump_spritelayout",
-    tile="general_store_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
-    building_sprites=[spriteset_1],
+
+industry.add_magic_spritelayout(
+    type="jetty_auto_orient_to_coast_direction",
+    base_id="facility_water_pump_spritelayout_small_tanks",
+    tile="facility_water_pump_tile_1",
+    config={
+        "jetty_foundations": True,
+        "building_sprites": {
+            "se": [
+                spriteset_small_tanks,
+            ],
+            "sw": [
+                spriteset_small_tanks,
+            ],
+            "nw": [
+                spriteset_small_tanks,
+            ],
+            "ne": [
+                spriteset_small_tanks,
+            ],
+        },
+    },
 )
-industry.add_industry_layout(
-    id="facility_water_pump_industry_layout",
-    layout=[(0, 0, "facility_water_pump_spritelayout")],
+
+industry.add_industry_jetty_layout(
+    id="facility_water_pump_industry_layout_1",
+    layout=[
+        (0, 0, "spritelayout_null_water"),
+        (0, 1, "facility_water_pump_spritelayout_small_tanks"),
+    ],
 )
