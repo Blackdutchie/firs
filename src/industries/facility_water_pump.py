@@ -35,7 +35,7 @@ industry.add_tile(
 spriteset_small_tanks = industry.add_spriteset(
     sprites=[(440, 110, 64, 84, -31, -43)],
     zoffset=18,
-)
+) 
 
 industry.add_magic_spritelayout(
     type="jetty_auto_orient_to_coast_direction",
@@ -65,5 +65,12 @@ industry.add_industry_jetty_layout(
     layout=[
         (0, 0, "spritelayout_null_water"),
         (0, 1, "facility_water_pump_spritelayout_small_tanks"),
+    ],
+)
+industry.add_industry_jetty_layout(
+    id="facility_water_pump_industry_layout_2",
+    layout=[
+        (0, 0, "spritelayout_null_water"),
+        (1, 0, "facility_water_pump_spritelayout_small_tanks"),
     ],
 )
