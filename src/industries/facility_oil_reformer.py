@@ -27,20 +27,278 @@ industry.enable_in_economy(
 )
 
 spriteset_ground = industry.add_spriteset(
-    type="pavement",
+    type="asphalt",
 )
-spriteset_ground_overlay = industry.add_spriteset(
-    sprites=[(10, 10, 64, 31, -31, 0)],
+
+industry.add_tile(
+    id="facility_oil_reformer_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
 )
-spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
+
+spriteset_horizontal_tanks = industry.add_spriteset(
+    sprites=[(10, 10, 64, 114, -31, -83)],
+)
+spriteset_frac_columns = industry.add_spriteset(
+    sprites=[(80, 10, 64, 114, -31, -83)],
+)
+spriteset_drop_tower_and_thin_chimney = industry.add_spriteset(
+    sprites=[(150, 10, 64, 114, -31, -83)],
+)
+spriteset_large_building = industry.add_spriteset(
+    sprites=[(220, 10, 64, 114, -31, -83)],
+)
+spriteset_fat_chimney = industry.add_spriteset(
+    sprites=[(290, 10, 64, 114, -31, -83)],
+)
+spriteset_extra_pipe_huts_rear = industry.add_spriteset(
+    sprites=[(360, 10, 64, 114, -31, -83)],
+)
+spriteset_extra_pipe_huts_front = industry.add_spriteset(
+    sprites=[(430, 10, 64, 114, -31, -83)],
+)
+spriteset_extra_tanks = industry.add_spriteset(
+    sprites=[(500, 10, 64, 114, -31, -83)],
+)
+spriteset_spherical_tanks = industry.add_spriteset(
+    sprites=[(10, 140, 64, 66, -31, -35)],
+)
+spriteset_vertical_tanks = industry.add_spriteset(
+    sprites=[(80, 140, 64, 66, -31, -35)],
+)
+spriteset_barrels = industry.add_spriteset(
+    sprites=[(150, 140, 64, 66, -31, -35)],
+    always_draw=True,
+)
+spriteset_salt_handling = industry.add_spriteset(
+    sprites=[(220, 140, 64, 66, -31, -35)],
+)
+sprite_smoke_1 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_big",
+    xoffset=0,
+    yoffset=0,
+    zoffset=81,
+)
+sprite_smoke_2 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=6,
+    yoffset=-1,
+    zoffset=45,
+)
+sprite_smoke_3 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=6,
+    yoffset=3,
+    zoffset=45,
+)
+sprite_smoke_4 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=2,
+    yoffset=-1,
+    zoffset=45,
+)
+sprite_smoke_5 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=2,
+    yoffset=3,
+    zoffset=45,
+)
+sprite_smoke_6 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=6,
+    yoffset=0,
+    zoffset=60,
+)
+sprite_smoke_7 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=6,
+    yoffset=3,
+    zoffset=60,
+)
+sprite_smoke_8 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=3,
+    yoffset=0,
+    zoffset=60,
+)
+sprite_smoke_9 = industry.add_smoke_sprite(
+    smoke_type="white_smoke_small",
+    xoffset=3,
+    yoffset=3,
+    zoffset=60,
+)
+
+spriteset_1_0 = industry.add_spriteset(
+    sprites=[(10, 230, 64, 66, -31, -35)],
+)
+spriteset_2_0 = industry.add_spriteset(
+    sprites=[(80, 230, 64, 128, -31, -96)],
+)
+spriteset_3_0 = industry.add_spriteset(
+    sprites=[(150, 230, 64, 128, -31, -96)],
+)
+spriteset_4_0 = industry.add_spriteset(
+    sprites=[(220, 230, 64, 128, -31, -96)],
+)
+spriteset_5_0 = industry.add_spriteset(
+    sprites=[(290, 230, 64, 66, -31, -35)],
+)
+
+
 industry.add_spritelayout(
-    id="facility_oil_reformer_spritelayout",
-    tile="general_store_tile_1",
+    id="facility_oil_reformer_spritelayout_horizontal_tanks",
+    tile="facility_oil_reformer_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
-    building_sprites=[spriteset_1],
+    ground_overlay=None,
+    building_sprites=[spriteset_horizontal_tanks],
+    fences=["nw", "ne", "se", "sw"],
 )
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_frac_columns",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_frac_columns],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_drop_tower_and_thin_chimney",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_drop_tower_and_thin_chimney],
+    smoke_sprites=[sprite_smoke_1],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_large_building",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_large_building],
+    smoke_sprites=[sprite_smoke_2, sprite_smoke_3, sprite_smoke_4, sprite_smoke_5],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_fat_chimney",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_fat_chimney],
+    smoke_sprites=[sprite_smoke_6, sprite_smoke_7, sprite_smoke_8, sprite_smoke_9],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_spherical_tanks",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_spherical_tanks],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_vertical_tanks",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_vertical_tanks],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_barrels",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_barrels],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_extra_pipe_huts_front",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_extra_pipe_huts_front],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_extra_pipe_huts_rear",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_extra_pipe_huts_rear],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_extra_tanks",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_extra_tanks],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_salt_handling",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_salt_handling],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_empty",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[],
+)
+
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_1",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_1_0],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_2",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_2_0],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_3",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_3_0],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_4",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_4_0],
+    fences=["nw", "ne", "se", "sw"],
+)
+industry.add_spritelayout(
+    id="facility_oil_reformer_spritelayout_5",
+    tile="facility_oil_reformer_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_5_0],
+    fences=["nw", "ne", "se", "sw"],
+)
+
+
 industry.add_industry_layout(
-    id="facility_oil_reformer_industry_layout",
-    layout=[(0, 0, "facility_oil_reformer_spritelayout")],
+    id="facility_oil_reformer_industry_layout_1",
+    layout=[
+        (0, 0, "facility_oil_reformer_spritelayout_4"),
+        (0, 1, "facility_oil_reformer_spritelayout_3"),
+        (1, 0, "facility_oil_reformer_spritelayout_4"),
+        (1, 1, "facility_oil_reformer_spritelayout_horizontal_tanks"),
+        (2, 0, "facility_oil_reformer_spritelayout_4"),
+        (2, 1, "facility_oil_reformer_spritelayout_vertical_tanks"),
+    ],
 )
