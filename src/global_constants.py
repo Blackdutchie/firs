@@ -382,6 +382,7 @@ tile_numeric_ids = dict(
     facility_oil_reformer_tile_1=99,
     facility_coal_refinery_tile_1=100,
     facility_water_pump_tile_1=101,
+    facility_water_pump_tile_2=106,
 )
 
 grfid = "F1250009"
