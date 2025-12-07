@@ -127,14 +127,14 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="facility_coal_refinery_spritelayout_oven_battery_pipes_only",
     # tile id has to match larry car spritelayout for the multiple-view object case
-    tile="facility_coal_refinery_tile_3",
+    tile="facility_coal_refinery_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
     building_sprites=[spriteset_oven_battery],
 )
 industry.add_spritelayout(
     id="facility_coal_refinery_spritelayout_oven_battery_larry_car",
-    tile="facility_coal_refinery_tile_3",
+    tile="facility_coal_refinery_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
     building_sprites=[spriteset_oven_battery_larry_car],
@@ -142,7 +142,7 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="facility_coal_refinery_spritelayout_silo",
-    tile="facility_coal_refinery_tile_2",
+    tile="facility_coal_refinery_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
     building_sprites=[spriteset_silo],
@@ -175,7 +175,7 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="facility_coal_refinery_spritelayout_quench_tower",
-    tile="facility_coal_refinery_tile_2",
+    tile="facility_coal_refinery_tile_1",
     ground_sprite=sprite_ground,
     ground_overlay=None,
     building_sprites=[spriteset_quench_tower],
