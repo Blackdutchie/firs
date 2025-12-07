@@ -36,14 +36,39 @@ spriteset_small_tanks = industry.add_spriteset(
     sprites=[(440, 110, 64, 84, -31, -43)],
     zoffset=18,
 ) 
-
+spriteset_jetty_se_nw = industry.add_spriteset(
+    sprites=[(10, 153, 64, 39, -31, -7)],
+    always_draw=True,
+)
+spriteset_jetty_ne_sw = industry.add_spriteset(
+    sprites=[(80, 153, 64, 39, -31, -7)], always_draw=1
+)
+spriteset_jetty_slope_nw_se = industry.add_spriteset(
+    sprites=[(150, 153, 64, 39, -31, -7)],
+)
+spriteset_jetty_slope_ne_sw = industry.add_spriteset(
+    sprites=[(220, 153, 64, 39, -31, -7)],
+)
+spriteset_jetty_slope_se_nw = industry.add_spriteset(
+    sprites=[(290, 153, 64, 39, -31, -7)],
+)
+spriteset_jetty_slope_sw_ne = industry.add_spriteset(
+    sprites=[(360, 153, 64, 39, -31, -7)],
+)
 industry.add_magic_spritelayout(
     type="jetty_coast_foundations",
     base_id="facility_water_pump_spritelayout_small_tanks",
     tile="facility_water_pump_tile_1",
     config={
         "ground_sprite": None,
-        "jetty_foundations": True,
+        "foundation_sprites": {
+            "ne_sw": spriteset_jetty_ne_sw,
+            "se_nw": spriteset_jetty_se_nw,
+            "slope_nw_se": spriteset_jetty_slope_nw_se,
+            "slope_ne_sw": spriteset_jetty_slope_ne_sw,
+            "slope_se_nw": spriteset_jetty_slope_se_nw,
+            "slope_sw_ne": spriteset_jetty_slope_sw_ne,
+        },
         "building_sprites": {
             "slope_nw_se": [
                 spriteset_small_tanks,
