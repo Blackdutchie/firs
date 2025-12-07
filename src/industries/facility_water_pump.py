@@ -42,6 +42,7 @@ industry.add_magic_spritelayout(
     base_id="facility_water_pump_spritelayout_small_tanks",
     tile="facility_water_pump_tile_1",
     config={
+        "ground_sprite": None,
         "jetty_foundations": True,
         "building_sprites": {
             "slope_nw_se": [
