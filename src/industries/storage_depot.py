@@ -20,8 +20,7 @@ industry = IndustrySecondary(
     location_checks=dict(
         same_type_distance=32,
     ),
-    name="string(STR_IND_STORAGE_DEPOT)",
-    special_flags=["IND_FLAG_ONLY_IN_TOWNS"],
+    name="string(IND_FLAG_BUILT_NEAR_TOWN)",
     nearby_station_name="string(STR_STATION_VEHICLE_DISTRIBUTOR)",
     fund_cost_multiplier="255",
     provides_snow=False,
@@ -45,27 +44,27 @@ spriteset_ground = industry.add_spriteset(
 )
 
 spriteset_crane_rails_nw_se = industry.add_spriteset(
-    sprites=[(180, 505, 64, 39, -31, -8)],
+    sprites=[(180, 505, 64, 39, -31, -1)],
     always_draw=True,
 )
 spriteset_crane_rails_ne_sw = industry.add_spriteset(
-    sprites=[(250, 505, 64, 39, -31, -8)],
+    sprites=[(250, 505, 64, 39, -31, -1)],
     always_draw=True,
 )
 spriteset_warehouse_full_nw_se = industry.add_spriteset(
-    sprites=[(720, 10, 64, 84, -31, -61)],
+    sprites=[(720, 10, 64, 84, -31, -51)],
 )
 spriteset_warehouse_full_ne_sw = industry.add_spriteset(
-    sprites=[(790, 10, 64, 84, -31, -61)],
+    sprites=[(790, 10, 64, 84, -31, -51)],
 )
 
 spriteset_large_crane_ne_sw = industry.add_spriteset(
     sprites=[(440, 410, 64, 84, -31, -43)],
-    zoffset=18,
+    always_draw=True,
 )
 spriteset_large_crane_nw_se = industry.add_spriteset(
     sprites=[(510, 410, 64, 84, -31, -43)],
-    zoffset=18,
+    always_draw=True,
 )
 industry.add_spritelayout(
     id="storage_depot_spritelayout_empty",
@@ -128,7 +127,7 @@ industry.add_industry_layout(
         (0, 0, "storage_depot_spritelayout_spriteset_warehouse_full_nw_se"),
         (0, 1, "storage_depot_spritelayout_spriteset_warehouse_full_nw_se"),
         (1, 0, "storage_depot_spritelayout_spriteset_large_crane_ne_sw"),
-        (1, 1, "storage_depot_spritelayout_spriteset_crane_rails_ne_sw"),
+        (1, 1, "storage_depot_spritelayout_spriteset_crane_rails_nw_se"),
     ],
 )
 
@@ -137,7 +136,7 @@ industry.add_industry_layout(
     layout=[
         (0, 0, "storage_depot_spritelayout_spriteset_large_crane_nw_se"),
         (0, 1, "storage_depot_spritelayout_spriteset_warehouse_full_ne_sw"),
-        (1, 0, "storage_depot_spritelayout_spriteset_crane_rails_nw_se"),
+        (1, 0, "storage_depot_spritelayout_spriteset_crane_rails_ne_sw"),
         (1, 1, "storage_depot_spritelayout_spriteset_warehouse_full_ne_sw"),
     ],
 )
