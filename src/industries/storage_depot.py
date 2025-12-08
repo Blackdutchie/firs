@@ -50,11 +50,11 @@ spriteset_ground = industry.add_spriteset(
 )
 
 spriteset_crane_rails_nw_se = industry.add_spriteset(
-    sprites=[(180, 505, 64, 39, -31, -1)],
+    sprites=[(181, 505, 64, 39, -31, -1)],
     always_draw=True,
 )
 spriteset_crane_rails_ne_sw = industry.add_spriteset(
-    sprites=[(250, 505, 64, 39, -31, -1)],
+    sprites=[(251, 505, 64, 39, -31, -1)],
     always_draw=True,
 )
 spriteset_warehouse_full_nw_se = industry.add_spriteset(
@@ -65,11 +65,11 @@ spriteset_warehouse_full_ne_sw = industry.add_spriteset(
 )
 
 spriteset_large_crane_ne_sw = industry.add_spriteset(
-    sprites=[(440, 410, 64, 84, -34, -63)],
+    sprites=[(440, 410, 64, 84, -34, -53)],
     always_draw=True,
 )
 spriteset_large_crane_nw_se = industry.add_spriteset(
-    sprites=[(510, 410, 64, 84, -34, -63)],
+    sprites=[(510, 410, 64, 84, -34, -53)],
     always_draw=True,
 )
 industry.add_spritelayout(
