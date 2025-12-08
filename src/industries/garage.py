@@ -34,7 +34,7 @@ industry.add_tile(
 garage_spriteset_ground = industry.add_spriteset(
     type="pavement",
 )
-garage_spriteset = industry.add_spriteset(sprites=[(10, 74, 64, 64, -31, -33)])
+garage_spriteset = industry.add_spriteset(sprites=[(10, 74, 64, 58, -31, -23)])
 
 industry.add_spritelayout(
     id="garage_spritelayout",
