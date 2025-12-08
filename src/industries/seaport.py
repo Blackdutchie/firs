@@ -16,8 +16,8 @@ industry = IndustrySecondary(
     prob_map_gen="4",
     # map_colour="186", # former orange before v5?
     # map_colour="177",  # former Bulk Terminal colour?
-    map_colour="45",
-    colour_scheme_name="scheme_9_shania",
+    map_colour="186",
+    colour_scheme_name="scheme_5_alanis",
     special_flags=["IND_FLAG_BUILT_ON_WATER"],
     location_checks=dict(same_type_distance=32),
     name="string(STR_IND_SEAPORT)",

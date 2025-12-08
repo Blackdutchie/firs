@@ -34,6 +34,8 @@ industry.enable_in_economy(
 
 industry.enable_in_economy(
     "WAR_ECONOMY",
+    map_colour="209",
+    colour_scheme_name="scheme_3_hendrix", # cabbage needs checked
 )
 
 industry.add_tile(

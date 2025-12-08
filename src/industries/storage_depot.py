@@ -14,8 +14,8 @@ industry = IndustrySecondary(
     ],
     prob_in_game="0",
     prob_map_gen="10",
-    map_colour="207",
-    colour_scheme_name="scheme_1_elton", # cabbage needs checked
+    map_colour="186",
+    colour_scheme_name="scheme_5_alanis", # cabbage needs checked
     life_type="IND_LIFE_TYPE_BLACK_HOLE",
     location_checks=dict(
         same_type_distance=32,

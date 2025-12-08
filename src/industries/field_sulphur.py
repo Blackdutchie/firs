@@ -8,7 +8,6 @@ industry = IndustryPrimaryResourceField(
     prob_map_gen="7",
     map_colour="189",
     colour_scheme_name="scheme_1_elton",
-    location_checks=dict(require_cluster=[70, 3]),
     prospect_chance="0.1",
     name="string(STR_IND_FIELD_SULPHUR)",
     nearby_station_name="string(STR_STATION_COLLIERY)",

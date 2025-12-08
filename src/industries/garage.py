@@ -11,8 +11,8 @@ industry = IndustrySecondary(
     ],
     prob_in_game="0",  # low chance of build during gameplay
     prob_map_gen="5",
-    map_colour="141",
-    colour_scheme_name="scheme_7_bowie",
+    map_colour="160",
+    colour_scheme_name="scheme_15_seal",
     name="string(STR_IND_GARAGE)",
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     special_flags=["IND_FLAG_BUILT_NEAR_TOWN"],
