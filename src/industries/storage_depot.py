@@ -86,6 +86,7 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_crane_rails_ne_sw",
+    tile="storage_depot_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crane_rails_ne_sw],
@@ -93,8 +94,8 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_warehouse_full_nw_se",
-    ground_sprite=spriteset_ground,
     tile="storage_depot_tile_1",
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_warehouse_full_nw_se],
 )
