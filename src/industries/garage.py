@@ -49,3 +49,8 @@ industry.add_industry_layout(
         (0, 0, "garage_spritelayout"),
         (1, 0, "garage_spritelayout")],
 )
+industry.add_industry_layout(
+    id="garage_industry_layout_2",
+    layout=[
+        (0, 0, "garage_spritelayout")],
+)
