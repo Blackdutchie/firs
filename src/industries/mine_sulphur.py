@@ -83,7 +83,7 @@ sprite_smoke_2 = industry.add_smoke_sprite(
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_tile_empty",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[],
 )
@@ -91,21 +91,21 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_crusher_front_part",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crusher_front_part],
 )
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_crusher_rear_part",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crusher_rear_part],
 )
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_hut_vents",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_hut_vents],
     add_to_object_num=5,
@@ -113,7 +113,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_ore_1",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_ore_1],
     add_to_object_num=7,
@@ -121,7 +121,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_ore_2",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_ore_2],
     add_to_object_num=6,
@@ -129,7 +129,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_empty",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[],
     add_to_object_num=8,
@@ -137,7 +137,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_winding_house",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_winding_house],
     smoke_sprites=[sprite_smoke_1, sprite_smoke_2],
@@ -147,7 +147,7 @@ industry.add_spritelayout(
     id="mine_sulphur_spritelayout_exit_shed_rear",
     # tile has to match trestle for multi-tile object case
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_exit_shed_rear],
 )
@@ -156,14 +156,14 @@ industry.add_spritelayout(
     id="mine_sulphur_spritelayout_exit_shed_front",
     # tile has to match trestle for multi-tile object case
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_exit_shed_front],
 )
 industry.add_spritelayout(
     id="mine_sulphur_spritelayout_belt_tower",
     tile="mine_sulphur_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_belt_tower],
     add_to_object_num=6,

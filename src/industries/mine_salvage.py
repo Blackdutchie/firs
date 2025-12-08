@@ -87,7 +87,7 @@ sprite_smoke_2 = industry.add_smoke_sprite(
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_tile_empty",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[],
 )
@@ -95,42 +95,42 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_crusher_front_part",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crusher_front_part],
 )
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_crusher_rear_part",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crusher_rear_part],
 )
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_ore_truck",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_ore_truck],
 )
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_joined_ore_front",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_joined_ore_front],
 )
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_joined_ore_rear",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_joined_ore_rear],
 )
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_boiler_house",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_boiler_house],
     smoke_sprites=[sprite_smoke_1, sprite_smoke_2],
@@ -138,7 +138,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_salvage_spritelayout_winding_house",
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_winding_house],
 )
@@ -146,7 +146,7 @@ industry.add_spritelayout(
     id="mine_salvage_spritelayout_exit_shed_rear",
     # tile has to match trestle for multi-tile object case
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_exit_shed_rear],
 )
@@ -154,7 +154,7 @@ industry.add_spritelayout(
     id="mine_salvage_spritelayout_exit_shed_front",
     # tile has to match trestle for multi-tile object case
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_house_front],
 )
@@ -162,7 +162,7 @@ industry.add_spritelayout(
     id="mine_salvage_spritelayout_tower",
     # tile has to match trestle for multi-tile object case
     tile="mine_salvage_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_tower],
 )

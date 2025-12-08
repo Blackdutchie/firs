@@ -65,7 +65,7 @@ sprite_smoke_1 = industry.add_smoke_sprite(
 industry.add_spritelayout(
     id="mine_components_spritelayout_tile_empty",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[],
     fences=["nw", "ne", "se", "sw"],
@@ -73,7 +73,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_components_spritelayout_mine_tower",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_mine_tower],
     fences=["nw", "ne", "se", "sw"],
@@ -81,7 +81,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_components_spritelayout_crusher_front_part",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crusher_front_part],
     smoke_sprites=[sprite_smoke_1],
@@ -90,7 +90,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_components_spritelayout_crusher_mid_part",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[],
     fences=["nw", "ne", "se", "sw"],
@@ -98,7 +98,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_components_spritelayout_crusher_rear_part",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crusher_rear_part],
     fences=["nw", "ne", "se", "sw"],
@@ -106,7 +106,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_components_spritelayout_misc_building",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_misc_building],
     fences=["nw", "ne", "se", "sw"],
@@ -114,7 +114,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_components_spritelayout_vents_shed",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_vents_shed],
     fences=["nw", "ne", "se", "sw"],
@@ -122,7 +122,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="mine_components_spritelayout_winding_house",
     tile="mine_components_tile_1",
-    ground_sprite=sprite_ground,
+    ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_winding_house],
     fences=["nw", "ne", "se", "sw"],
