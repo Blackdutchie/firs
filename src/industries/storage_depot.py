@@ -70,6 +70,7 @@ spriteset_large_crane_nw_se = industry.add_spriteset(
 industry.add_spritelayout(
     id="storage_depot_spritelayout_empty",
     ground_sprite=spriteset_ground,
+    tile="storage_depot_tile_1",
     ground_overlay=None,
     building_sprites=[],
     fences=["nw", "ne", "se", "sw"],
@@ -78,6 +79,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_crane_rails_nw_se",
     ground_sprite=spriteset_ground,
+    tile="storage_depot_tile_1",
     ground_overlay=None,
     building_sprites=[spriteset_crane_rails_nw_se],
     fences=["nw"],
@@ -92,18 +94,21 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_warehouse_full_nw_se",
     ground_sprite=spriteset_ground,
+    tile="storage_depot_tile_1",
     ground_overlay=None,
     building_sprites=[spriteset_warehouse_full_nw_se],
 )
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_warehouse_full_ne_sw",
     ground_sprite=spriteset_ground,
+    tile="storage_depot_tile_1",
     ground_overlay=None,
     building_sprites=[spriteset_warehouse_full_ne_sw],
 )
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_large_crane_ne_sw",
     ground_sprite=spriteset_ground,
+    tile="storage_depot_tile_1",
     ground_overlay=None,
     building_sprites=[spriteset_large_crane_ne_sw],
     fences=["sw"],
@@ -111,6 +116,7 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_large_crane_nw_se",
     ground_sprite=spriteset_ground,
+    tile="storage_depot_tile_1",
     ground_overlay=None,
     building_sprites=[],
     fences=["nw"],
