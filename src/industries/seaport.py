@@ -103,8 +103,8 @@ spriteset_shed_full_ne_sw = industry.add_spriteset(
 industry.add_spritelayout(
     id="seaport_spritelayout_water_empty",
     tile="seaport_tile_1",
-    ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground,
+    ground_sprite=None,
+    ground_overlay=None,
     building_sprites=[
         spriteset_jetty_left,
         spriteset_jetty_right,
