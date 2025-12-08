@@ -76,6 +76,7 @@ industry.add_spritelayout(
     ground_sprite=None,
     ground_overlay=None,
     building_sprites=[spriteset_1_bulldozer],
+    terrain_aware_ground=True,
 )
 industry.add_spritelayout(
     id="field_salvage_spritelayout_2",
@@ -90,6 +91,7 @@ industry.add_spritelayout(
     ground_sprite=None,
     ground_overlay=None,
     building_sprites=[spriteset_3_crane],
+    terrain_aware_ground=True,
 )
 industry.add_spritelayout(
     id="field_salvage_spritelayout_4",
@@ -97,6 +99,7 @@ industry.add_spritelayout(
     ground_sprite=None,
     ground_overlay=None,
     building_sprites=[spriteset_4_pilebig],
+    terrain_aware_ground=True,
 )
 industry.add_spritelayout(
     id="field_salvage_spritelayout_5",
@@ -104,6 +107,7 @@ industry.add_spritelayout(
     ground_sprite=None,
     ground_overlay=None,
     building_sprites=[spriteset_5_pilemedium],
+    terrain_aware_ground=True,
 )
 industry.add_spritelayout(
     id="field_salvage_spritelayout_6",
@@ -111,6 +115,7 @@ industry.add_spritelayout(
     ground_sprite=None,
     ground_overlay=None,
     building_sprites=[spriteset_6_piletiny],
+    terrain_aware_ground=True,
 )
 industry.add_spritelayout(
     id="field_salvage_spritelayout_7",
@@ -125,6 +130,7 @@ industry.add_spritelayout(
     ground_sprite=None,
     ground_overlay=None,
     building_sprites=[spriteset_8_pilesmall],
+    terrain_aware_ground=True,
 )
 industry.add_spritelayout(
     id="field_salvage_spritelayout_9",
@@ -132,6 +138,7 @@ industry.add_spritelayout(
     ground_sprite=None,
     ground_overlay=None,
     building_sprites=[spriteset_9_digger],
+    terrain_aware_ground=True,
 )
 industry.add_spritelayout(
     id="field_salvage_spritelayout_10",
