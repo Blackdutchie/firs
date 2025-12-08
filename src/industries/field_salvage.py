@@ -160,7 +160,7 @@ industry.add_industry_layout(
 )
 
 industry.add_industry_layout(
-    id="field_salvage_industry_layout_1",
+    id="field_salvage_industry_layout_2",
     layout=[
         (0, 0, "field_salvage_spritelayout_5"),
         (0, 1, "field_salvage_spritelayout_8"),
@@ -176,7 +176,7 @@ industry.add_industry_layout(
 )
 
 industry.add_industry_layout(
-    id="field_salvage_industry_layout_1",
+    id="field_salvage_industry_layout_3",
     layout=[
         (0, 0, "field_salvage_spritelayout_8"),
         (0, 1, "field_salvage_spritelayout_3"),
