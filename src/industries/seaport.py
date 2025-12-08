@@ -219,7 +219,6 @@ industry.add_magic_spritelayout(
                 spriteset_boat_sw_ne,
             ],
         },
-        "add_objects": True,
     },
 )
 
