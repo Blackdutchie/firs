@@ -386,6 +386,7 @@ tile_numeric_ids = dict(
     mine_sulphur_tile_1=107,
     mine_components_tile_1=111,
     mine_salvage_tile_1=118,
+    storage_depot_tile_1=119,
 )
 
 grfid = "F1250009"

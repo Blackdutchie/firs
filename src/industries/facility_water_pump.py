@@ -34,7 +34,9 @@ industry.add_tile(
     foundations="return CB_RESULT_NO_FOUNDATIONS",
     location_checks=TileLocationChecks(always_allow_founder=False, require_coast=True),
 )
-
+spriteset_ground = industry.add_spriteset(
+    type="asphalt",
+)
 spriteset_small_tanks = industry.add_spriteset(
     sprites=[(440, 110, 64, 84, -31, -43)],
     zoffset=18,
@@ -96,7 +98,7 @@ industry.add_magic_spritelayout(
     base_id="facility_water_pump_spritelayout_coast",
     tile="facility_water_pump_tile_2",
     config={
-        "ground_sprite": None,
+        "ground_sprite": spriteset_ground,
         "building_sprites": [spriteset_small_tanks],
         "foundation_sprites": {
             "ne_sw": spriteset_jetty_right,

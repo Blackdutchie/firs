@@ -24,7 +24,7 @@ industry = IndustrySecondary(
     special_flags=["IND_FLAG_ONLY_IN_TOWNS"],
     nearby_station_name="string(STR_STATION_VEHICLE_DISTRIBUTOR)",
     fund_cost_multiplier="255",
-    provides_snow=True,
+    provides_snow=False,
     sprites_complete=True,
     animated_tiles_fixed=True,
 )
@@ -33,22 +33,104 @@ industry.enable_in_economy(
     "WAR_ECONOMY",
 )
 
+industry.add_tile(
+    id="storage_depot_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
 
 spriteset_ground = industry.add_spriteset(
     type="pavement",
 )
-spriteset_ground_overlay = industry.add_spriteset(
-    sprites=[(10, 10, 64, 31, -31, 0)],
+
+spriteset_crane_rails_nw_se = industry.add_spriteset(
+    sprites=[(180, 505, 64, 39, -31, -8)],
+    always_draw=True,
 )
-spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
+spriteset_crane_rails_ne_sw = industry.add_spriteset(
+    sprites=[(250, 505, 64, 39, -31, -8)],
+    always_draw=True,
+)
+spriteset_warehouse_full_nw_se = industry.add_spriteset(
+    sprites=[(720, 10, 64, 84, -31, -61)],
+)
+spriteset_warehouse_full_ne_sw = industry.add_spriteset(
+    sprites=[(790, 10, 64, 84, -31, -61)],
+)
+
+spriteset_large_crane_ne_sw = industry.add_spriteset(
+    sprites=[(440, 410, 64, 84, -31, -43)],
+    zoffset=18,
+)
+spriteset_large_crane_nw_se = industry.add_spriteset(
+    sprites=[(510, 410, 64, 84, -31, -43)],
+    zoffset=18,
+)
 industry.add_spritelayout(
-    id="storage_depot_spritelayout",
-    tile="general_store_tile_1",
+    id="storage_depot_spritelayout_empty",
     ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
-    building_sprites=[spriteset_1],
+    ground_overlay=None,
+    building_sprites=[],
+    fences=["nw", "ne", "se", "sw"],
+)
+
+industry.add_spritelayout(
+    id="storage_depot_spritelayout_spriteset_crane_rails_nw_se",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_crane_rails_nw_se],
+    fences=["nw"],
+)
+industry.add_spritelayout(
+    id="storage_depot_spritelayout_spriteset_crane_rails_ne_sw",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_crane_rails_ne_sw],
+    fences=["sw"],
+)
+industry.add_spritelayout(
+    id="storage_depot_spritelayout_spriteset_warehouse_full_nw_se",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_warehouse_full_nw_se],
+)
+industry.add_spritelayout(
+    id="storage_depot_spritelayout_spriteset_warehouse_full_ne_sw",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_warehouse_full_ne_sw],
+)
+industry.add_spritelayout(
+    id="storage_depot_spritelayout_spriteset_large_crane_ne_sw",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_large_crane_ne_sw],
+    fences=["sw"],
+)
+industry.add_spritelayout(
+    id="storage_depot_spritelayout_spriteset_large_crane_nw_se",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[],
+    fences=["nw"],
 )
 industry.add_industry_layout(
-    id="storage_depot_industry_layout",
-    layout=[(0, 0, "storage_depot_spritelayout")],
+    id="storage_depot_industry_layout_1",
+    layout=[
+        (0, 0, "storage_depot_spritelayout_spriteset_warehouse_full_nw_se"),
+        (0, 1, "storage_depot_spritelayout_spriteset_warehouse_full_nw_se"),
+        (1, 0, "storage_depot_spritelayout_spriteset_large_crane_ne_sw"),
+        (1, 1, "storage_depot_spritelayout_spriteset_crane_rails_ne_sw"),
+    ],
+)
+
+industry.add_industry_layout(
+    id="storage_depot_industry_layout_3",
+    layout=[
+        (0, 0, "storage_depot_spritelayout_spriteset_large_crane_nw_se"),
+        (0, 1, "storage_depot_spritelayout_spriteset_warehouse_full_ne_sw"),
+        (1, 0, "storage_depot_spritelayout_spriteset_crane_rails_nw_se"),
+        (1, 1, "storage_depot_spritelayout_spriteset_warehouse_full_ne_sw"),
+    ],
 )
