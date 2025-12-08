@@ -391,6 +391,7 @@ tile_numeric_ids = dict(
     seaport_tile_1=121,
     seaport_tile_2=122,
     garage_tile_1=123,
+    field_salvage_tile_1=124,
 )
 
 grfid = "F1250009"
