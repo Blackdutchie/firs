@@ -39,7 +39,12 @@ industry.add_tile(
         require_effectively_flat=True, disallow_industry_adjacent=True
     ),
 )
-
+industry.add_tile(
+    id="storage_depot_tile_2",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True, require_road_adjacent=True
+    ),
+)
 spriteset_ground = industry.add_spriteset(
     type="pavement",
 )
@@ -60,11 +65,11 @@ spriteset_warehouse_full_ne_sw = industry.add_spriteset(
 )
 
 spriteset_large_crane_ne_sw = industry.add_spriteset(
-    sprites=[(440, 410, 64, 84, -31, -43)],
+    sprites=[(440, 410, 64, 84, -34, -63)],
     always_draw=True,
 )
 spriteset_large_crane_nw_se = industry.add_spriteset(
-    sprites=[(510, 410, 64, 84, -31, -43)],
+    sprites=[(510, 410, 64, 84, -34, -63)],
     always_draw=True,
 )
 industry.add_spritelayout(
@@ -79,18 +84,18 @@ industry.add_spritelayout(
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_crane_rails_nw_se",
     ground_sprite=spriteset_ground,
-    tile="storage_depot_tile_1",
+    tile="storage_depot_tile_2",
     ground_overlay=None,
     building_sprites=[spriteset_crane_rails_nw_se],
-    fences=["nw"],
+    fences=["sw"],
 )
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_crane_rails_ne_sw",
-    tile="storage_depot_tile_1",
+    tile="storage_depot_tile_2",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
     building_sprites=[spriteset_crane_rails_ne_sw],
-    fences=["sw"],
+    fences=["nw"],
 )
 industry.add_spritelayout(
     id="storage_depot_spritelayout_spriteset_warehouse_full_nw_se",
