@@ -223,7 +223,7 @@ industry.add_magic_spritelayout(
 )
 
 industry.add_magic_spritelayout(
-    type="jetty_auto_orient_to_coast_direction",
+    type="water_feature_auto_orient_to_coast_direction",
     base_id="seaport_spritelayout_shed_full",
     tile="seaport_tile_1",
     config={
