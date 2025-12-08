@@ -20,7 +20,8 @@ industry = IndustrySecondary(
     location_checks=dict(
         same_type_distance=32,
     ),
-    name="string(IND_FLAG_BUILT_NEAR_TOWN)",
+    special_flags=["IND_FLAG_BUILT_NEAR_TOWN"],
+    name="string(STR_IND_STORAGE_DEPOT)",
     nearby_station_name="string(STR_STATION_VEHICLE_DISTRIBUTOR)",
     fund_cost_multiplier="255",
     provides_snow=False,
