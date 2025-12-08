@@ -68,7 +68,7 @@ sprite_smoke_kiln = industry.add_smoke_sprite(
     zoffset=58,
 )
 industry.add_spritelayout(
-    id="facility_forge_spritelayout_empty",
+    id="factory_war_spritelayout_empty",
     tile="factory_war_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
@@ -129,7 +129,7 @@ industry.add_spritelayout(
 industry.add_industry_layout(
     id="factory_war_industry_layout_1",
     layout=[
-        (0, 0, "facility_forge_spritelayout_empty"),
+        (0, 0, "factory_war_spritelayout_empty"),
         (0, 1, "factory_war_spritelayout_2"),
         (0, 2, "factory_war_spritelayout_1"),
         (1, 0, "factory_war_spritelayout_2"),
