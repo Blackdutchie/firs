@@ -209,30 +209,31 @@ industry.add_magic_spritelayout(
     },
 )
 
-
-
-industry.add_magic_spritelayout(
-    type="jetty_auto_orient_to_coast_direction",
-    base_id="seaport_spritelayout_shed_full",
+industry.add_spritelayout(
+    id="seaport_spritelayout_shed_nw_se",
     tile="seaport_tile_1",
-    config={
-        "building_sprites": {
-            "se": [
-                spriteset_shed_full_nw_se,
-            ],
-            "sw": [
-                spriteset_shed_full_ne_sw,
-            ],
-            "nw": [
-                spriteset_shed_full_nw_se,
-            ],
-            "ne": [
-                spriteset_shed_full_ne_sw,
-            ],
-        },
-        "add_objects": True,
-    },
+    ground_sprite=None,
+    ground_overlay=None,
+    building_sprites=[
+        spriteset_jetty_left,
+        spriteset_jetty_right,
+        spriteset_shed_full_nw_se,
+    ],
+    terrain_aware_ground=True,
 )
+industry.add_spritelayout(
+    id="seaport_spritelayout_shed_ne_sw",
+    tile="seaport_tile_1",
+    ground_sprite=None,
+    ground_overlay=None,
+    building_sprites=[
+        spriteset_jetty_left,
+        spriteset_jetty_right,
+        spriteset_shed_full_ne_sw,
+    ],
+    terrain_aware_ground=True,
+)
+
 
 
 industry.add_industry_layout(
@@ -243,11 +244,11 @@ industry.add_industry_layout(
         (0, 2, "spritelayout_null_water"),
         (1, 0, "seaport_spritelayout_coast_empty"),
         (1, 1, "seaport_spritelayout_water_empty"),
-        (1, 2, "seaport_spritelayout_shed_full"),
+        (1, 2, "seaport_spritelayout_shed_nw_se"),
         (1, 3, "spritelayout_null_water"),
         (2, 0, "seaport_spritelayout_coast_empty"),
         (2, 1, "seaport_spritelayout_water_empty"),
-        (2, 2, "seaport_spritelayout_shed_full"),
+        (2, 2, "seaport_spritelayout_shed_nw_se"),
         (2, 3, "spritelayout_null_water"),
         (3, 0, "seaport_spritelayout_coast_crane_TR"),
         (3, 1, "spritelayout_null_water"),
@@ -266,8 +267,8 @@ industry.add_industry_layout(
         (1, 2, "seaport_spritelayout_water_empty"),
         (1, 3, "spritelayout_null_water"),
         (2, 0, "spritelayout_null_water"),
-        (2, 1, "seaport_spritelayout_shed_full"),
-        (2, 2, "seaport_spritelayout_shed_full"),
+        (2, 1, "seaport_spritelayout_shed_ne_sw"),
+        (2, 2, "seaport_spritelayout_shed_ne_sw"),
         (2, 3, "spritelayout_null_water"),
         (3, 1, "spritelayout_null_water"),
         (3, 2, "spritelayout_null_water"),
@@ -281,11 +282,11 @@ industry.add_industry_layout(
         (0, 2, "spritelayout_null_water"),
         (0, 3, "seaport_spritelayout_coast_crane_BL"),
         (1, 0, "spritelayout_null_water"),
-        (1, 1, "seaport_spritelayout_shed_full"),
+        (1, 1, "seaport_spritelayout_shed_nw_se"),
         (1, 2, "seaport_spritelayout_water_empty"),
         (1, 3, "seaport_spritelayout_coast_empty"),
         (2, 0, "spritelayout_null_water"),
-        (2, 1, "seaport_spritelayout_shed_full"),
+        (2, 1, "seaport_spritelayout_shed_nw_se"),
         (2, 2, "seaport_spritelayout_water_empty"),
         (2, 3, "seaport_spritelayout_coast_empty"),
         (3, 1, "spritelayout_null_water"),
@@ -300,8 +301,8 @@ industry.add_industry_layout(
         (0, 1, "spritelayout_null_water"),
         (0, 2, "spritelayout_null_water"),
         (1, 0, "spritelayout_null_water"),
-        (1, 1, "seaport_spritelayout_shed_full"),
-        (1, 2, "seaport_spritelayout_shed_full"),
+        (1, 1, "seaport_spritelayout_shed_ne_sw"),
+        (1, 2, "seaport_spritelayout_shed_ne_sw"),
         (1, 3, "spritelayout_null_water"),
         (2, 0, "spritelayout_null_water"),
         (2, 1, "seaport_spritelayout_water_empty"),
