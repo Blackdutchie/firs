@@ -124,7 +124,7 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     tile="storage_depot_tile_1",
     ground_overlay=None,
-    building_sprites=[],
+    building_sprites=[spriteset_crane_rails_nw_se],
     fences=["nw"],
 )
 industry.add_industry_layout(
