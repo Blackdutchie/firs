@@ -1,11 +1,8 @@
-from industry import IndustrySecondary, TileLocationChecks
+from industry import IndustryPrimaryWaterAccepter, TileLocationChecks
 
-industry = IndustrySecondary(
+industry = IndustryPrimaryWaterAccepter(
     id="oil_wells_war",
-    accept_cargos_with_input_ratios=[
-        ("WATR", 2),
-    ],
-    prod_cargo_types_with_output_ratios=[
+    prod_cargo_types_with_multipliers=[
         ("OIL_", 8),
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
@@ -14,6 +11,7 @@ industry = IndustrySecondary(
     map_colour="207",
     colour_scheme_name="scheme_1_elton",
     name="TTD_STR_INDUSTRY_NAME_OIL_WELLS",
+    special_flags=["IND_CREATION_FUND"],
     prospect_chance="0.1",
     nearby_station_name="string(STR_STATION_WELLS)",
     fund_cost_multiplier="255",
