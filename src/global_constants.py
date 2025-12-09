@@ -397,6 +397,11 @@ tile_numeric_ids = dict(
     field_sulphur_tile_1=183,
     oil_wells_war_tile_2=184,
     factory_war_tile_1=185,
+    mass_production_factory_tile_1=192,
+    construction_yard_tile_1=194,
+    refinery_salvage_tile_1=201,
+    refinery_components_tile_1=202,
+    refinery_sulphur_tile_1=214,
 )
 
 grfid = "F1250009"

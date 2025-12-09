@@ -29,23 +29,56 @@ industry.enable_in_economy(
         "exclude_map_edges",
     ],
 )
-
+industry.add_tile(
+    id="refinery_salvage_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
 
 spriteset_ground = industry.add_spriteset(
     type="pavement",
 )
-spriteset_ground_overlay = industry.add_spriteset(
-    sprites=[(10, 10, 64, 31, -31, 0)],
+
+spriteset_1 = industry.add_spriteset(
+    sprites=[(10, 161, 64, 78, -31, -50)],
 )
-spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
+
+spriteset_2 = industry.add_spriteset(
+    sprites=[(81, 161, 64, 70, -31, -46)],
+)
+spriteset_3 = industry.add_spriteset(
+    sprites=[(720, 110, 64, 84, -31, -54)],
+)
+spriteset_4 = industry.add_spriteset(
+    sprites=[(441, 410, 64, 84, -31, -54)],
+)
+spriteset_5 = industry.add_spriteset(
+    sprites=[(251, 505, 64, 31, -31, -20)],
+)
+
 industry.add_spritelayout(
-    id="refinery_salvage_spritelayout",
-    tile="general_store_tile_1",
+    id="refinery_salvage_spritelayout_1",
+    tile="refinery_salvage_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
-    building_sprites=[spriteset_1],
+    ground_overlay=None,
+    building_sprites=[spriteset_5],
+    fences=["nw", "se"],
 )
+industry.add_spritelayout(
+    id="refinery_salvage_spritelayout_2",
+    tile="refinery_salvage_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_4],
+    fences=["nw", "ne", "se", "sw"],
+)
+
 industry.add_industry_layout(
-    id="refinery_salvage_industry_layout",
-    layout=[(0, 0, "refinery_salvage_spritelayout")],
+    id="refinery_salvage_industry_layout_1",
+    layout=[
+        (0, 0, "refinery_salvage_spritelayout_2"),
+        (0, 1, "refinery_salvage_spritelayout_1"),
+        (1, 1, "refinery_salvage_spritelayout_1"),
+    ],
 )

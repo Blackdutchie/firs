@@ -15,6 +15,7 @@ industry = IndustrySecondary(
     map_colour="151",
     colour_scheme_name="scheme_3_hendrix", # cabbage needs checked
     name="string(STR_IND_FACTORY_WAR)",
+    special_flags=["IND_FLAG_BUILT_NEAR_TOWN"],
     nearby_station_name="string(STR_STATION_INDUSTRY_ESTATE_1)",
     fund_cost_multiplier="255",
     pollution_and_squalor_factor=1,
