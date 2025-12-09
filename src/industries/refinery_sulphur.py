@@ -66,10 +66,10 @@ industry.add_spritelayout(
 )
 industry.add_spritelayout(
     id="refinery_sulphur_spritelayout_2",
-    tile="spriteset_2",
+    tile="refinery_sulphur_tile_1",
     ground_sprite=spriteset_ground,
     ground_overlay=None,
-    building_sprites=[spriteset_4],
+    building_sprites=[spriteset_2],
     fences=["nw", "ne", "se", "sw"],
 )
 
