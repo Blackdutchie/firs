@@ -130,13 +130,11 @@ industry.add_spritelayout(
 industry.add_industry_layout(
     id="factory_war_industry_layout_1",
     layout=[
-        (0, 0, "factory_war_spritelayout_empty"),
+        (0, 0, "factory_war_spritelayout_1"),
         (0, 1, "factory_war_spritelayout_2"),
-        (0, 2, "factory_war_spritelayout_1"),
+        (0, 2, "factory_war_spritelayout_4"),
         (1, 0, "factory_war_spritelayout_2"),
         (1, 1, "factory_war_spritelayout_2"),
-        (1, 2, "factory_war_spritelayout_3"),
-        (1, 3, "factory_war_spritelayout_4"),
         (2, 1, "factory_war_spritelayout_2"),
     ],
 )
