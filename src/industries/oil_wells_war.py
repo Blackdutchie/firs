@@ -11,7 +11,6 @@ industry = IndustryPrimaryWaterAccepter(
     map_colour="207",
     colour_scheme_name="scheme_1_elton",
     name="TTD_STR_INDUSTRY_NAME_OIL_WELLS",
-    special_flags=["IND_CREATION_FUND"],
     prospect_chance="0.1",
     nearby_station_name="string(STR_STATION_WELLS)",
     fund_cost_multiplier="255",
