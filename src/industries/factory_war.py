@@ -135,6 +135,7 @@ industry.add_industry_layout(
         (0, 2, "factory_war_spritelayout_4"),
         (1, 0, "factory_war_spritelayout_2"),
         (1, 1, "factory_war_spritelayout_2"),
+        (1, 2, "factory_war_spritelayout_3"),
         (2, 1, "factory_war_spritelayout_2"),
     ],
 )

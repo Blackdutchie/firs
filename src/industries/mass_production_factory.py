@@ -161,20 +161,16 @@ industry.add_spritelayout(
 industry.add_industry_layout(
     id="mass_production_factory_industry_layout_1",
     layout=[
+
         (0, 0, "mass_production_factory_spritelayout_empty"),
-        (0, 1, "mass_production_factory_spritelayout_4"),
+        (0, 1, "mass_production_factory_spritelayout_7"),
         (0, 2, "mass_production_factory_spritelayout_3"),
         (0, 3, "mass_production_factory_spritelayout_3"),
-        (0, 4, "mass_production_factory_spritelayout_9"),
-        (1, 0, "mass_production_factory_spritelayout_empty"),
+        (0, 4, "mass_production_factory_spritelayout_4"),
+        (1, 0, "mass_production_factory_spritelayout_8"),
         (1, 1, "mass_production_factory_spritelayout_7"),
         (1, 2, "mass_production_factory_spritelayout_3"),
         (1, 3, "mass_production_factory_spritelayout_3"),
         (1, 4, "mass_production_factory_spritelayout_9"),
-        (2, 0, "mass_production_factory_spritelayout_8"),
-        (2, 1, "mass_production_factory_spritelayout_7"),
-        (2, 2, "mass_production_factory_spritelayout_3"),
-        (2, 3, "mass_production_factory_spritelayout_3"),
-        (2, 4, "mass_production_factory_spritelayout_9"),
     ],
 )

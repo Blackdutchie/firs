@@ -51,7 +51,7 @@ spriteset_3 = industry.add_spriteset(
     sprites=[(720, 110, 64, 84, -31, -54)],
 )
 spriteset_4 = industry.add_spriteset(
-    sprites=[(440, 410, 64, 84, -31, -54)],
+    sprites=[(440, 410, 64, 84, -31, 0)],
 )
 spriteset_5 = industry.add_spriteset(
     sprites=[(251, 505, 64, 31, -31, -31)],
