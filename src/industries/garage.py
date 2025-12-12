@@ -11,13 +11,13 @@ industry = IndustrySecondary(
     ],
     prob_in_game="0",  # low chance of build during gameplay
     prob_map_gen="5",
-    map_colour="141",
-    colour_scheme_name="scheme_7_bowie",
+    map_colour="160",
+    colour_scheme_name="scheme_15_seal",
     name="string(STR_IND_GARAGE)",
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
-    special_flags=["IND_FLAG_ONLY_IN_TOWNS"],
+    special_flags=["IND_FLAG_BUILT_NEAR_TOWN"],
     nearby_station_name="string(STR_STATION_AUTOMOTIVE)",
-    fund_cost_multiplier="145",
+    fund_cost_multiplier="255",
     sprites_complete=True,
     animated_tiles_fixed=True,
 )
@@ -25,20 +25,32 @@ industry = IndustrySecondary(
 industry.enable_in_economy(
     "WAR_ECONOMY",
 )
-
-hardware_store_spriteset_ground = industry.add_spriteset(
+industry.add_tile(
+    id="garage_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True, require_road_adjacent=True
+    ),
+)
+garage_spriteset_ground = industry.add_spriteset(
     type="pavement",
 )
-hardware_store_spriteset = industry.add_spriteset(sprites=[(0, 0, 64, 64, -31, -33)])
+garage_spriteset = industry.add_spriteset(sprites=[(10, 74, 64, 58, -31, -23)])
 
 industry.add_spritelayout(
     id="garage_spritelayout",
-    tile="hardware_store_tile_1",
-    ground_sprite=hardware_store_spriteset_ground,
+    tile="garage_tile_1",
+    ground_sprite=garage_spriteset_ground,
     ground_overlay=None,
-    building_sprites=[hardware_store_spriteset],
+    building_sprites=[garage_spriteset],
 )
 industry.add_industry_layout(
     id="garage_industry_layout",
-    layout=[(0, 0, "garage_spritelayout")],
+    layout=[
+        (0, 0, "garage_spritelayout"),
+        (1, 0, "garage_spritelayout")],
+)
+industry.add_industry_layout(
+    id="garage_industry_layout_2",
+    layout=[
+        (0, 0, "garage_spritelayout")],
 )

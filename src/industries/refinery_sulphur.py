@@ -11,11 +11,11 @@ industry = IndustrySecondary(
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",  # do not build during gameplay
     prob_map_gen="3",
-    map_colour="10",
+    map_colour="166",
     colour_scheme_name="scheme_1_elton", # cabbage needs checked
-    name="string(STR_IND_REF_COMP)",
+    name="string(STR_IND_REF_SULPH)",
     nearby_station_name="string(STR_STATION_FURNACE)",
-    fund_cost_multiplier="190",
+    fund_cost_multiplier="255",
     pollution_and_squalor_factor=2,
     sprites_complete=True,
     animated_tiles_fixed=True,
@@ -28,22 +28,56 @@ industry.enable_in_economy(
     ],
 )
 
+industry.add_tile(
+    id="refinery_sulphur_tile_1",
+    location_checks=TileLocationChecks(
+        require_effectively_flat=True, disallow_industry_adjacent=True
+    ),
+)
 
 spriteset_ground = industry.add_spriteset(
     type="pavement",
 )
-spriteset_ground_overlay = industry.add_spriteset(
-    sprites=[(10, 10, 64, 31, -31, 0)],
+
+spriteset_1 = industry.add_spriteset(
+    sprites=[(10, 161, 64, 78, -31, -50)],
 )
-spriteset_1 = industry.add_spriteset(sprites=[(10, 60, 64, 48, -31, -18)])
+
+spriteset_2 = industry.add_spriteset(
+    sprites=[(80, 161, 64, 70, -31, -46)],
+)
+spriteset_3 = industry.add_spriteset(
+    sprites=[(720, 110, 64, 84, -31, -54)],
+)
+spriteset_4 = industry.add_spriteset(
+    sprites=[(441, 410, 64, 84, -31, -54)],
+)
+spriteset_5 = industry.add_spriteset(
+    sprites=[(251, 505, 64, 31, -31, -20)],
+)
+
 industry.add_spritelayout(
-    id="refinery_sulphur_spritelayout",
-    tile="general_store_tile_1",
+    id="refinery_sulphur_spritelayout_1",
+    tile="refinery_sulphur_tile_1",
     ground_sprite=spriteset_ground,
-    ground_overlay=spriteset_ground_overlay,
-    building_sprites=[spriteset_1],
+    ground_overlay=None,
+    building_sprites=[spriteset_3],
+    fences=["nw", "ne", "se", "sw"],
 )
+industry.add_spritelayout(
+    id="refinery_sulphur_spritelayout_2",
+    tile="refinery_sulphur_tile_1",
+    ground_sprite=spriteset_ground,
+    ground_overlay=None,
+    building_sprites=[spriteset_2],
+    fences=["nw", "ne", "se", "sw"],
+)
+
 industry.add_industry_layout(
-    id="refinery_sulphur_industry_layout",
-    layout=[(0, 0, "refinery_sulphur_spritelayout")],
+    id="refinery_sulphur_industry_layout_1",
+    layout=[
+        (0, 0, "refinery_sulphur_spritelayout_1"),
+        (1, 0, "refinery_sulphur_spritelayout_2"),
+    ],
 )
+

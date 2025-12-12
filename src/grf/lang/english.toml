@@ -63,6 +63,9 @@ base = "In A Hot Country"
 [STR_PARAM_VALUE_ECONOMIES_STEELTOWN]
 base = "Steeltown"
 
+[STR_PARAM_VALUE_ECONOMIES_WAR_ECONOMY]
+base = "War Economy"
+
 [STR_PARAM_NAME_OBJECTS]
 base = "FIRS landscaping objects"
 
@@ -441,6 +444,9 @@ base = "Vehicle Parts"
 [STR_CARGO_NAME_VEHICLES]
 base = "Vehicles"
 
+[STR_CARGO_NAME_WATER]
+base = "Water"
+
 [STR_CARGO_NAME_WELDING_CONSUMABLES]
 base = "Welding Consumables"
 
@@ -785,6 +791,9 @@ base = "{WEIGHT} of vehicle parts"
 
 [STR_CARGO_UNIT_VEHICLES]
 base = "{WEIGHT} of vehicles"
+
+[STR_CARGO_UNIT_WATER]
+base = "{VOLUME} of water"
 
 [STR_CARGO_UNIT_WELDING_CONSUMABLES]
 base = "{WEIGHT} of welding consumables"
@@ -1137,6 +1146,9 @@ base = "{TINYFONT}VP"
 [STR_CID_VEHICLES]
 base = "{TINYFONT}VS"
 
+[STR_CID_WATER]
+base = "{TINYFONT}WA"
+
 [STR_CID_WELDING_CONSUMABLES]
 base = "{TINYFONT}WS"
 
@@ -1290,6 +1302,39 @@ base = "Ferrochrome Smelter"
 [STR_IND_FERTILISER_PLANT]
 base = "Fertiliser Plant"
 
+[STR_IND_FACILITY_ADVANCED_VEHICLE_PAD]
+base = "(F) Advanced Vehicle Pad"
+
+[STR_IND_FACILITY_AMMUNITION_FACTORY]
+base = "(F) Ammunition Factory"
+
+[STR_IND_FACILITY_BASIC_VEHICLE_PAD]
+base = "(F) Basic Vehicle Pad"
+
+[STR_IND_FACILITY_BLAST_FURNACE]
+base = "(F) Blast Furnace"
+
+[STR_IND_FACILITY_COAL_REFINERY]
+base = "(F) Coal Refinery"
+
+[STR_IND_FACILITY_ENGINEERING_BAY]
+base = "(F) Engineering Bay"
+
+[STR_IND_FACILITY_FORGE]
+base = "(F) Forge"
+
+[STR_IND_FACILITY_METAL_PRESS]
+base = "(F) Metal Press"
+
+[STR_IND_FACILITY_OIL_REFORMER]
+base = "(F) Oil Reformer"
+
+[STR_IND_FACILITY_PETROCHEMICAL_PLANT]
+base = "(F) Petrochemical Plant"
+
+[STR_IND_FACILITY_WATER_PUMP]
+base = "(F) Water Pump"
+
 [STR_IND_FACTORY_1]
 base = "Factory 1"
 
@@ -1382,6 +1427,15 @@ base = "Mass Production Factory"
 
 [STR_IND_METAL_WORKS]
 base = "Metal Works"
+
+[STR_IND_MINE_SALVAGE]
+base = "Salvage Mine"
+
+[STR_IND_MINE_COMPONENTS]
+base = "Component Mine"
+
+[STR_IND_MINE_SULPHUR]
+base = "Sulphur Mine"
 
 [STR_IND_NITRATE_MINE]
 base = "Nitrate Mine"

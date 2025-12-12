@@ -32,6 +32,12 @@ industry.enable_in_economy(
     "IN_A_HOT_COUNTRY",
 )
 
+industry.enable_in_economy(
+    "WAR_ECONOMY",
+    map_colour="209",
+    colour_scheme_name="scheme_3_hendrix", # cabbage needs checked
+)
+
 industry.add_tile(
     id="oil_rig_tile_1",
     location_checks=TileLocationChecks(
