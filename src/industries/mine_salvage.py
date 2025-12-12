@@ -7,7 +7,7 @@ industry = IndustrySecondary(
         ("PETR", 2),
     ],
     prod_cargo_types_with_output_ratios=[
-        ("SALV", 4),
+        ("SALV", 12),
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
