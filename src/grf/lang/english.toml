@@ -259,7 +259,7 @@ base = "Hardware"
 base = "High Explosive Powder"
 
 [STR_CARGO_NAME_ICRATES]
-base = "Item Crates"
+base = "Equipment Crates"
 
 [STR_CARGO_NAME_KAOLIN]
 base = "China Clay"
@@ -310,7 +310,7 @@ base = "Processed Construction Materials"
 base = "Peat"
 
 [STR_CARGO_NAME_PETROL]
-base = "Petroleum Fuels"
+base = "Petrol"
 
 [STR_CARGO_NAME_PIPEWORK]
 base = "Storage Tanks & Pipework"
@@ -550,7 +550,7 @@ base = "{WEIGHT} of copper"
 base = "{WEIGHT} of copper concentrate"
 
 [STR_CARGO_UNIT_DIESEL]
-base = "{VOLUME} of diesel"
+base = "{SIGNED_WORD} can{P 0 \"\" s}  of diesel"
 
 [STR_CARGO_UNIT_EDIBLE_OIL]
 base = "{VOLUME} of edible oil"
@@ -568,7 +568,7 @@ base = "{SIGNED_WORD} crate{P 0 \"\" s} of explosives"
 base = "{WEIGHT} of Epowder"
 
 [STR_CARGO_UNIT_EXOIL]
-base = "{VOLUME} of enriched oil"
+base = "{SIGNED_WORD} can{P 0 \"\" s}  of enriched oil"
 
 [STR_CARGO_UNIT_FERROALLOYS]
 base = "{WEIGHT} of ferroalloys"
@@ -583,7 +583,7 @@ base = "{WEIGHT} of food additives"
 base = "{WEIGHT} of forgings & castings"
 
 [STR_CARGO_UNIT_FRONTSUP]
-base = "{SIGNED_WORD} crate{P 0 \"\" s} of logi deliveries"
+base = "{SIGNED_WORD} crate{P 0 \"\" s} of frontline supplies"
 
 [STR_CARGO_UNIT_FISH]
 base = "{WEIGHT} of fish"
@@ -655,7 +655,7 @@ base = "{WEIGHT} of PCmats"
 base = "{WEIGHT} of peat"
 
 [STR_CARGO_UNIT_PETROL]
-base = "{VOLUME} of petroleum fuels"
+base = "{SIGNED_WORD} can{P 0 \"\" s}  of petrol"
 
 [STR_CARGO_UNIT_PHOSPHATE]
 base = "{WEIGHT} of phosphate"
@@ -793,7 +793,7 @@ base = "{WEIGHT} of vehicle parts"
 base = "{WEIGHT} of vehicles"
 
 [STR_CARGO_UNIT_WATER]
-base = "{VOLUME} of water"
+base = "{SIGNED_WORD} can{P 0 \"\" s}  of water"
 
 [STR_CARGO_UNIT_WELDING_CONSUMABLES]
 base = "{WEIGHT} of welding consumables"
@@ -955,7 +955,7 @@ base = "{TINYFONT}HW"
 base = "{TINYFONT}HE"
 
 [STR_CID_ICRATES]
-base = "{TINYFONT}IC"
+base = "{TINYFONT}EQ"
 
 [STR_CID_KAOLIN]
 base = "{TINYFONT}KA"

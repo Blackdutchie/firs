@@ -13,7 +13,7 @@ industry = IndustrySecondary(
         ("FRNT", 8),
     ],
     prob_in_game="0",
-    prob_map_gen="10",
+    prob_map_gen="69",
     map_colour="186",
     colour_scheme_name="scheme_5_alanis", # cabbage needs checked
     life_type="IND_LIFE_TYPE_BLACK_HOLE",

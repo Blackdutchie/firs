@@ -7,7 +7,7 @@ industry = IndustryPrimaryWaterAccepter(
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
-    prob_map_gen="7",
+    prob_map_gen="54",
     map_colour="207",
     colour_scheme_name="scheme_1_elton",
     name="TTD_STR_INDUSTRY_NAME_OIL_WELLS",

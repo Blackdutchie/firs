@@ -1,11 +1,11 @@
 from industry import IndustryPrimaryResourceField, TileLocationChecks
 
-industry = IndustryPrimaryResourceField(
+industry = IndustryPrimaryResourceFieldForBaby(
     id="field_salvage",
     prod_cargo_types_with_multipliers=[("SALV", 20)],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
-    prob_map_gen="7",
+    prob_map_gen="146",
     map_colour="64",
     colour_scheme_name="scheme_1_elton",
     prospect_chance="0.0",

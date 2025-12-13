@@ -3,15 +3,14 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="mine_salvage",
     accept_cargos_with_input_ratios=[
-        ("DIES", 6),
-        ("PETR", 2),
+        ("DIES", 8),
     ],
     prod_cargo_types_with_output_ratios=[
-        ("SALV", 12),
+        ("SALV", 18),
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
-    prob_map_gen="8",
+    prob_map_gen="213",
     map_colour="55",
     colour_scheme_name="scheme_3_hendrix", # cabbage needs checked
     name="string(STR_IND_MINE_SALVAGE)",

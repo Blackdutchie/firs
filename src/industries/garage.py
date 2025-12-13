@@ -10,7 +10,7 @@ industry = IndustrySecondary(
         ("VEHI", 8),
     ],
     prob_in_game="0",  # low chance of build during gameplay
-    prob_map_gen="5",
+    prob_map_gen="25",
     map_colour="160",
     colour_scheme_name="scheme_15_seal",
     name="string(STR_IND_GARAGE)",

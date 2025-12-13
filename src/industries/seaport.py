@@ -13,7 +13,7 @@ industry = IndustrySecondary(
         ("FRNT", 8),
     ],
     prob_in_game="0",
-    prob_map_gen="4",
+    prob_map_gen="42",
     # map_colour="186", # former orange before v5?
     # map_colour="177",  # former Bulk Terminal colour?
     map_colour="186",

@@ -10,7 +10,7 @@ industry = IndustrySecondary(
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",  # do not build during gameplay
-    prob_map_gen="3",
+    prob_map_gen="24",
     map_colour="166",
     colour_scheme_name="scheme_1_elton", # cabbage needs checked
     name="string(STR_IND_REF_COMP)",

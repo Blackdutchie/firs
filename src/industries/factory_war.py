@@ -11,7 +11,7 @@ industry = IndustrySecondary(
     ],
     life_type = "IND_LIFE_TYPE_BLACK_HOLE",
     prob_in_game="0",
-    prob_map_gen="5",
+    prob_map_gen="34",
     map_colour="151",
     colour_scheme_name="scheme_3_hendrix", # cabbage needs checked
     name="string(STR_IND_FACTORY_WAR)",
