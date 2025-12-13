@@ -1,4 +1,4 @@
-from industry import IndustryPrimaryResourceField, TileLocationChecks
+from industry import IndustryPrimaryResourceFieldForBaby, TileLocationChecks
 
 industry = IndustryPrimaryResourceFieldForBaby(
     id="field_salvage",
